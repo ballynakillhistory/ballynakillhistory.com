@@ -181,6 +181,72 @@ th {
   cursor: zoom-in;
 }
 
+/* interactive townland map */
+
+.townland-map {
+  width: 100%;
+  height: 640px;
+  border: 1px solid var(--color-border);
+  background: #eee;
+}
+.map-legend {
+  background: #fff;
+  padding: 8px 10px;
+  border-radius: 4px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+  font-size: 0.8125rem;
+  line-height: 1.6;
+}
+.map-legend span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.map-legend i {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.leaflet-tooltip.point-label {
+  pointer-events: none;
+  background: #fff;
+  border: none;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 1px 5px;
+  color: #111;
+}
+.leaflet-tooltip-right.point-label::before {
+  border-right-color: #fff;
+}
+.leaflet-tooltip-left.point-label::before {
+  border-left-color: #fff;
+}
+.leaflet-popup-content {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+.leaflet-popup-content-wrapper {
+  max-width: 280px;
+}
+.leaflet-popup-content p {
+  margin: 0.5em 0 0;
+}
+.map-popup-category {
+  color: var(--color-caption);
+}
+.map-popup-source {
+  color: var(--color-caption);
+  font-size: 0.8125rem;
+}
+
 /* footer */
 
 footer {
