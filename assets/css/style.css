@@ -1,0 +1,188 @@
+/* Ballynakill & Surroundings Historical Group — site stylesheet */
+
+@font-face {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-display: fallback;
+  src: url("../fonts/SourceSansPro-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  font-style: italic;
+  font-weight: 400;
+  font-display: fallback;
+  src: url("../fonts/SourceSansPro-Italic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 600;
+  font-display: fallback;
+  src: url("../fonts/SourceSansPro-SemiBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 700;
+  font-display: fallback;
+  src: url("../fonts/SourceSansPro-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "DM Serif Display";
+  font-style: normal;
+  font-weight: 400;
+  font-display: fallback;
+  src: url("../fonts/DMSerifDisplay-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "DM Serif Display";
+  font-style: italic;
+  font-weight: 400;
+  font-display: fallback;
+  src: url("../fonts/DMSerifDisplay-Italic.ttf") format("truetype");
+}
+
+:root {
+  --color-bg: #fff;
+  --color-text: #000;
+  --color-muted: #666;
+  --color-border: #dedede;
+  --content-width: 1200px;
+  --side-padding: clamp(1.5rem, 5vw, 2rem);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.0625rem;
+  line-height: 1.6;
+  padding: 0 var(--side-padding);
+}
+
+a {
+  color: var(--color-text);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+h1, h2, h3, h4 {
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  line-height: 1.2;
+}
+h1 { font-size: clamp(1.75rem, 1.75rem + 2vw, 3rem); }
+h2 { font-size: clamp(1.75rem, 1.75rem + 1vw, 2.25rem); }
+h4 { font-size: 1.125rem; }
+
+header, main, footer {
+  max-width: var(--content-width);
+  margin: 0 auto;
+}
+
+/* header / banner / nav */
+
+.banner {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+nav {
+  border-top: 1px solid var(--color-text);
+  border-bottom: 1px solid var(--color-text);
+  padding: 20px 0;
+  margin-bottom: 1.5rem;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+/* content */
+
+main > * + * {
+  margin-top: 1.5rem;
+}
+
+main img {
+  max-width: 100%;
+  height: auto;
+}
+
+figure {
+  margin: 0;
+}
+figcaption {
+  color: var(--color-muted);
+  font-size: 0.8125rem;
+  text-align: center;
+  margin-top: 0.5em;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th, td {
+  border: 1px solid var(--color-border);
+  padding: 0.5em 0.75em;
+  text-align: left;
+  vertical-align: top;
+}
+th {
+  background: #f7f7f7;
+}
+
+/* map thumbnail galleries (click to enlarge) */
+
+.map-gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.map-gallery a {
+  display: block;
+  cursor: zoom-in;
+}
+
+/* footer */
+
+footer {
+  border-top: 1px solid var(--color-border);
+  margin-top: 2.5rem;
+  padding: 2rem 0 1.5rem;
+  text-align: center;
+}
+.social-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 0 0 1rem;
+  padding: 0;
+}
+.social-links a {
+  display: inline-flex;
+}
+.social-links svg {
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+}
+footer p {
+  color: var(--color-muted);
+  margin: 0;
+}
