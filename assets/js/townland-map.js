@@ -239,9 +239,21 @@ async function initTownlandMap(el) {
     const legend = L.control({ position: "bottomright" });
     legend.onAdd = () => {
       const div = L.DomUtil.create("div", "map-legend");
-      div.innerHTML = legendEntries
-        .map((e) => `<span><i style="background:${e.color}"></i>${esc(e.label)}</span>`)
-        .join("");
+      // collapsed by default on narrow (mobile) viewports, where the full list eats too much
+      // of the map — open by default on wider ones, where it was never a space problem
+      const startCollapsed = window.matchMedia("(max-width: 600px)").matches;
+      if (startCollapsed) div.classList.add("collapsed");
+      div.innerHTML =
+        '<button type="button" class="map-legend-toggle">Legend</button>' +
+        '<div class="map-legend-items">' +
+        legendEntries
+          .map((e) => `<span><i style="background:${e.color}"></i>${esc(e.label)}</span>`)
+          .join("") +
+        "</div>";
+      div.querySelector(".map-legend-toggle").addEventListener("click", () => {
+        div.classList.toggle("collapsed");
+      });
+      L.DomEvent.disableClickPropagation(div);
       return div;
     };
     legend.addTo(map);
