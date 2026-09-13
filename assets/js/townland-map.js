@@ -192,7 +192,10 @@ async function initTownlandMap(el) {
     return;
   }
 
-  const map = L.map(el, { scrollWheelZoom: false });
+  // fractional zoom so fitBounds can land on the true best-fit level instead of always
+  // rounding down to the next whole zoom (which overshoots badly on small/oddly-shaped
+  // townlands, e.g. a tall narrow bounding box) — zoomDelta keeps the +/- buttons at whole steps
+  const map = L.map(el, { scrollWheelZoom: false, zoomSnap: 0.25, zoomDelta: 1 });
   map.invalidateSize();
 
   L.tileLayer(
