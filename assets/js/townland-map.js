@@ -1,24 +1,59 @@
 const FIXED_COLORS = {
-  houses: "#d1372b",
-  buildings: "#2b6bd1",
+  houses: "#db1e2a",
+  buildings: "#0000ff",
 };
 
-// deterministic categorical palette for placename types — same type always gets the same
-// colour across every townland page, since the palette is chosen by hash, not by page order
-const TYPE_PALETTE = [
-  "#4e79a7", "#f28e2b", "#e15759", "#76b7b2", "#59a14f",
-  "#edc948", "#b07aa1", "#ff9da7", "#9c755f", "#bab0ac",
-];
-
-function hashColor(str) {
-  let h = 0;
-  for (let i = 0; i < str.length; i++) h = (h * 31 + str.charCodeAt(i)) >>> 0;
-  return TYPE_PALETTE[h % TYPE_PALETTE.length];
-}
+// colours copied exactly from the categorized renderer on the "placenames" layer in the
+// project's own QGIS "Online" group — keep this in sync with that layer's style, not invented
+const TYPE_COLORS = {
+  "bog": "#d844ef",
+  "bridge": "#d07e92",
+  "brow, slope, hillside": "#2525e3",
+  "cave(s), souterrain(s)": "#d4ac0c",
+  "creek": "#82e898",
+  "crossroads": "#397eee",
+  "enclosure": "#cb31aa",
+  "field": "#88db3a",
+  "fort": "#3c92d8",
+  "gap": "#c84393",
+  "gate": "#56efad",
+  "graveyard, cemetary, burial ground": "#755cf0",
+  "hamlet (small group of houses in a rural area)": "#31e8d9",
+  "hill or hills": "#9ae577",
+  "hole": "#845bcf",
+  "hollow": "#4cda51",
+  "house": "#efa76d",
+  "island or archipelago": "#0f3bed",
+  "lake or lakes": "#6ddc5b",
+  "man-made feature": "#d25523",
+  "marsh": "#9ad02f",
+  "mass path": "#68b0ca",
+  "mass rock": "#b4cc3e",
+  "other": "#dc7dd7",
+  "point, tip": "#df1f6f",
+  "river": "#d0424c",
+  "road": "#984fdd",
+  "rock or rocks": "#bb5ce4",
+  "stream": "#2ecfe1",
+  "sub-townland": "#cc9028",
+  "tree or bush": "#ee4b39",
+  "well": "#42dc7d",
+  "wood": "#edeb58",
+  "minor feature": "#9228b8",
+  "monument": "#27dda0",
+  "mountain or mountain range": "#60c665",
+  "country lane, boreen": "#91502d",
+  "forge": "#2d218c",
+  "haggard": "#fec645",
+  "standing stone or standing stones": "#f4b548",
+  "bay": "#77b9d7",
+  "patch of ground": "#385b8e",
+  "quay, pier, wharf": "#3148ae",
+};
 
 function colorFor(properties) {
   if (properties.layer === "placenames") {
-    return hashColor(properties.category || "");
+    return TYPE_COLORS[properties.category] || "#666";
   }
   return FIXED_COLORS[properties.layer] || "#666";
 }
