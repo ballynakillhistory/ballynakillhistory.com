@@ -55,44 +55,94 @@ function offsetFor(dir) {
   return dir === "left" ? [-LABEL_GAP, 0] : [LABEL_GAP, 0];
 }
 
-// simple side-declutter: pairwise-check rendered label boxes, flip conflicting labels to the
-// other side of their point until no (or fewer) pairs overlap. Panning doesn't change relative
-// overlap (a rigid translation), so this only needs to re-run on zoom, not on every pan.
-function declutterLabels(items) {
-  function rectOf(item) {
+// Labels are shown on a "does it fit" basis rather than a fixed zoom threshold: at each zoom
+// level we place labels one at a time in priority order, skipping (hiding) any whose box would
+// overlap one already placed. Zooming in spreads points apart in pixel-space, so more labels
+// pass the fit test on their own — no manual threshold to tune. Priority favours orienting,
+// larger-scale features (lakes, hills, sub-townlands) so those are the ones that survive first
+// when zoomed out and everything can't fit yet.
+const TYPE_PRIORITY = {
+  "sub-townland": 0,
+  "lake or lakes": 0,
+  "hill or hills": 0,
+  wood: 0,
+};
+
+function priorityFor(properties) {
+  if (properties.layer === "houses") return 3;
+  if (properties.layer === "buildings") return 4;
+  return TYPE_PRIORITY[properties.category] ?? 2;
+}
+
+function overlaps(a, b) {
+  return !(a.right < b.left || b.right < a.left || a.bottom < b.top || b.bottom < a.top);
+}
+
+// how many zoom levels past the initial fit-to-townland view before every label is forced
+// to show — a hard guarantee on top of the collision-avoidance, so two points that are
+// genuinely only a few metres apart (and so never fully separate in pixel-space at any
+// sane zoom) don't end up with a permanently-hidden label
+const FULL_LABEL_ZOOM_DELTA = 2;
+
+function declutterLabels(map, items, initialZoom) {
+  const forceAll = map.getZoom() >= initialZoom + FULL_LABEL_ZOOM_DELTA;
+  // measure each label's natural size once (before any hiding) — content/font never changes,
+  // so a fixed width/height can be reused for every future placement calculation
+  items.forEach((item) => {
+    if (item.size) return;
     const el = item.marker.getTooltip()?.getElement();
-    return el ? el.getBoundingClientRect() : null;
+    if (el) item.size = { width: el.offsetWidth, height: el.offsetHeight };
+  });
+
+  function candidateRect(item, dir) {
+    const pt = map.latLngToContainerPoint(item.marker.getLatLng());
+    const { width, height } = item.size;
+    const top = pt.y - height / 2;
+    const left = dir === "left" ? pt.x - LABEL_GAP - width : pt.x + LABEL_GAP;
+    return { left, top, right: left + width, bottom: top + height };
   }
-  function overlaps(a, b) {
-    return !(a.right < b.left || b.right < a.left || a.bottom < b.top || b.bottom < a.top);
-  }
-  function applyDirection(item) {
+
+  function show(item, dir) {
     const tooltip = item.marker.getTooltip();
-    if (tooltip && tooltip.options.direction !== item.dir) {
-      tooltip.options.direction = item.dir;
-      tooltip.options.offset = offsetFor(item.dir);
+    if (tooltip.options.direction !== dir) {
+      tooltip.options.direction = dir;
+      tooltip.options.offset = offsetFor(dir);
       item.marker.closeTooltip();
       item.marker.openTooltip();
     }
+    tooltip.getElement().style.display = "";
   }
 
-  items.forEach((item) => applyDirection(item));
+  function hide(item) {
+    item.marker.getTooltip()?.getElement()?.style.setProperty("display", "none");
+  }
 
-  for (let pass = 0; pass < 4; pass++) {
-    const rects = items.map(rectOf);
-    let changed = false;
-    for (let i = 0; i < items.length; i++) {
-      for (let j = i + 1; j < items.length; j++) {
-        if (!rects[i] || !rects[j]) continue;
-        if (items[i].dir === items[j].dir && overlaps(rects[i], rects[j])) {
-          items[j].dir = items[j].dir === "right" ? "left" : "right";
-          changed = true;
-        }
-      }
+  const ordered = [...items].sort(
+    (a, b) => priorityFor(a.marker.feature.properties) - priorityFor(b.marker.feature.properties),
+  );
+
+  const accepted = [];
+  ordered.forEach((item) => {
+    if (!item.size) return;
+    const rightRect = candidateRect(item, "right");
+    const leftRect = candidateRect(item, "left");
+    const rightFree = !accepted.some((r) => overlaps(r, rightRect));
+    const leftFree = !accepted.some((r) => overlaps(r, leftRect));
+    if (rightFree) {
+      show(item, "right");
+      accepted.push(rightRect);
+    } else if (leftFree) {
+      show(item, "left");
+      accepted.push(leftRect);
+    } else if (forceAll) {
+      // both sides collide, but past the guarantee threshold every label shows regardless —
+      // still pick 'right' for consistency, just accept the visual overlap
+      show(item, "right");
+      accepted.push(rightRect);
+    } else {
+      hide(item);
     }
-    items.forEach((item) => applyDirection(item));
-    if (!changed) break;
-  }
+  });
 }
 
 async function initTownlandMap(el) {
@@ -153,7 +203,7 @@ async function initTownlandMap(el) {
         offset: offsetFor("right"),
         className: "point-label",
       });
-      labelItems.push({ marker: layer, dir: "right" });
+      labelItems.push({ marker: layer });
     },
   }).addTo(map);
   boundsList.push(pointsLayer.getBounds());
@@ -163,9 +213,10 @@ async function initTownlandMap(el) {
     null,
   );
   if (combined) map.fitBounds(combined, { padding: [20, 20] });
+  const initialZoom = map.getZoom();
 
-  map.whenReady(() => setTimeout(() => declutterLabels(labelItems), 0));
-  map.on("zoomend", () => declutterLabels(labelItems));
+  map.whenReady(() => setTimeout(() => declutterLabels(map, labelItems, initialZoom), 0));
+  map.on("zoomend", () => declutterLabels(map, labelItems, initialZoom));
 
   const legendEntries = [];
   const seenTypes = new Set();
