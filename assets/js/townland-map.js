@@ -173,6 +173,38 @@ async function initTownlandMap(el) {
   el.addEventListener("click", () => map.scrollWheelZoom.enable());
   el.addEventListener("mouseleave", () => map.scrollWheelZoom.disable());
 
+  // fullscreen via the native Fullscreen API rather than a plugin — the browser already
+  // provides an "Esc to exit" affordance for free, the button just mirrors that as a click target
+  if (el.requestFullscreen) {
+    const fullscreenControl = L.control({ position: "topright" });
+    fullscreenControl.onAdd = () => {
+      const container = L.DomUtil.create("div", "leaflet-bar map-fullscreen-control");
+      const button = L.DomUtil.create("a", "", container);
+      button.href = "#";
+      button.setAttribute("role", "button");
+      button.setAttribute("aria-label", "Toggle fullscreen map");
+      button.title = "View fullscreen";
+      button.innerHTML = "⛶";
+      L.DomEvent.disableClickPropagation(container);
+      L.DomEvent.on(button, "click", (e) => {
+        e.preventDefault();
+        if (document.fullscreenElement === el) {
+          document.exitFullscreen().catch(() => {});
+        } else {
+          el.requestFullscreen().catch(() => {});
+        }
+      });
+      el.addEventListener("fullscreenchange", () => {
+        const isFullscreen = document.fullscreenElement === el;
+        button.title = isFullscreen ? "Exit fullscreen" : "View fullscreen";
+        button.innerHTML = isFullscreen ? "✕" : "⛶";
+        map.invalidateSize();
+      });
+      return container;
+    };
+    fullscreenControl.addTo(map);
+  }
+
   const boundsList = [];
 
   if (data.boundary) {
