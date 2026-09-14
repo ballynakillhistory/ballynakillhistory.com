@@ -196,16 +196,23 @@ function declutterLabels(map, items, initialZoom) {
 // avoidance, just show it once the townland's own on-screen footprint is big enough to hold
 // it. At the parish-wide initial view, 144 labels pairwise-overlap badly (small townlands
 // packed close together); this thins them out and fills in as you zoom into a given area.
+//
+// Reads (offsetWidth/getBounds) and writes (open/closeTooltip) are done in two separate
+// passes, not interleaved per item — mixing them in one loop over 144 items forces a
+// synchronous layout reflow on every single read, once per item, which is what made this
+// noticeably janky on zoom before this was split.
 function declutterTownlandLabels(map, items) {
   items.forEach((item) => {
+    if (!item.bounds) item.bounds = item.layer.getBounds(); // static geometry, cache forever
     if (!item.size) {
       const el = item.layer.getTooltip()?.getElement();
       if (el) item.size = { width: el.offsetWidth, height: el.offsetHeight };
     }
+  });
+  items.forEach((item) => {
     if (!item.size) return;
-    const bounds = item.layer.getBounds();
-    const nw = map.latLngToContainerPoint(bounds.getNorthWest());
-    const se = map.latLngToContainerPoint(bounds.getSouthEast());
+    const nw = map.latLngToContainerPoint(item.bounds.getNorthWest());
+    const se = map.latLngToContainerPoint(item.bounds.getSouthEast());
     const fits =
       Math.abs(se.x - nw.x) > item.size.width + 12 && Math.abs(se.y - nw.y) > item.size.height + 12;
     if (fits) item.layer.openTooltip();
