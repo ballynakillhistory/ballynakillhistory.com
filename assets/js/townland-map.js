@@ -272,6 +272,21 @@ async function initTownlandMap(el) {
     fullscreenControl.addTo(map);
   }
 
+  // the overview map is a bare full-viewport page (no site header/nav), so it needs its
+  // own way back in rather than relying on the browser back button
+  if (!townland) {
+    const backControl = L.control({ position: "topleft" });
+    backControl.onAdd = () => {
+      const container = L.DomUtil.create("div", "map-back-link");
+      const link = L.DomUtil.create("a", "", container);
+      link.href = "../";
+      link.textContent = "← Placenames Project";
+      L.DomEvent.disableClickPropagation(container);
+      return container;
+    };
+    backControl.addTo(map);
+  }
+
   const boundsList = [];
 
   // used only in overview mode (townland === null) to label points with which townland
@@ -279,13 +294,26 @@ async function initTownlandMap(el) {
   const townlandNames = new Map(boundaries.features.map((f) => [f.properties.townland, f.properties.name]));
 
   if (data.boundaries.length) {
+    // In overview mode boundaries.json carries every townland in the civil parish, not just
+    // published ones (so the map shows the whole area, points or not) — dim/dash the ones
+    // without a page yet so it's clear at a glance which is which.
     const boundaryLayer = L.geoJSON(
       { type: "FeatureCollection", features: data.boundaries },
       {
-        style: { color: "#e8890c", weight: 2, fill: false },
+        style: (feature) =>
+          feature.properties.published
+            ? { color: "#e8890c", weight: 2, fill: false }
+            : { color: "#999", weight: 1, dashArray: "4,4", fill: false },
         onEachFeature: townland
           ? undefined
-          : (feature, layer) => layer.bindTooltip(esc(feature.properties.name), { sticky: true }),
+          : (feature, layer) => {
+              layer.bindTooltip(esc(feature.properties.name), { sticky: true });
+              if (feature.properties.published) {
+                layer.on("click", () => {
+                  window.location.href = `../${feature.properties.townland}/`;
+                });
+              }
+            },
       },
     ).addTo(map);
     boundsList.push(boundaryLayer.getBounds());

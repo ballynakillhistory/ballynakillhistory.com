@@ -221,9 +221,30 @@ th {
   height: 100%;
   border: none;
 }
-.townland-map.map-all {
-  height: 80vh;
-  min-height: 500px;
+
+/* full-viewport overview map, no site header/nav/footer */
+body.map-page {
+  margin: 0;
+}
+body.map-page .townland-map {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+.map-back-link {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+  font-size: 0.8125rem;
+}
+.map-back-link a {
+  display: block;
+  padding: 6px 10px;
+  color: inherit;
+  text-decoration: none;
+  white-space: nowrap;
 }
 .map-fullscreen-control a {
   font-size: 18px;
