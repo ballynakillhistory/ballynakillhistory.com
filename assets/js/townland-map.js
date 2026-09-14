@@ -327,6 +327,13 @@ async function initTownlandMap(el) {
 
   const townlandLabelItems = [];
 
+  // Fitting the initial view to all 144 boundaries (below) zooms out to the whole civil
+  // parish, which is both more zoomed-out than useful and makes the first view of the
+  // overview map busier than it needs to be with unpublished-townland labels. Frame the
+  // initial view on the published townlands only — the full parish is still there to
+  // explore by zooming/panning out, just not what you're dropped into.
+  let publishedBoundsOnly = null;
+
   if (data.boundaries.length) {
     // In overview mode boundaries.json carries every townland in the civil parish, not just
     // published ones (so the map shows the whole area, points or not) — dim/dash the ones
@@ -349,10 +356,15 @@ async function initTownlandMap(el) {
                 className: "townland-label",
               });
               townlandLabelItems.push({ layer });
+              if (feature.properties.published) {
+                const b = layer.getBounds();
+                publishedBoundsOnly = publishedBoundsOnly ? publishedBoundsOnly.extend(b) : b;
+              }
             },
       },
     ).addTo(map);
-    boundsList.push(boundaryLayer.getBounds());
+    const fitBoundary = townland ? boundaryLayer.getBounds() : publishedBoundsOnly;
+    if (fitBoundary) boundsList.push(fitBoundary);
   }
 
   const labelItems = [];
