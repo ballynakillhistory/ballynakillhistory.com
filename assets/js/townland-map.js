@@ -82,9 +82,9 @@ function popupHtml(properties, townlandLabel) {
   const p = properties;
   let html = `<strong>${esc(p.name)}</strong>`;
   if (townlandLabel) {
-    html += `<br><span class="map-popup-townland">Townland: ${esc(townlandLabel)}</span>`;
-    if (p.category) html += `<br><span class="map-popup-category">Type: ${esc(p.category)}</span>`;
-    if (p.notes) html += `<p>Notes: ${linkify(esc(p.notes).replace(/\n/g, "<br>"))}</p>`;
+    html += `<br><span class="map-popup-townland"><strong>Townland:</strong> ${esc(townlandLabel)}</span>`;
+    if (p.category) html += `<br><span class="map-popup-category"><strong>Type:</strong> ${esc(p.category)}</span>`;
+    if (p.notes) html += `<p><strong>Notes</strong><br>${linkify(esc(p.notes).replace(/\n/g, "<br>"))}</p>`;
   } else {
     if (p.category) html += `<br><span class="map-popup-category">${esc(p.category)}</span>`;
     if (p.notes) html += `<p>${linkify(esc(p.notes).replace(/\n/g, "<br>"))}</p>`;

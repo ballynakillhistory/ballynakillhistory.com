@@ -336,7 +336,6 @@ body.map-page .townland-map {
 .map-popup-townland {
   color: var(--color-caption);
   font-size: 0.8125rem;
-  font-style: italic;
 }
 
 /* footer */
