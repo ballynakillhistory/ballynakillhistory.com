@@ -74,21 +74,16 @@ function linkify(escapedText) {
 }
 
 // townlandLabel is passed only when rendering unfiltered (the overview map) — on a
-// single-townland page it would just repeat the page's own subject, so it's omitted there.
-// Its presence also distinguishes the two popup styles: the overview map mixes points from
-// many townlands, so its fields are labelled (except name); a single-townland page's popup
-// stays unlabelled since "Type: field" etc. is less needed alongside the page's own tables.
+// single-townland page it would just repeat the page's own subject, so that one line is
+// omitted there; Type and Notes are labelled the same way on every page.
 function popupHtml(properties, townlandLabel) {
   const p = properties;
   let html = `<strong>${esc(p.name)}</strong>`;
   if (townlandLabel) {
     html += `<br><span class="map-popup-townland"><strong>Townland:</strong> ${esc(townlandLabel)}</span>`;
-    if (p.category) html += `<br><span class="map-popup-category"><strong>Type:</strong> ${esc(p.category)}</span>`;
-    if (p.notes) html += `<p><strong>Notes</strong><br>${linkify(esc(p.notes).replace(/\n/g, "<br>"))}</p>`;
-  } else {
-    if (p.category) html += `<br><span class="map-popup-category">${esc(p.category)}</span>`;
-    if (p.notes) html += `<p>${linkify(esc(p.notes).replace(/\n/g, "<br>"))}</p>`;
   }
+  if (p.category) html += `<br><span class="map-popup-category"><strong>Type:</strong> ${esc(p.category)}</span>`;
+  if (p.notes) html += `<p><strong>Notes</strong><br>${linkify(esc(p.notes).replace(/\n/g, "<br>"))}</p>`;
   return html;
 }
 
