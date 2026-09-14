@@ -191,6 +191,28 @@ function declutterLabels(map, items, initialZoom) {
   });
 }
 
+// Townland-boundary labels (overview map only) use a simpler rule than declutterLabels above:
+// a centred label doesn't have a left/right choice to try, so instead of pairwise collision
+// avoidance, just show it once the townland's own on-screen footprint is big enough to hold
+// it. At the parish-wide initial view, 144 labels pairwise-overlap badly (small townlands
+// packed close together); this thins them out and fills in as you zoom into a given area.
+function declutterTownlandLabels(map, items) {
+  items.forEach((item) => {
+    if (!item.size) {
+      const el = item.layer.getTooltip()?.getElement();
+      if (el) item.size = { width: el.offsetWidth, height: el.offsetHeight };
+    }
+    if (!item.size) return;
+    const bounds = item.layer.getBounds();
+    const nw = map.latLngToContainerPoint(bounds.getNorthWest());
+    const se = map.latLngToContainerPoint(bounds.getSouthEast());
+    const fits =
+      Math.abs(se.x - nw.x) > item.size.width + 12 && Math.abs(se.y - nw.y) > item.size.height + 12;
+    if (fits) item.layer.openTooltip();
+    else item.layer.closeTooltip();
+  });
+}
+
 // Points and boundaries for every published townland live in two shared files (not one
 // file per townland) so there is a single source of truth for both the per-townland pages
 // and the combined overview map. A page opts into just its own townland via data-townland;
@@ -301,6 +323,8 @@ async function initTownlandMap(el) {
   // they belong to, since a single point feature only carries the townland's slug
   const townlandNames = new Map(boundaries.features.map((f) => [f.properties.townland, f.properties.name]));
 
+  const townlandLabelItems = [];
+
   if (data.boundaries.length) {
     // In overview mode boundaries.json carries every townland in the civil parish, not just
     // published ones (so the map shows the whole area, points or not) — dim/dash the ones
@@ -315,7 +339,14 @@ async function initTownlandMap(el) {
         onEachFeature: townland
           ? undefined
           : (feature, layer) => {
-              layer.bindTooltip(esc(feature.properties.name), { sticky: true });
+              // permanent, not hover-only — the overview map is meant to read as a labelled
+              // parish map. Positioned by Leaflet's own polygon-centre logic (direction: "center").
+              layer.bindTooltip(esc(feature.properties.name), {
+                permanent: true,
+                direction: "center",
+                className: "townland-label",
+              });
+              townlandLabelItems.push({ layer });
               if (feature.properties.published) {
                 layer.on("click", () => {
                   window.location.href = `../${feature.properties.townland}/`;
@@ -363,6 +394,11 @@ async function initTownlandMap(el) {
 
   map.whenReady(() => setTimeout(() => declutterLabels(map, labelItems, initialZoom), 0));
   map.on("zoomend", () => declutterLabels(map, labelItems, initialZoom));
+
+  if (townlandLabelItems.length) {
+    map.whenReady(() => setTimeout(() => declutterTownlandLabels(map, townlandLabelItems), 0));
+    map.on("zoomend", () => declutterTownlandLabels(map, townlandLabelItems));
+  }
 
   const legendEntries = [];
   const seenTypes = new Set();

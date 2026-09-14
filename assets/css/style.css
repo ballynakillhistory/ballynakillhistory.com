@@ -313,6 +313,23 @@ body.map-page .townland-map {
 .leaflet-tooltip-left.point-label::before {
   border-left-color: #fff;
 }
+.leaflet-tooltip.townland-label {
+  pointer-events: none;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  font-style: italic;
+  color: #fff;
+  text-shadow:
+    0 0 3px #000,
+    0 0 3px #000;
+}
+.leaflet-tooltip.townland-label::before {
+  display: none;
+}
 .leaflet-popup-content {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 0.875rem;
