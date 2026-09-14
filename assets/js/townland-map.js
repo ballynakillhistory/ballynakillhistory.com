@@ -354,11 +354,6 @@ async function initTownlandMap(el) {
                 className: "townland-label",
               });
               townlandLabelItems.push({ layer });
-              if (feature.properties.published) {
-                layer.on("click", () => {
-                  window.location.href = `../${feature.properties.townland}/`;
-                });
-              }
             },
       },
     ).addTo(map);
