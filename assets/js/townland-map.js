@@ -282,7 +282,7 @@ async function initTownlandMap(el) {
     (acc, b) => (acc ? acc.extend(b) : L.latLngBounds(b.getSouthWest(), b.getNorthEast())),
     null,
   );
-  if (combined) map.fitBounds(combined, { padding: [20, 20] });
+  if (combined) map.fitBounds(combined, { padding: [40, 40] });
   const initialZoom = map.getZoom();
 
   map.whenReady(() => setTimeout(() => declutterLabels(map, labelItems, initialZoom), 0));
