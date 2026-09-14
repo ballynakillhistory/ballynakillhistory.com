@@ -1,0 +1,172 @@
+[
+  {
+    "slug": "acres",
+    "name_tag": "Acres",
+    "fid": 41
+  },
+  {
+    "slug": "ballinlough",
+    "name_tag": "Ballinlough",
+    "fid": 60
+  },
+  {
+    "slug": "ballycorban",
+    "name_tag": "Ballycorban",
+    "fid": 7
+  },
+  {
+    "slug": "ballydaly",
+    "name_tag": "Ballydaly",
+    "fid": 14
+  },
+  {
+    "slug": "ballyglass",
+    "name_tag": "Ballyglass",
+    "fid": 94
+  },
+  {
+    "slug": "ballynagar",
+    "name_tag": "Ballynagar",
+    "fid": 86
+  },
+  {
+    "slug": "burroge",
+    "name_tag": "Burroge",
+    "fid": 58
+  },
+  {
+    "slug": "cappaghcon",
+    "name_tag": "Cappaghcon",
+    "fid": 96
+  },
+  {
+    "slug": "cappaghcon-east",
+    "name_tag": "Cappaghcon East",
+    "fid": 82
+  },
+  {
+    "slug": "cappaghcon-west",
+    "name_tag": "Cappaghcon West",
+    "fid": 9
+  },
+  {
+    "slug": "cappaghconbeg",
+    "name_tag": "Cappaghconbeg",
+    "fid": 90
+  },
+  {
+    "slug": "carrowroe",
+    "name_tag": "Carrowroe",
+    "fid": 43
+  },
+  {
+    "slug": "cartron-south",
+    "name_tag": "Cartron South",
+    "fid": 50
+  },
+  {
+    "slug": "clooneen",
+    "name_tag": "Clooneen",
+    "fid": 51
+  },
+  {
+    "slug": "cuilleendaeagh",
+    "name_tag": "Cuilleendaeagh",
+    "fid": 34
+  },
+  {
+    "slug": "garraunphaudeen",
+    "name_tag": "Garraunphaudeen",
+    "fid": 88
+  },
+  {
+    "slug": "gortnakilla",
+    "name_tag": "Gortnakilla",
+    "fid": 32
+  },
+  {
+    "slug": "knockadrum",
+    "name_tag": "Knockadrum",
+    "fid": 6
+  },
+  {
+    "slug": "knockdrummore",
+    "name_tag": "Knockdrummore",
+    "fid": 54
+  },
+  {
+    "slug": "knockmoyle-east",
+    "name_tag": "Knockmoyle East",
+    "fid": 23
+  },
+  {
+    "slug": "knockmoyle-west",
+    "name_tag": "Knockmoyle West",
+    "fid": 20
+  },
+  {
+    "slug": "knockroe",
+    "name_tag": "Knockroe",
+    "fid": 16
+  },
+  {
+    "slug": "laggoo",
+    "name_tag": "Laggoo",
+    "fid": 25
+  },
+  {
+    "slug": "lecarrow-north",
+    "name_tag": "Lecarrow North",
+    "fid": 71
+  },
+  {
+    "slug": "lecarrow-south",
+    "name_tag": "Lecarrow South",
+    "fid": 73
+  },
+  {
+    "slug": "liss",
+    "name_tag": "Liss",
+    "fid": 64
+  },
+  {
+    "slug": "loughpark",
+    "name_tag": "Loughpark",
+    "fid": 19
+  },
+  {
+    "slug": "mountainpark",
+    "name_tag": "Mountainpark",
+    "fid": 100
+  },
+  {
+    "slug": "moyglass",
+    "name_tag": "Moyglass",
+    "fid": 40
+  },
+  {
+    "slug": "ross",
+    "name_tag": "Ross",
+    "fid": 48
+  },
+  {
+    "slug": "rosseeshal",
+    "name_tag": "Rosseeshal",
+    "fid": 56
+  },
+  {
+    "slug": "silverstream",
+    "name_tag": "Silverstream",
+    "fid": 81
+  },
+  {
+    "slug": "slatefield",
+    "name_tag": "Slatefield",
+    "fid": 53
+  },
+  {
+    "slug": "tulla",
+    "name_tag": "Tulla",
+    "fid": 69
+  }
+]

@@ -73,10 +73,13 @@ function linkify(escapedText) {
   );
 }
 
-function popupHtml(properties) {
+// townlandLabel is passed only when rendering unfiltered (the overview map) — on a
+// single-townland page it would just repeat the page's own subject, so it's omitted there
+function popupHtml(properties, townlandLabel) {
   const p = properties;
   let html = `<strong>${esc(p.name)}</strong>`;
   if (p.category) html += `<br><span class="map-popup-category">${esc(p.category)}</span>`;
+  if (townlandLabel) html += `<br><span class="map-popup-townland">${esc(townlandLabel)}</span>`;
   if (p.notes) html += `<p>${linkify(esc(p.notes).replace(/\n/g, "<br>"))}</p>`;
   return html;
 }
@@ -180,17 +183,43 @@ function declutterLabels(map, items, initialZoom) {
   });
 }
 
+// Points and boundaries for every published townland live in two shared files (not one
+// file per townland) so there is a single source of truth for both the per-townland pages
+// and the combined overview map. A page opts into just its own townland via data-townland;
+// the overview map omits that attribute and gets everything.
+async function loadSharedData() {
+  const [pointsRes, boundariesRes] = await Promise.all([
+    fetch("../../assets/data/points.json"),
+    fetch("../../assets/data/boundaries.json"),
+  ]);
+  if (!pointsRes.ok || !boundariesRes.ok) {
+    throw new Error(pointsRes.statusText || boundariesRes.statusText);
+  }
+  const [points, boundaries] = await Promise.all([pointsRes.json(), boundariesRes.json()]);
+  return { points, boundaries };
+}
+
 async function initTownlandMap(el) {
-  const dataUrl = el.dataset.src;
-  let data;
+  const townland = el.dataset.townland || null;
+  let points, boundaries;
   try {
-    const res = await fetch(dataUrl);
-    if (!res.ok) throw new Error(res.statusText);
-    data = await res.json();
+    ({ points, boundaries } = await loadSharedData());
   } catch (err) {
     el.textContent = "Map data could not be loaded.";
     return;
   }
+
+  const data = {
+    points: {
+      type: "FeatureCollection",
+      features: townland
+        ? points.features.filter((f) => f.properties.townland === townland)
+        : points.features,
+    },
+    boundaries: townland
+      ? boundaries.features.filter((f) => f.properties.townland === townland)
+      : boundaries.features,
+  };
 
   // fractional zoom so fitBounds can land on the true best-fit level instead of always
   // rounding down to the next whole zoom (which overshoots badly on small/oddly-shaped
@@ -245,10 +274,20 @@ async function initTownlandMap(el) {
 
   const boundsList = [];
 
-  if (data.boundary) {
-    const boundaryLayer = L.geoJSON(data.boundary, {
-      style: { color: "#e8890c", weight: 2, fill: false },
-    }).addTo(map);
+  // used only in overview mode (townland === null) to label points with which townland
+  // they belong to, since a single point feature only carries the townland's slug
+  const townlandNames = new Map(boundaries.features.map((f) => [f.properties.townland, f.properties.name]));
+
+  if (data.boundaries.length) {
+    const boundaryLayer = L.geoJSON(
+      { type: "FeatureCollection", features: data.boundaries },
+      {
+        style: { color: "#e8890c", weight: 2, fill: false },
+        onEachFeature: townland
+          ? undefined
+          : (feature, layer) => layer.bindTooltip(esc(feature.properties.name), { sticky: true }),
+      },
+    ).addTo(map);
     boundsList.push(boundaryLayer.getBounds());
   }
 
@@ -266,7 +305,8 @@ async function initTownlandMap(el) {
       });
     },
     onEachFeature: (feature, layer) => {
-      layer.bindPopup(popupHtml(feature.properties));
+      const townlandLabel = townland ? null : townlandNames.get(feature.properties.townland);
+      layer.bindPopup(popupHtml(feature.properties, townlandLabel));
       layer.bindTooltip(esc(feature.properties.name), {
         permanent: true,
         direction: "right",
@@ -330,4 +370,4 @@ async function initTownlandMap(el) {
   }
 }
 
-document.querySelectorAll(".townland-map[data-src]").forEach(initTownlandMap);
+document.querySelectorAll(".townland-map").forEach(initTownlandMap);

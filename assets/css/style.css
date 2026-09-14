@@ -221,6 +221,10 @@ th {
   height: 100%;
   border: none;
 }
+.townland-map.map-all {
+  height: 80vh;
+  min-height: 500px;
+}
 .map-fullscreen-control a {
   font-size: 18px;
   line-height: 28px;
@@ -307,6 +311,11 @@ th {
 .map-popup-source {
   color: var(--color-caption);
   font-size: 0.8125rem;
+}
+.map-popup-townland {
+  color: var(--color-caption);
+  font-size: 0.8125rem;
+  font-style: italic;
 }
 
 /* footer */
