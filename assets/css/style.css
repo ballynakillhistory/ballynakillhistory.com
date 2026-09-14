@@ -159,6 +159,10 @@ main img {
 figure {
   margin: 0;
 }
+main audio {
+  display: block;
+  width: 100%;
+}
 figure + figure {
   margin-top: 2.5rem;
 }
