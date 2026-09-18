@@ -137,16 +137,18 @@ body.home {
   padding-bottom: 60px;
 }
 
-/* alphabetical townland list on the Placenames Project page — flows into as many
+/* alphabetical townland/contributor lists on the Placenames Project pages — flows into as many
    columns as fit rather than one long single-file list */
-.townland-list {
+.townland-list,
+.contributor-list {
   list-style: none;
   margin: 0;
   padding: 0;
   column-width: 12rem;
   column-gap: 2rem;
 }
-.townland-list li {
+.townland-list li,
+.contributor-list li {
   break-inside: avoid;
   padding: 0.15rem 0;
 }
