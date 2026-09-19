@@ -137,6 +137,37 @@ body.home {
   padding-bottom: 60px;
 }
 
+/* Placenames Project index: small headings in the intro text, prominent Townlands heading */
+h2.minor-heading {
+  font-size: 1.5rem;
+  margin: 2rem 0 0.5rem;
+}
+h2.townlands-heading {
+  font-size: var(--fs-h1);
+  margin: 3rem 0 1rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--color-border);
+}
+
+/* church parish sub-headings above each townland list */
+h3.parish-heading {
+  font-size: 1.25rem;
+  margin: 1.5rem 0 0.5rem;
+}
+
+/* small group lists: names run across the row so every column is used */
+.group-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
+  column-gap: 2rem;
+}
+.group-list li {
+  padding: 0.15rem 0;
+}
+
 /* alphabetical townland/contributor lists on the Placenames Project pages — flows into as many
    columns as fit rather than one long single-file list */
 .townland-list,
