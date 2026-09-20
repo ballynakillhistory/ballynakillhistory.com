@@ -6698,6 +6698,788 @@
     "category": "building",
     "townland": "ballynagar"
    }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4899264,
+     53.1157363
+    ]
+   },
+   "properties": {
+    "name": "Bush of Sceach",
+    "layer": "placenames",
+    "notes": "Location not exact. This was a fairy bush.",
+    "category": "tree or bush",
+    "townland": "drumkeary-west"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4883564,
+     53.1125506
+    ]
+   },
+   "properties": {
+    "name": "Darby Shiel's Lough",
+    "layer": "placenames",
+    "notes": null,
+    "category": "lake or lakes",
+    "townland": "drumkeary-west"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4875737,
+     53.1121912
+    ]
+   },
+   "properties": {
+    "name": "Gleann Luachmhar",
+    "layer": "placenames",
+    "notes": "Not sure of the exact location but it's a valley around the lake.\n\nPronounced \"Glannloochwar\".",
+    "category": "field",
+    "townland": "drumkeary-west"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4799856,
+     53.1084456
+    ]
+   },
+   "properties": {
+    "name": "The Hurling Field",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "drumkeary-west"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4764301,
+     53.1081483
+    ]
+   },
+   "properties": {
+    "name": "The Swimming Pool",
+    "layer": "placenames",
+    "notes": "People used to swim here, you could block the river and and raise the pool as high as you want",
+    "category": "river",
+    "townland": "drumkeary-west"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4787522,
+     53.108037
+    ]
+   },
+   "properties": {
+    "name": "The Island",
+    "layer": "placenames",
+    "notes": "The river splits around this.",
+    "category": "field",
+    "townland": "drumkeary-west"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4743253,
+     53.1079731
+    ]
+   },
+   "properties": {
+    "name": "Lochaunawurs",
+    "layer": "placenames",
+    "notes": "Lochaunnawurs extends down to here, draw a box around it.",
+    "category": "patch of ground",
+    "townland": "drumkeary-west"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4757719,
+     53.1079265
+    ]
+   },
+   "properties": {
+    "name": "The Long Garden",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "drumkeary-west"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4754761,
+     53.1072405
+    ]
+   },
+   "properties": {
+    "name": "The High Paddock",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "drumkeary-west"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4757466,
+     53.107168
+    ]
+   },
+   "properties": {
+    "name": "Goirtín Cloch",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "drumkeary-west"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.478414,
+     53.1071063
+    ]
+   },
+   "properties": {
+    "name": "The Flaggy Garden",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "drumkeary-west"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4762814,
+     53.1069652
+    ]
+   },
+   "properties": {
+    "name": "The Clover",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "drumkeary-west"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4768126,
+     53.1069596
+    ]
+   },
+   "properties": {
+    "name": "Kitty's Garden",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "drumkeary-west"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4743824,
+     53.1064863
+    ]
+   },
+   "properties": {
+    "name": "Goirtín Uisce",
+    "layer": "placenames",
+    "notes": "Very wet here, you'd go to your knees in it.",
+    "category": "field",
+    "townland": "drumkeary-west"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4740552,
+     53.1060318
+    ]
+   },
+   "properties": {
+    "name": "Tobar",
+    "layer": "placenames",
+    "notes": "There is a well here.",
+    "category": "field",
+    "townland": "drumkeary-west"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.472939,
+     53.1059304
+    ]
+   },
+   "properties": {
+    "name": "Lochaunawurs",
+    "layer": "placenames",
+    "notes": "Pronounced \"Luckawnawurs\".",
+    "category": "road",
+    "townland": "drumkeary-west"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4740627,
+     53.1051686
+    ]
+   },
+   "properties": {
+    "name": "The Bull Field",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "drumkeary-west"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4747334,
+     53.1043633
+    ]
+   },
+   "properties": {
+    "name": "Lochaunnavalla Boreen",
+    "layer": "placenames",
+    "notes": "The road here is known as \"Lochaunnavalla Boreen\" but the land around is is probably \"Lochaunnavalla\" as well.",
+    "category": "country lane, boreen",
+    "townland": "drumkeary-west"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4789797,
+     53.1042228
+    ]
+   },
+   "properties": {
+    "name": "Golyeentubber",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "drumkeary-west"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4800472,
+     53.1038066
+    ]
+   },
+   "properties": {
+    "name": "Powerglas",
+    "layer": "placenames",
+    "notes": "Probably Poll Glas.",
+    "category": "field",
+    "townland": "drumkeary-west"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.478215,
+     53.1037423
+    ]
+   },
+   "properties": {
+    "name": "Hanrahan's Garden",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "drumkeary-west"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.469673,
+     53.1036884
+    ]
+   },
+   "properties": {
+    "name": "Devine's Field",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "drumkeary-west"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.47548,
+     53.1036296
+    ]
+   },
+   "properties": {
+    "name": "Locaunnavalla",
+    "layer": "placenames",
+    "notes": "Pat Joe Shiel used to say the area around here is \"Lochaunnavalla\", this field in particular was pointed out but it might be more of them.",
+    "category": "field",
+    "townland": "drumkeary-west"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4786215,
+     53.1035389
+    ]
+   },
+   "properties": {
+    "name": "St. Patrick's Holy Well",
+    "layer": "placenames",
+    "notes": null,
+    "category": "well",
+    "townland": "drumkeary-west"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4731272,
+     53.1034915
+    ]
+   },
+   "properties": {
+    "name": "Leckans",
+    "layer": "placenames",
+    "notes": "All of the fields along the road on this side, between the house to the west and the forestry to the east. This fields are sloped on the side of a hill.",
+    "category": "brow, slope, hillside",
+    "townland": "drumkeary-west"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4726666,
+     53.1033678
+    ]
+   },
+   "properties": {
+    "name": "The Middle Gap",
+    "layer": "placenames",
+    "notes": null,
+    "category": "gate",
+    "townland": "drumkeary-west"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4709535,
+     53.1033262
+    ]
+   },
+   "properties": {
+    "name": "The Coarse Place",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "drumkeary-west"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4691077,
+     53.10316
+    ]
+   },
+   "properties": {
+    "name": "The Barley Field",
+    "layer": "placenames",
+    "notes": "Barley used to be sown here.",
+    "category": "field",
+    "townland": "drumkeary-west"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4718988,
+     53.1025494
+    ]
+   },
+   "properties": {
+    "name": "The Paddock",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "drumkeary-west"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4765458,
+     53.1022553
+    ]
+   },
+   "properties": {
+    "name": "The Hill",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "drumkeary-west"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4758704,
+     53.1017427
+    ]
+   },
+   "properties": {
+    "name": "Closhroo",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "drumkeary-west"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4795251,
+     53.1014487
+    ]
+   },
+   "properties": {
+    "name": "Keane's Gullet",
+    "layer": "placenames",
+    "notes": null,
+    "category": "stream",
+    "townland": "drumkeary-west"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4687455,
+     53.1014265
+    ]
+   },
+   "properties": {
+    "name": "The Hurling Field",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "drumkeary-west"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4784294,
+     53.1013356
+    ]
+   },
+   "properties": {
+    "name": "The White Park",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "drumkeary-west"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4729193,
+     53.1003874
+    ]
+   },
+   "properties": {
+    "name": "Mass Path",
+    "layer": "placenames",
+    "notes": null,
+    "category": "mass path",
+    "townland": "drumkeary-west"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4706146,
+     53.1000457
+    ]
+   },
+   "properties": {
+    "name": "The Hills",
+    "layer": "placenames",
+    "notes": "This covers about 3 fields, these 2 and the one to the West (Luke's Field).",
+    "category": "hill or hills",
+    "townland": "drumkeary-west"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4756401,
+     53.0999051
+    ]
+   },
+   "properties": {
+    "name": "Garrai Ard",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "drumkeary-west"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4707982,
+     53.0998196
+    ]
+   },
+   "properties": {
+    "name": "The Fort Field",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "drumkeary-west"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4729139,
+     53.0996468
+    ]
+   },
+   "properties": {
+    "name": "Luke's Field",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "drumkeary-west"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4694054,
+     53.098962
+    ]
+   },
+   "properties": {
+    "name": "Rogers' Field",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "drumkeary-west"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4693528,
+     53.0977195
+    ]
+   },
+   "properties": {
+    "name": "Tuohy's",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "drumkeary-west"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4900501,
+     53.114671
+    ]
+   },
+   "properties": {
+    "name": "Shiel's House",
+    "layer": "houses",
+    "notes": "Fix location.",
+    "category": "house",
+    "townland": "drumkeary-west"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.473832,
+     53.1016984
+    ]
+   },
+   "properties": {
+    "name": "Norrie Murphy's House",
+    "layer": "houses",
+    "notes": null,
+    "category": "house",
+    "townland": "drumkeary-west"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4694399,
+     53.0973784
+    ]
+   },
+   "properties": {
+    "name": "Shiel's House",
+    "layer": "houses",
+    "notes": "Shiel's, Glynn's, Tuohys, then Glynn's again.\n\nTuohy all of his potatoes got blight.\nGot TB, went up to County Meath. Went lived with Duane's Ballinlough before.",
+    "category": "house",
+    "townland": "drumkeary-west"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4770325,
+     53.103052
+    ]
+   },
+   "properties": {
+    "name": "Daniel's Shebeen",
+    "layer": "buildings",
+    "notes": "Dempsey's kept their Sheebeen in Daniel's house.",
+    "category": "pub",
+    "townland": "drumkeary-west"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4774095,
+     53.1021873
+    ]
+   },
+   "properties": {
+    "name": "Dempsey's Shop",
+    "layer": "buildings",
+    "notes": null,
+    "category": "shop",
+    "townland": "drumkeary-west"
+   }
   }
  ]
 }
