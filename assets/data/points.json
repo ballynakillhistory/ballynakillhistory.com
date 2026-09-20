@@ -6806,14 +6806,14 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -8.4743253,
-     53.1079731
+     -8.4733047,
+     53.1071193
     ]
    },
    "properties": {
     "name": "Lochaunawurs",
     "layer": "placenames",
-    "notes": "Lochaunnawurs extends down to here, draw a box around it.",
+    "notes": "Pronounced \"Luckawnawurs\". The road here is also known by this name.",
     "category": "patch of ground",
     "townland": "drumkeary-west"
    }
@@ -6951,23 +6951,6 @@
     "layer": "placenames",
     "notes": "There is a well here.",
     "category": "field",
-    "townland": "drumkeary-west"
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
-     -8.472939,
-     53.1059304
-    ]
-   },
-   "properties": {
-    "name": "Lochaunawurs",
-    "layer": "placenames",
-    "notes": "Pronounced \"Luckawnawurs\".",
-    "category": "road",
     "townland": "drumkeary-west"
    }
   },
