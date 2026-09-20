@@ -7480,6 +7480,363 @@
     "category": "shop",
     "townland": "drumkeary-west"
    }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.483993,
+     53.1149496
+    ]
+   },
+   "properties": {
+    "name": "The Black Hill",
+    "layer": "placenames",
+    "notes": null,
+    "category": "hill or hills",
+    "townland": "drumkeary-east"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4772086,
+     53.1135256
+    ]
+   },
+   "properties": {
+    "name": "Haugh's Gullet",
+    "layer": "placenames",
+    "notes": null,
+    "category": "stream",
+    "townland": "drumkeary-east"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4678012,
+     53.1076445
+    ]
+   },
+   "properties": {
+    "name": "The Furry Hill",
+    "layer": "placenames",
+    "notes": null,
+    "category": "hill or hills",
+    "townland": "drumkeary-east"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4669784,
+     53.1061813
+    ]
+   },
+   "properties": {
+    "name": "Mass Path",
+    "layer": "placenames",
+    "notes": null,
+    "category": "mass path",
+    "townland": "drumkeary-east"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4662394,
+     53.1057423
+    ]
+   },
+   "properties": {
+    "name": "The Mushroom Hill",
+    "layer": "placenames",
+    "notes": null,
+    "category": "hill or hills",
+    "townland": "drumkeary-east"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.465367,
+     53.1049008
+    ]
+   },
+   "properties": {
+    "name": "Below the Road",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "drumkeary-east"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4649428,
+     53.1041012
+    ]
+   },
+   "properties": {
+    "name": "The Garden",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "drumkeary-east"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4657816,
+     53.1040664
+    ]
+   },
+   "properties": {
+    "name": "Opposite Murphy's",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "drumkeary-east"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4648137,
+     53.1033539
+    ]
+   },
+   "properties": {
+    "name": "The Headland",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "drumkeary-east"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.464263,
+     53.1027879
+    ]
+   },
+   "properties": {
+    "name": "The Riasc",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "drumkeary-east"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4633444,
+     53.102705
+    ]
+   },
+   "properties": {
+    "name": "The Clegeen",
+    "layer": "placenames",
+    "notes": null,
+    "category": "well",
+    "townland": "drumkeary-east"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.464193,
+     53.1022808
+    ]
+   },
+   "properties": {
+    "name": "The Brand Iron Field",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "drumkeary-east"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4631185,
+     53.1013988
+    ]
+   },
+   "properties": {
+    "name": "The Hill Field",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "drumkeary-east"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4618896,
+     53.1007869
+    ]
+   },
+   "properties": {
+    "name": "The Long Field",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "drumkeary-east"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4632079,
+     53.1007089
+    ]
+   },
+   "properties": {
+    "name": "The Cúine Field",
+    "layer": "placenames",
+    "notes": "Pronounced \"Coona\".",
+    "category": "field",
+    "townland": "drumkeary-east"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4615844,
+     53.099778
+    ]
+   },
+   "properties": {
+    "name": "The Far Field",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "drumkeary-east"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4833662,
+     53.1162189
+    ]
+   },
+   "properties": {
+    "name": "Simon Whelan's House",
+    "layer": "houses",
+    "notes": "Simon Whelan drowned in the lake known as \"Darby Shiels Lough\" in Drumkeary West.",
+    "category": "house",
+    "townland": "drumkeary-east"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4644969,
+     53.1046517
+    ]
+   },
+   "properties": {
+    "name": "Lally's House",
+    "layer": "houses",
+    "notes": "Then Devine's.",
+    "category": "house",
+    "townland": "drumkeary-east"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4692454,
+     53.1042859
+    ]
+   },
+   "properties": {
+    "name": "Devine's House",
+    "layer": "houses",
+    "notes": "It was said there was a bakery here.",
+    "category": "house",
+    "townland": "drumkeary-east"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4687997,
+     53.1035558
+    ]
+   },
+   "properties": {
+    "name": "Shiel's House",
+    "layer": "houses",
+    "notes": "Tomsheen Darby Shiel's family were evicted from here.",
+    "category": "house",
+    "townland": "drumkeary-east"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4692516,
+     53.1041159
+    ]
+   },
+   "properties": {
+    "name": "The Car House",
+    "layer": "buildings",
+    "notes": null,
+    "category": "building",
+    "townland": "drumkeary-east"
+   }
   }
  ]
 }
