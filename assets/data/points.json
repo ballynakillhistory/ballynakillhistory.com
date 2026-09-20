@@ -9537,6 +9537,482 @@
     "category": "forge",
     "townland": "cullenagh"
    }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.5098622,
+     53.1095143
+    ]
+   },
+   "properties": {
+    "name": "The Potato Garden",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "knockaundarragh"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.5103017,
+     53.109246
+    ]
+   },
+   "properties": {
+    "name": "The White Garden",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "knockaundarragh"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.5090624,
+     53.1091905
+    ]
+   },
+   "properties": {
+    "name": "The Kitchen Garden",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "knockaundarragh"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.5101193,
+     53.1089267
+    ]
+   },
+   "properties": {
+    "name": "The Beech Garden",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "knockaundarragh"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.5098249,
+     53.1086545
+    ]
+   },
+   "properties": {
+    "name": "The Back of the Barn",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "knockaundarragh"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.5111582,
+     53.1084502
+    ]
+   },
+   "properties": {
+    "name": "The Baunoge's",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "knockaundarragh"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.5119741,
+     53.1081593
+    ]
+   },
+   "properties": {
+    "name": "The Bog Garden",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "knockaundarragh"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.5081553,
+     53.1080051
+    ]
+   },
+   "properties": {
+    "name": "The Long Garden",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "knockaundarragh"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.5106666,
+     53.1079242
+    ]
+   },
+   "properties": {
+    "name": "The Well Garden",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "knockaundarragh"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.504524,
+     53.1071174
+    ]
+   },
+   "properties": {
+    "name": "Connors' Mire",
+    "layer": "placenames",
+    "notes": null,
+    "category": "bog",
+    "townland": "knockaundarragh"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.5074997,
+     53.1050964
+    ]
+   },
+   "properties": {
+    "name": "Tommy's Hill",
+    "layer": "placenames",
+    "notes": null,
+    "category": "hill or hills",
+    "townland": "knockaundarragh"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.5109347,
+     53.1049906
+    ]
+   },
+   "properties": {
+    "name": "Bolley",
+    "layer": "placenames",
+    "notes": null,
+    "category": "bog",
+    "townland": "knockaundarragh"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.5043974,
+     53.104351
+    ]
+   },
+   "properties": {
+    "name": "The Tailor's Stream",
+    "layer": "placenames",
+    "notes": null,
+    "category": "stream",
+    "townland": "knockaundarragh"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.5053125,
+     53.1042086
+    ]
+   },
+   "properties": {
+    "name": "The Broken Gullet",
+    "layer": "placenames",
+    "notes": "Location not exact.",
+    "category": "stream",
+    "townland": "knockaundarragh"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.5031094,
+     53.1041827
+    ]
+   },
+   "properties": {
+    "name": "Fahy's Hill",
+    "layer": "placenames",
+    "notes": null,
+    "category": "hill or hills",
+    "townland": "knockaundarragh"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.5074141,
+     53.1037578
+    ]
+   },
+   "properties": {
+    "name": "Johnny's Hill",
+    "layer": "placenames",
+    "notes": null,
+    "category": "hill or hills",
+    "townland": "knockaundarragh"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.5001579,
+     53.1035861
+    ]
+   },
+   "properties": {
+    "name": "Poll na gCaorach",
+    "layer": "placenames",
+    "notes": "Pronounced \"Powlnageerach\".",
+    "category": "hole",
+    "townland": "knockaundarragh"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.5014482,
+     53.1011164
+    ]
+   },
+   "properties": {
+    "name": "Mass Path",
+    "layer": "placenames",
+    "notes": "People from Cullenagh used to go to mass this way.",
+    "category": "mass path",
+    "townland": "knockaundarragh"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.5096762,
+     53.1092183
+    ]
+   },
+   "properties": {
+    "name": "Spain's House",
+    "layer": "houses",
+    "notes": null,
+    "category": "house",
+    "townland": "knockaundarragh"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4923008,
+     53.1030101
+    ]
+   },
+   "properties": {
+    "name": "Connor's House",
+    "layer": "houses",
+    "notes": "Then Mickey Mannion's.",
+    "category": "house",
+    "townland": "knockaundarragh"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.5024852,
+     53.1016021
+    ]
+   },
+   "properties": {
+    "name": "Johnny Murphy's House",
+    "layer": "houses",
+    "notes": null,
+    "category": "house",
+    "townland": "knockaundarragh"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4922928,
+     53.101188
+    ]
+   },
+   "properties": {
+    "name": "Tuohy's House",
+    "layer": "houses",
+    "notes": null,
+    "category": "house",
+    "townland": "knockaundarragh"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4928248,
+     53.1002572
+    ]
+   },
+   "properties": {
+    "name": "Mickey Mannion's House",
+    "layer": "houses",
+    "notes": "Moved from the house up above, was Tuohy's.",
+    "category": "house",
+    "townland": "knockaundarragh"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4907583,
+     53.0994883
+    ]
+   },
+   "properties": {
+    "name": "Gurley's House",
+    "layer": "houses",
+    "notes": "Built around 1910, this is newer than Gurley's other house in this townland.",
+    "category": "house",
+    "townland": "knockaundarragh"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4915031,
+     53.0989142
+    ]
+   },
+   "properties": {
+    "name": "Gurley's House",
+    "layer": "houses",
+    "notes": null,
+    "category": "house",
+    "townland": "knockaundarragh"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4991962,
+     53.098817
+    ]
+   },
+   "properties": {
+    "name": "Melia's House?",
+    "layer": "houses",
+    "notes": "Not sure of the location but it's somewhere around here.",
+    "category": "house",
+    "townland": "knockaundarragh"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4929911,
+     53.0982913
+    ]
+   },
+   "properties": {
+    "name": "Dolphin's House",
+    "layer": "houses",
+    "notes": "Came down from Belfast. 2 men and a woman. Th Dummy Dolphins. Everyone in the village could do sign language.",
+    "category": "house",
+    "townland": "knockaundarragh"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4971219,
+     53.097692
+    ]
+   },
+   "properties": {
+    "name": "Keating's House",
+    "layer": "houses",
+    "notes": null,
+    "category": "house",
+    "townland": "knockaundarragh"
+   }
   }
  ]
 }
