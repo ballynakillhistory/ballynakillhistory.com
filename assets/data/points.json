@@ -8585,6 +8585,261 @@
     "category": "forge",
     "townland": "drum"
    }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.478025,
+     53.1164145
+    ]
+   },
+   "properties": {
+    "name": "Ballinamona",
+    "layer": "placenames",
+    "notes": null,
+    "category": "sub-townland",
+    "townland": "larraga"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4704394,
+     53.1135965
+    ]
+   },
+   "properties": {
+    "name": "Mass Rock",
+    "layer": "placenames",
+    "notes": null,
+    "category": "mass rock",
+    "townland": "larraga"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4643059,
+     53.1113972
+    ]
+   },
+   "properties": {
+    "name": "Kirwan's Garden",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "larraga"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.463423,
+     53.110258
+    ]
+   },
+   "properties": {
+    "name": "Ballyfintan?",
+    "layer": "placenames",
+    "notes": "Somewhere around this location there was a group of houses Colie Larkin knew as Ballyfintan. The location may not be exact here.",
+    "category": "sub-townland",
+    "townland": "larraga"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4571356,
+     53.1086815
+    ]
+   },
+   "properties": {
+    "name": "Cúinín",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "larraga"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4631672,
+     53.1077525
+    ]
+   },
+   "properties": {
+    "name": "Begley's",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "larraga"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.479125,
+     53.1164211
+    ]
+   },
+   "properties": {
+    "name": "Gardiner's House",
+    "layer": "houses",
+    "notes": "Jack and Winny Gardiner lived here.",
+    "category": "house",
+    "townland": "larraga"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4799618,
+     53.1153677
+    ]
+   },
+   "properties": {
+    "name": "Gardiner's House",
+    "layer": "houses",
+    "notes": "This house was never finished, it was started and the landlord stopped it because there wasn't enough land for 2 families. He was a brother of Gardiner's above.",
+    "category": "house",
+    "townland": "larraga"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4759418,
+     53.1143945
+    ]
+   },
+   "properties": {
+    "name": "Haugh's House",
+    "layer": "houses",
+    "notes": null,
+    "category": "house",
+    "townland": "larraga"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4628337,
+     53.110189
+    ]
+   },
+   "properties": {
+    "name": "Murray's House",
+    "layer": "houses",
+    "notes": "Then Comer's.",
+    "category": "house",
+    "townland": "larraga"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4586769,
+     53.1096187
+    ]
+   },
+   "properties": {
+    "name": "Gads Rafferty's House",
+    "layer": "houses",
+    "notes": "This family of Rafferty's were known as \"Gads\" Rafferty,",
+    "category": "house",
+    "townland": "larraga"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4591304,
+     53.1095759
+    ]
+   },
+   "properties": {
+    "name": "Tommy Rafferty's",
+    "layer": "houses",
+    "notes": null,
+    "category": "house",
+    "townland": "larraga"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4632076,
+     53.1093208
+    ]
+   },
+   "properties": {
+    "name": "Begley's House",
+    "layer": "houses",
+    "notes": null,
+    "category": "house",
+    "townland": "larraga"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.464498,
+     53.1073807
+    ]
+   },
+   "properties": {
+    "name": "John Joe Rafferty's House",
+    "layer": "houses",
+    "notes": "This family of Rafferty's were known as \"the John Joe's\". Michael Rafferty lived here.",
+    "category": "house",
+    "townland": "larraga"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4578806,
+     53.1073116
+    ]
+   },
+   "properties": {
+    "name": "Barrel Rafferty's House",
+    "layer": "houses",
+    "notes": "This family of Rafferty's were known as \"Barrel\" Rafferty.",
+    "category": "house",
+    "townland": "larraga"
+   }
   }
  ]
 }
