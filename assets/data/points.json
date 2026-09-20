@@ -8700,7 +8700,7 @@
    "properties": {
     "name": "Gardiner's House",
     "layer": "houses",
-    "notes": "Jack and Winny.",
+    "notes": "Jack and Winny Gardiner lived here.",
     "category": "house",
     "townland": "larraga"
    }
@@ -8717,7 +8717,7 @@
    "properties": {
     "name": "Gardiner's House",
     "layer": "houses",
-    "notes": "This house was never finished, it was started and the landlord stopped it because there wasn't enough land for 2 families. He was a brother of Gardiner's above (Barratoor townland).",
+    "notes": "This house was never finished, it was started and the landlord stopped it because there wasn't enough land for 2 families. He was a brother of Gardiner's above.",
     "category": "house",
     "townland": "larraga"
    }
