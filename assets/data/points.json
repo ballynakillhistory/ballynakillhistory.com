@@ -8103,7 +8103,7 @@
     ]
    },
    "properties": {
-    "name": "Culyeen na hown",
+    "name": "Culyeen na Hown",
     "layer": "placenames",
     "notes": "Probably \"Coillín na hAbhann\".",
     "category": "field",
@@ -8292,7 +8292,7 @@
    "properties": {
     "name": "Shiel's House",
     "layer": "houses",
-    "notes": "Mike Shiel's house, known as Mickeen.",
+    "notes": "Mike Shiel known as \"Mickeen\".",
     "category": "house",
     "townland": "drum"
    }
@@ -8377,7 +8377,7 @@
    "properties": {
     "name": "Murphy's House",
     "layer": "houses",
-    "notes": "Crow Murphys said Noel.",
+    "notes": null,
     "category": "house",
     "townland": "drum"
    }
@@ -8462,7 +8462,7 @@
    "properties": {
     "name": "Cleary's House",
     "layer": "houses",
-    "notes": "Then Sheanans.",
+    "notes": "Then Sheanan's.",
     "category": "house",
     "townland": "drum"
    }
