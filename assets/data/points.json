@@ -7837,6 +7837,754 @@
     "category": "building",
     "townland": "drumkeary-east"
    }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.5070692,
+     53.1016199
+    ]
+   },
+   "properties": {
+    "name": "Beal Jerrig",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "drum"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.5161761,
+     53.1015576
+    ]
+   },
+   "properties": {
+    "name": "Madden's Walls",
+    "layer": "placenames",
+    "notes": null,
+    "category": "man-made feature",
+    "townland": "drum"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.5005766,
+     53.0997937
+    ]
+   },
+   "properties": {
+    "name": "Kyle na Duchaigh",
+    "layer": "placenames",
+    "notes": null,
+    "category": "wood",
+    "townland": "drum"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.5034513,
+     53.0991729
+    ]
+   },
+   "properties": {
+    "name": "Begley's Garden's",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "drum"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4826497,
+     53.0987839
+    ]
+   },
+   "properties": {
+    "name": "The Lisheen",
+    "layer": "placenames",
+    "notes": "Known locally as \"The Lisheen\" but a story in the schools collection refers to it as \"Loisín Glas\": https://www.duchas.ie/en/cbes/4583316/4579046/4588048\n\nWe heard a story about a man from Drim that died during the famine and his wife wheeled him out to the Lisheen in the wheelbarrow and buried him there. Then she went back home and died herself.",
+    "category": "graveyard, cemetary, burial ground",
+    "townland": "drum"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.5007567,
+     53.0981886
+    ]
+   },
+   "properties": {
+    "name": "The Riasc",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "drum"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4880888,
+     53.0974866
+    ]
+   },
+   "properties": {
+    "name": "Pinna",
+    "layer": "placenames",
+    "notes": "This was pronounced as both \"Pinna\" and \"Penna\".",
+    "category": "field",
+    "townland": "drum"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4996477,
+     53.0974344
+    ]
+   },
+   "properties": {
+    "name": "The Triangle Field",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "drum"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4959116,
+     53.0970623
+    ]
+   },
+   "properties": {
+    "name": "The Lochán",
+    "layer": "placenames",
+    "notes": "Pronounced \"Luhhawn\".",
+    "category": "field",
+    "townland": "drum"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4981941,
+     53.0966361
+    ]
+   },
+   "properties": {
+    "name": "The Moonchoge",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "drum"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.5020075,
+     53.096585
+    ]
+   },
+   "properties": {
+    "name": "Réidh na Maldún",
+    "layer": "placenames",
+    "notes": "Pronounced \"Ray na Moldoon\".",
+    "category": "field",
+    "townland": "drum"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4923202,
+     53.0963503
+    ]
+   },
+   "properties": {
+    "name": "The Lochán",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "drum"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4965067,
+     53.0963002
+    ]
+   },
+   "properties": {
+    "name": "Darcy's Field",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "drum"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4850697,
+     53.0962286
+    ]
+   },
+   "properties": {
+    "name": "The Black Ground",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "drum"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4941768,
+     53.0961591
+    ]
+   },
+   "properties": {
+    "name": "Móin Bhuí",
+    "layer": "placenames",
+    "notes": "Pronounced \"Mown wee\".",
+    "category": "field",
+    "townland": "drum"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4843933,
+     53.0959155
+    ]
+   },
+   "properties": {
+    "name": "Culyeen na hown",
+    "layer": "placenames",
+    "notes": "Probably \"Coillín na hAbhann\".",
+    "category": "field",
+    "townland": "drum"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4862906,
+     53.0957091
+    ]
+   },
+   "properties": {
+    "name": "Pairc Garbh",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "drum"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4971494,
+     53.0954242
+    ]
+   },
+   "properties": {
+    "name": "Apple Garden",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "drum"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4962468,
+     53.0954175
+    ]
+   },
+   "properties": {
+    "name": "The Haggart",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "drum"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.500056,
+     53.0954121
+    ]
+   },
+   "properties": {
+    "name": "Glans",
+    "layer": "placenames",
+    "notes": "Pronounced like Irish glan.",
+    "category": "field",
+    "townland": "drum"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4975268,
+     53.095328
+    ]
+   },
+   "properties": {
+    "name": "The Calf Garden",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "drum"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4965578,
+     53.0951147
+    ]
+   },
+   "properties": {
+    "name": "The Rush Field",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "drum"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4923748,
+     53.0949904
+    ]
+   },
+   "properties": {
+    "name": "Pollín",
+    "layer": "placenames",
+    "notes": "Pronounced \"Powleen\". This is a drop or a hollow in the field.",
+    "category": "hollow",
+    "townland": "drum"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4942169,
+     53.0945917
+    ]
+   },
+   "properties": {
+    "name": "The Hazel",
+    "layer": "placenames",
+    "notes": "Pronounced \"Hayzshel\".",
+    "category": "field",
+    "townland": "drum"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4950141,
+     53.0945534
+    ]
+   },
+   "properties": {
+    "name": "Poll Uisce",
+    "layer": "placenames",
+    "notes": "Pronounced \"Powl Ishka\".",
+    "category": "field",
+    "townland": "drum"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4942512,
+     53.0935261
+    ]
+   },
+   "properties": {
+    "name": "The High Field",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "drum"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4834395,
+     53.09935
+    ]
+   },
+   "properties": {
+    "name": "Shiel's House",
+    "layer": "houses",
+    "notes": "Mike Shiel's house, known as Mickeen.",
+    "category": "house",
+    "townland": "drum"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4982684,
+     53.0975225
+    ]
+   },
+   "properties": {
+    "name": "Darcy's House",
+    "layer": "houses",
+    "notes": null,
+    "category": "house",
+    "townland": "drum"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4919652,
+     53.0970773
+    ]
+   },
+   "properties": {
+    "name": "Moran's House",
+    "layer": "houses",
+    "notes": null,
+    "category": "house",
+    "townland": "drum"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4922403,
+     53.0969952
+    ]
+   },
+   "properties": {
+    "name": "Gilchreest's House",
+    "layer": "houses",
+    "notes": null,
+    "category": "house",
+    "townland": "drum"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4895385,
+     53.0969297
+    ]
+   },
+   "properties": {
+    "name": "Riordan's House",
+    "layer": "houses",
+    "notes": null,
+    "category": "house",
+    "townland": "drum"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.493978,
+     53.0969284
+    ]
+   },
+   "properties": {
+    "name": "Murphy's House",
+    "layer": "houses",
+    "notes": "Crow Murphys said Noel.",
+    "category": "house",
+    "townland": "drum"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4909063,
+     53.0968928
+    ]
+   },
+   "properties": {
+    "name": "Mary Ellen Fahy's House",
+    "layer": "houses",
+    "notes": null,
+    "category": "house",
+    "townland": "drum"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4953951,
+     53.0966612
+    ]
+   },
+   "properties": {
+    "name": "Tim Fahy's House",
+    "layer": "houses",
+    "notes": null,
+    "category": "house",
+    "townland": "drum"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.496888,
+     53.0954744
+    ]
+   },
+   "properties": {
+    "name": "Donohoe's House",
+    "layer": "houses",
+    "notes": null,
+    "category": "house",
+    "townland": "drum"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4885363,
+     53.0950631
+    ]
+   },
+   "properties": {
+    "name": "O'Donnell's House",
+    "layer": "houses",
+    "notes": null,
+    "category": "house",
+    "townland": "drum"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.496335,
+     53.0942974
+    ]
+   },
+   "properties": {
+    "name": "Cleary's House",
+    "layer": "houses",
+    "notes": "Then Sheanans.",
+    "category": "house",
+    "townland": "drum"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.5023713,
+     53.0936985
+    ]
+   },
+   "properties": {
+    "name": "Moran's House",
+    "layer": "houses",
+    "notes": null,
+    "category": "house",
+    "townland": "drum"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.5018129,
+     53.0935475
+    ]
+   },
+   "properties": {
+    "name": "Tuohy's House",
+    "layer": "houses",
+    "notes": null,
+    "category": "house",
+    "townland": "drum"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4998163,
+     53.0934537
+    ]
+   },
+   "properties": {
+    "name": "Flynn's House",
+    "layer": "houses",
+    "notes": null,
+    "category": "house",
+    "townland": "drum"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4845994,
+     53.0979372
+    ]
+   },
+   "properties": {
+    "name": "Riordan's Store",
+    "layer": "buildings",
+    "notes": null,
+    "category": "shop",
+    "townland": "drum"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4845292,
+     53.097765
+    ]
+   },
+   "properties": {
+    "name": "Riordan's Shop",
+    "layer": "buildings",
+    "notes": null,
+    "category": "shop",
+    "townland": "drum"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4869835,
+     53.0975331
+    ]
+   },
+   "properties": {
+    "name": "Burke's Shop",
+    "layer": "buildings",
+    "notes": "The parafin oil used to burn Marblehill House is supposed to have come from here.",
+    "category": "shop",
+    "townland": "drum"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4972836,
+     53.0969588
+    ]
+   },
+   "properties": {
+    "name": "Darcy's Forge",
+    "layer": "buildings",
+    "notes": null,
+    "category": "forge",
+    "townland": "drum"
+   }
   }
  ]
 }
