@@ -9210,7 +9210,7 @@
    "properties": {
     "name": "The Muin",
     "layer": "placenames",
-    "notes": "Muin turf.",
+    "notes": null,
     "category": "field",
     "townland": "cullenagh"
    }
@@ -9499,7 +9499,7 @@
    "properties": {
     "name": "Anne Halloran's House",
     "layer": "houses",
-    "notes": "Pat Joe Keane got it, she was a spinster.",
+    "notes": null,
     "category": "house",
     "townland": "cullenagh"
    }
