@@ -7765,7 +7765,7 @@
    "properties": {
     "name": "Simon Whelan's House",
     "layer": "houses",
-    "notes": "Simon Whelan drowned in the lake known as \"Darby Shiels Lough\".",
+    "notes": "Simon Whelan drowned in the lake known as \"Darby Shiels Lough\" in Drumkeary West.",
     "category": "house",
     "townland": "drumkeary-east"
    }
@@ -7780,9 +7780,9 @@
     ]
    },
    "properties": {
-    "name": "Lally's, Devine's House",
+    "name": "Lally's House",
     "layer": "houses",
-    "notes": "Divine's Kippeldy",
+    "notes": "Then Devine's.",
     "category": "house",
     "townland": "drumkeary-east"
    }
@@ -7799,7 +7799,7 @@
    "properties": {
     "name": "Devine's House",
     "layer": "houses",
-    "notes": "There was supposed to be a bakery here. - Gerard Dervan",
+    "notes": "It was said there was a bakery here.",
     "category": "house",
     "townland": "drumkeary-east"
    }
@@ -7816,7 +7816,7 @@
    "properties": {
     "name": "Shiel's House",
     "layer": "houses",
-    "notes": "Tomsheen Darby's family were evicted from here.",
+    "notes": "Tomsheen Darby Shiel's family were evicted from here.",
     "category": "house",
     "townland": "drumkeary-east"
    }
