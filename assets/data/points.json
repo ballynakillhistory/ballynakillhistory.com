@@ -8173,7 +8173,7 @@
    "properties": {
     "name": "Glans",
     "layer": "placenames",
-    "notes": "Pronounced like Irish glan.",
+    "notes": "Pronounced like Irish \"glan\" + s.",
     "category": "field",
     "townland": "drum"
    }
@@ -8234,14 +8234,14 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -8.4942169,
-     53.0945917
+     -8.4950141,
+     53.0945534
     ]
    },
    "properties": {
-    "name": "The Hazel",
+    "name": "Poll Uisce",
     "layer": "placenames",
-    "notes": "Pronounced \"Hayzshel\".",
+    "notes": "Pronounced \"Powl Ishka\".",
     "category": "field",
     "townland": "drum"
    }
@@ -8251,14 +8251,14 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -8.4950141,
-     53.0945534
+     -8.4940132,
+     53.0945523
     ]
    },
    "properties": {
-    "name": "Poll Uisce",
+    "name": "The Hazel",
     "layer": "placenames",
-    "notes": "Pronounced \"Powl Ishka\".",
+    "notes": null,
     "category": "field",
     "townland": "drum"
    }
