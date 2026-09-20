@@ -8840,6 +8840,703 @@
     "category": "house",
     "townland": "larraga"
    }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.5123409,
+     53.1225351
+    ]
+   },
+   "properties": {
+    "name": "The Mass Stone",
+    "layer": "placenames",
+    "notes": "Location not exact.",
+    "category": "mass rock",
+    "townland": "cullenagh"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.5248132,
+     53.1191581
+    ]
+   },
+   "properties": {
+    "name": "Drummin Bridge",
+    "layer": "placenames",
+    "notes": "Also Cullenagh Bridge.",
+    "category": "bridge",
+    "townland": "cullenagh"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.5166826,
+     53.1170303
+    ]
+   },
+   "properties": {
+    "name": "Cullenagh Cross",
+    "layer": "placenames",
+    "notes": "Pronounced \"Cuillena\".",
+    "category": "crossroads",
+    "townland": "cullenagh"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.5287256,
+     53.1169799
+    ]
+   },
+   "properties": {
+    "name": "The Bog",
+    "layer": "placenames",
+    "notes": null,
+    "category": "bog",
+    "townland": "cullenagh"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.5280663,
+     53.116352
+    ]
+   },
+   "properties": {
+    "name": "Stony Porfree",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "cullenagh"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.5268184,
+     53.1160779
+    ]
+   },
+   "properties": {
+    "name": "Grán Gráinneach",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "cullenagh"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.5283219,
+     53.1160505
+    ]
+   },
+   "properties": {
+    "name": "Under the Oul' Door",
+    "layer": "placenames",
+    "notes": "The area around the old house.",
+    "category": "field",
+    "townland": "cullenagh"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.5293647,
+     53.1160095
+    ]
+   },
+   "properties": {
+    "name": "The Meadow",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "cullenagh"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.5273843,
+     53.1158099
+    ]
+   },
+   "properties": {
+    "name": "Small Porfree",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "cullenagh"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.5279615,
+     53.1158021
+    ]
+   },
+   "properties": {
+    "name": "Ferny Porfree",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "cullenagh"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.5265784,
+     53.1156262
+    ]
+   },
+   "properties": {
+    "name": "The Hill",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "cullenagh"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.5274242,
+     53.1154286
+    ]
+   },
+   "properties": {
+    "name": "New Porfree",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "cullenagh"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.5301898,
+     53.1151948
+    ]
+   },
+   "properties": {
+    "name": "Coarse Meadow",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "cullenagh"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.5281644,
+     53.115188
+    ]
+   },
+   "properties": {
+    "name": "New Garden",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "cullenagh"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.5117636,
+     53.1113661
+    ]
+   },
+   "properties": {
+    "name": "Spain's Road",
+    "layer": "placenames",
+    "notes": null,
+    "category": "road",
+    "townland": "cullenagh"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.5107129,
+     53.111172
+    ]
+   },
+   "properties": {
+    "name": "The Two Sticks",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "cullenagh"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.5125894,
+     53.1109232
+    ]
+   },
+   "properties": {
+    "name": "The Ridge Field",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "cullenagh"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.5154099,
+     53.1107008
+    ]
+   },
+   "properties": {
+    "name": "The Beatin",
+    "layer": "placenames",
+    "notes": "Pronounced \"The Baytin\".",
+    "category": "field",
+    "townland": "cullenagh"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.5118839,
+     53.1103701
+    ]
+   },
+   "properties": {
+    "name": "The Goat Cabbin Field",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "cullenagh"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.5119992,
+     53.1102738
+    ]
+   },
+   "properties": {
+    "name": "The Burnt Hill",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "cullenagh"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.5123822,
+     53.1101507
+    ]
+   },
+   "properties": {
+    "name": "The Hay Haggart",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "cullenagh"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.5100744,
+     53.1100508
+    ]
+   },
+   "properties": {
+    "name": "The Muin",
+    "layer": "placenames",
+    "notes": "Muin turf.",
+    "category": "field",
+    "townland": "cullenagh"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.510946,
+     53.1098741
+    ]
+   },
+   "properties": {
+    "name": "The Bogs",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "cullenagh"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.5125136,
+     53.1097692
+    ]
+   },
+   "properties": {
+    "name": "The Hill",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "cullenagh"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.513307,
+     53.1095532
+    ]
+   },
+   "properties": {
+    "name": "The Goat's Field",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "cullenagh"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.5114571,
+     53.1094233
+    ]
+   },
+   "properties": {
+    "name": "The Bogs",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "cullenagh"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.5125038,
+     53.1092716
+    ]
+   },
+   "properties": {
+    "name": "The Bogs",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "cullenagh"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.5169329,
+     53.1182112
+    ]
+   },
+   "properties": {
+    "name": "Eoin Sheanan's House",
+    "layer": "houses",
+    "notes": null,
+    "category": "house",
+    "townland": "cullenagh"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.5190366,
+     53.1180992
+    ]
+   },
+   "properties": {
+    "name": "Jack Flynn's House",
+    "layer": "houses",
+    "notes": null,
+    "category": "house",
+    "townland": "cullenagh"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.5253583,
+     53.1176766
+    ]
+   },
+   "properties": {
+    "name": "Harney's House",
+    "layer": "houses",
+    "notes": null,
+    "category": "house",
+    "townland": "cullenagh"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.5281663,
+     53.1160267
+    ]
+   },
+   "properties": {
+    "name": "Madden's House",
+    "layer": "houses",
+    "notes": "The oldest of the 3 Madden's houses here.",
+    "category": "house",
+    "townland": "cullenagh"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.5218059,
+     53.1158626
+    ]
+   },
+   "properties": {
+    "name": "Jordan's House",
+    "layer": "houses",
+    "notes": null,
+    "category": "house",
+    "townland": "cullenagh"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.5247313,
+     53.1156161
+    ]
+   },
+   "properties": {
+    "name": "Padraig Sheanan's House",
+    "layer": "houses",
+    "notes": "Known as \"Crooshstoff\"",
+    "category": "house",
+    "townland": "cullenagh"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.5292129,
+     53.1156056
+    ]
+   },
+   "properties": {
+    "name": "Mike Madden's House",
+    "layer": "houses",
+    "notes": null,
+    "category": "house",
+    "townland": "cullenagh"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.5203108,
+     53.1155514
+    ]
+   },
+   "properties": {
+    "name": "Barney Sheanan's House",
+    "layer": "houses",
+    "notes": null,
+    "category": "house",
+    "townland": "cullenagh"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.5267855,
+     53.115027
+    ]
+   },
+   "properties": {
+    "name": "Madden's House",
+    "layer": "houses",
+    "notes": null,
+    "category": "house",
+    "townland": "cullenagh"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.5131104,
+     53.1099957
+    ]
+   },
+   "properties": {
+    "name": "Rourke's House",
+    "layer": "houses",
+    "notes": null,
+    "category": "house",
+    "townland": "cullenagh"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.513873,
+     53.1097938
+    ]
+   },
+   "properties": {
+    "name": "Rourke's House",
+    "layer": "houses",
+    "notes": null,
+    "category": "house",
+    "townland": "cullenagh"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.5207021,
+     53.1041688
+    ]
+   },
+   "properties": {
+    "name": "Anne Halloran's House",
+    "layer": "houses",
+    "notes": "Pat Joe Keane got it, she was a spinster.",
+    "category": "house",
+    "townland": "cullenagh"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.5185896,
+     53.1177507
+    ]
+   },
+   "properties": {
+    "name": "The Carpenter Rourke's Shop",
+    "layer": "buildings",
+    "notes": null,
+    "category": "shop",
+    "townland": "cullenagh"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.5192995,
+     53.1158644
+    ]
+   },
+   "properties": {
+    "name": "Tom Sheanan's Forge",
+    "layer": "buildings",
+    "notes": null,
+    "category": "forge",
+    "townland": "cullenagh"
+   }
   }
  ]
 }
