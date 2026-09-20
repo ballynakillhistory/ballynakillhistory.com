@@ -6711,7 +6711,7 @@
    "properties": {
     "name": "Bush of Sceach",
     "layer": "placenames",
-    "notes": "Location not exact. This was a fairy bush.",
+    "notes": "This was a fairy bush. Location not exact.",
     "category": "tree or bush",
     "townland": "drumkeary-west"
    }
@@ -6721,8 +6721,8 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -8.4883564,
-     53.1125506
+     -8.4882107,
+     53.1125149
     ]
    },
    "properties": {
@@ -6806,23 +6806,6 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -8.4733047,
-     53.1071193
-    ]
-   },
-   "properties": {
-    "name": "Lochaunawurs",
-    "layer": "placenames",
-    "notes": "Pronounced \"Luckawnawurs\".",
-    "category": "patch of ground",
-    "townland": "drumkeary-west"
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
      -8.4757719,
      53.1079265
     ]
@@ -6866,6 +6849,23 @@
     "layer": "placenames",
     "notes": null,
     "category": "field",
+    "townland": "drumkeary-west"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4733047,
+     53.1071193
+    ]
+   },
+   "properties": {
+    "name": "Lochaunawurs",
+    "layer": "placenames",
+    "notes": "Pronounced \"Luckawnawurs\".",
+    "category": "patch of ground",
     "townland": "drumkeary-west"
    }
   },
@@ -6932,7 +6932,7 @@
    "properties": {
     "name": "Goirtín Uisce",
     "layer": "placenames",
-    "notes": "Very wet here, you'd go to your knees in it.",
+    "notes": "This field is very wet.",
     "category": "field",
     "townland": "drumkeary-west"
    }
@@ -6949,7 +6949,7 @@
    "properties": {
     "name": "Tobar",
     "layer": "placenames",
-    "notes": "There is a well here.",
+    "notes": "There is a well in this field.",
     "category": "field",
     "townland": "drumkeary-west"
    }
@@ -7017,7 +7017,7 @@
    "properties": {
     "name": "Powerglas",
     "layer": "placenames",
-    "notes": "Probably Poll Glas.",
+    "notes": "Possibly \"Poll Glas\".",
     "category": "field",
     "townland": "drumkeary-west"
    }
@@ -7289,7 +7289,7 @@
    "properties": {
     "name": "The Hills",
     "layer": "placenames",
-    "notes": "This covers about 3 fields, these 2 and the one to the West (Luke's Field).",
+    "notes": "This covers several fields, including \"Luke's Field\" and \"The Fort Field\".",
     "category": "hill or hills",
     "townland": "drumkeary-west"
    }
@@ -7391,7 +7391,7 @@
    "properties": {
     "name": "Shiel's House",
     "layer": "houses",
-    "notes": "Fix location.",
+    "notes": null,
     "category": "house",
     "townland": "drumkeary-west"
    }
@@ -7418,14 +7418,31 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -8.4694399,
-     53.0973784
+     -8.4784798,
+     53.1007654
+    ]
+   },
+   "properties": {
+    "name": "Keane's House",
+    "layer": "houses",
+    "notes": null,
+    "category": "house",
+    "townland": "drumkeary-west"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4694139,
+     53.0973812
     ]
    },
    "properties": {
     "name": "Shiel's House",
     "layer": "houses",
-    "notes": "Shiel's, Glynn's, Tuohys, then Glynn's again.\n\nTuohy all of his potatoes got blight.\nGot TB, went up to County Meath. Went lived with Duane's Ballinlough before.",
+    "notes": "This house was Shiel's, Glynn's, Tuohy's, and then Glynn's again.\n\nIt was said that all of the Tuohy man's potatoes got blight. He lived with Duanes in Ballinlough and then went to County Meath.",
     "category": "house",
     "townland": "drumkeary-west"
    }
@@ -7442,7 +7459,7 @@
    "properties": {
     "name": "Daniel's Shebeen",
     "layer": "buildings",
-    "notes": "Dempsey's kept their Sheebeen in Daniel's house.",
+    "notes": "It was said that Dempsey's kept their Sheebeen in Daniel's house.",
     "category": "pub",
     "townland": "drumkeary-west"
    }
