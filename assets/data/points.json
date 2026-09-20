@@ -8615,7 +8615,7 @@
    "properties": {
     "name": "Mass Rock",
     "layer": "placenames",
-    "notes": "Location not exact",
+    "notes": null,
     "category": "mass rock",
     "townland": "larraga"
    }
@@ -8717,7 +8717,7 @@
    "properties": {
     "name": "Gardiner's House",
     "layer": "houses",
-    "notes": "This house was never finished, it was started and the Burke's stopped it because there wasn't enough land for 2 families. Brother of Gardiner's above.",
+    "notes": "This house was never finished, it was started and the landlord stopped it because there wasn't enough land for 2 families. He was a brother of Gardiner's above (Barratoor townland).",
     "category": "house",
     "townland": "larraga"
    }
@@ -8749,9 +8749,9 @@
     ]
    },
    "properties": {
-    "name": "Murray's, Comer's House",
+    "name": "Murray's House",
     "layer": "houses",
-    "notes": "Used to call it Comer's, it was Murray's before that.",
+    "notes": "Then Comer's.",
     "category": "house",
     "townland": "larraga"
    }
@@ -8768,7 +8768,7 @@
    "properties": {
     "name": "Gads Rafferty's House",
     "layer": "houses",
-    "notes": null,
+    "notes": "This family of Rafferty's were known as \"Gads\" Rafferty,",
     "category": "house",
     "townland": "larraga"
    }
@@ -8785,7 +8785,7 @@
    "properties": {
     "name": "Tommy Rafferty's",
     "layer": "houses",
-    "notes": "The Gads Rafferty's",
+    "notes": null,
     "category": "house",
     "townland": "larraga"
    }
@@ -8819,7 +8819,7 @@
    "properties": {
     "name": "John Joe Rafferty's House",
     "layer": "houses",
-    "notes": "Known as the John Joe's. Michael Rafferty.",
+    "notes": "This family of Rafferty's were known as \"the John Joe's\". Michael Rafferty lived here.",
     "category": "house",
     "townland": "larraga"
    }
@@ -8836,7 +8836,7 @@
    "properties": {
     "name": "Barrel Rafferty's House",
     "layer": "houses",
-    "notes": null,
+    "notes": "This family of Rafferty's were known as \"Barrel\" Rafferty.",
     "category": "house",
     "townland": "larraga"
    }
