@@ -9922,9 +9922,9 @@
     ]
    },
    "properties": {
-    "name": "Mickey Mannion's House",
+    "name": "Tuohy's House",
     "layer": "houses",
-    "notes": "Moved from the house up above, was Tuohy's.",
+    "notes": "Then it was Mickey Mannion's, he moved from the house up above (Connor's House) to here.",
     "category": "house",
     "townland": "knockaundarragh"
    }
@@ -9975,7 +9975,7 @@
    "properties": {
     "name": "Melia's House?",
     "layer": "houses",
-    "notes": "Not sure of the location but it's somewhere around here.",
+    "notes": "Not sure of the exact location but it was somewhere around here.",
     "category": "house",
     "townland": "knockaundarragh"
    }
