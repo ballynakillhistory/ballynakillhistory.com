@@ -58,6 +58,13 @@
   --fs-h1: clamp(1.743rem, 1.743rem + ((1vw - 0.2rem) * 2.285), 3rem);
 }
 
+/* laptops with short or heavily scaled displays (about 1280x720): scale everything down a notch */
+@media (min-width: 900px) and (max-height: 800px) {
+  html {
+    font-size: 90%;
+  }
+}
+
 * {
   box-sizing: border-box;
 }
@@ -126,7 +133,7 @@ nav ul {
 nav a {
   display: flex;
   align-items: center;
-  min-height: 44px;
+  min-height: 2.75rem;
   padding: 0 1.25rem;
   font-family: "DM Serif Display", serif;
   font-size: 1.2rem;
