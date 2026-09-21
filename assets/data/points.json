@@ -10128,7 +10128,7 @@
    "properties": {
     "name": "Fairy Fort",
     "layer": "placenames",
-    "notes": "It was said that this fort was rotovated out and that the man who did it died soon after.",
+    "notes": null,
     "category": "fort",
     "townland": "allykeolaun"
    }
@@ -10364,7 +10364,7 @@
     ]
    },
    "properties": {
-    "name": "Catherine \"The Bird\" Donohoe's House",
+    "name": "Catherine Donohoe's House",
     "layer": "houses",
     "notes": null,
     "category": "house",
