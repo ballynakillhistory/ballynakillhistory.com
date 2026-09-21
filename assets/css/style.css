@@ -245,7 +245,7 @@ h2.section-heading {
   padding: 0 1.25rem;
   font-weight: 700;
   color: #fff;
-  background: var(--color-text);
+  background: #444;
   border-radius: 8px;
   text-decoration: none;
 }
