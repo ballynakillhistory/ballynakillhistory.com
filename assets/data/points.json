@@ -10077,7 +10077,7 @@
    "properties": {
     "name": "The Quarry Field",
     "layer": "placenames",
-    "notes": "Stone came out of here to build Drimkeary bridge.",
+    "notes": "There was a quarry in this field. The stone used to build Drimkeary bridge came out of it.",
     "category": "field",
     "townland": "allykeolaun"
    }
@@ -10111,7 +10111,7 @@
    "properties": {
     "name": "Fairy Fort",
     "layer": "placenames",
-    "notes": "The fort was rotovated out, the man who did it died soon after.",
+    "notes": "It was said that this fort was rotovated out and that the man who did it died soon after.",
     "category": "fort",
     "townland": "allykeolaun"
    }
@@ -10376,14 +10376,14 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -8.4821386,
-     53.1036505
+     -8.4820958,
+     53.1036064
     ]
    },
    "properties": {
     "name": "Feeney's House",
     "layer": "houses",
-    "notes": "Not sure exactly where but somewhere around Farrells.",
+    "notes": "Unsure of the exact location but it was somewhere around Farrell's.",
     "category": "house",
     "townland": "allykeolaun"
    }
@@ -10417,7 +10417,7 @@
    "properties": {
     "name": "Gurley's House",
     "layer": "houses",
-    "notes": "Declan Gurley's old house.",
+    "notes": null,
     "category": "house",
     "townland": "allykeolaun"
    }
