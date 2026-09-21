@@ -292,6 +292,13 @@ h2.section-heading {
   text-decoration: underline;
 }
 
+/* first text section after the townland list gets a divider */
+.landing .townland-list + h2.minor-heading {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--color-border);
+}
+
 /* church parish sub-headings above each townland list */
 h3.parish-heading {
   font-size: 1.25rem;
