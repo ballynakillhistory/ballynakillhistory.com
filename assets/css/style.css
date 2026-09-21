@@ -172,12 +172,6 @@ h2.section-heading {
 }
 
 /* Placenames Project landing page: townland finder first, project text after */
-.landing .skip-link-row {
-  margin: 0 0 1rem;
-}
-.landing .skip-link-row a {
-  font-weight: 700;
-}
 h2.section-heading {
   scroll-margin-top: 1rem;
 }
