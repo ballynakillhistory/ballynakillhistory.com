@@ -2131,32 +2131,15 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -8.458899140816834,
-     53.12671953020797
+     -8.4616903,
+     53.128256
     ]
    },
    "properties": {
-    "name": "Móin Bhearnach",
-    "layer": "placenames",
-    "notes": "Pronounced \"Monevarnach\".",
-    "category": "field",
-    "townland": "ross"
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
-     -8.461116352694077,
-     53.125702164686025
-    ]
-   },
-   "properties": {
-    "name": "Campbell's",
+    "name": "The Ross River",
     "layer": "placenames",
     "notes": null,
-    "category": "field",
+    "category": "river",
     "townland": "ross"
    }
   },
@@ -2165,212 +2148,8 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -8.463412528585847,
-     53.12640705804016
-    ]
-   },
-   "properties": {
-    "name": "Above the Road",
-    "layer": "placenames",
-    "notes": null,
-    "category": "field",
-    "townland": "ross"
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
-     -8.464519952506967,
-     53.12691624745777
-    ]
-   },
-   "properties": {
-    "name": "Cregg",
-    "layer": "placenames",
-    "notes": "Also pronounced \"Cragg\".",
-    "category": "field",
-    "townland": "ross"
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
-     -8.465371104686142,
-     53.12667984379677
-    ]
-   },
-   "properties": {
-    "name": "The Forge Garden",
-    "layer": "placenames",
-    "notes": null,
-    "category": "field",
-    "townland": "ross"
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
-     -8.465003086619191,
-     53.1262406145018
-    ]
-   },
-   "properties": {
-    "name": "Gáirdín na Sceacha",
-    "layer": "placenames",
-    "notes": null,
-    "category": "field",
-    "townland": "ross"
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
-     -8.465590307821804,
-     53.12567382883944
-    ]
-   },
-   "properties": {
-    "name": "The Long Piece",
-    "layer": "placenames",
-    "notes": null,
-    "category": "field",
-    "townland": "ross"
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
-     -8.465197450652989,
-     53.125354879161
-    ]
-   },
-   "properties": {
-    "name": "Pat's Piece",
-    "layer": "placenames",
-    "notes": "Pat Moylan.",
-    "category": "field",
-    "townland": "ross"
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
-     -8.46770413993375,
-     53.125749307649265
-    ]
-   },
-   "properties": {
-    "name": "The Hill Field/The Tillage Field",
-    "layer": "placenames",
-    "notes": null,
-    "category": "field",
-    "townland": "ross"
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
-     -8.467866223246332,
-     53.12506399786501
-    ]
-   },
-   "properties": {
-    "name": "Coarse",
-    "layer": "placenames",
-    "notes": "Pronounced \"Coorse\".",
-    "category": "field",
-    "townland": "ross"
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
-     -8.466424603170273,
-     53.126679363554246
-    ]
-   },
-   "properties": {
-    "name": "The Haggard",
-    "layer": "placenames",
-    "notes": null,
-    "category": "field",
-    "townland": "ross"
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
-     -8.469716469365952,
-     53.12762059485422
-    ]
-   },
-   "properties": {
-    "name": "Gleann",
-    "layer": "placenames",
-    "notes": "Pronounced \"Glann\".",
-    "category": "field",
-    "townland": "ross"
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
-     -8.46863960168018,
-     53.12770131744358
-    ]
-   },
-   "properties": {
-    "name": "The Lime Kiln Field",
-    "layer": "placenames",
-    "notes": null,
-    "category": "field",
-    "townland": "ross"
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
-     -8.468282977481122,
-     53.12720014154192
-    ]
-   },
-   "properties": {
-    "name": "Behind the House",
-    "layer": "placenames",
-    "notes": null,
-    "category": "field",
-    "townland": "ross"
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
-     -8.467262571628691,
-     53.12801993051038
+     -8.4672626,
+     53.1280199
     ]
    },
    "properties": {
@@ -2386,59 +2165,8 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -8.466291241902578,
-     53.12778337442553
-    ]
-   },
-   "properties": {
-    "name": "The Well Park",
-    "layer": "placenames",
-    "notes": null,
-    "category": "field",
-    "townland": "ross"
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
-     -8.465367414521534,
-     53.12745921975589
-    ]
-   },
-   "properties": {
-    "name": "Calves Field",
-    "layer": "placenames",
-    "notes": null,
-    "category": "field",
-    "townland": "ross"
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
-     -8.463873528063072,
-     53.1276107239806
-    ]
-   },
-   "properties": {
-    "name": "The New Piece",
-    "layer": "placenames",
-    "notes": null,
-    "category": "field",
-    "townland": "ross"
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
-     -8.464949575744983,
-     53.128014417196226
+     -8.4649496,
+     53.1280144
     ]
    },
    "properties": {
@@ -2454,8 +2182,8 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -8.462841339392332,
-     53.12790609070154
+     -8.4628413,
+     53.1279061
     ]
    },
    "properties": {
@@ -2471,8 +2199,110 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -8.462930072040518,
-     53.12714823561078
+     -8.4662912,
+     53.1277834
+    ]
+   },
+   "properties": {
+    "name": "The Well Park",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "ross"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4686396,
+     53.1277013
+    ]
+   },
+   "properties": {
+    "name": "The Lime Kiln Field",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "ross"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4697165,
+     53.1276206
+    ]
+   },
+   "properties": {
+    "name": "Gleann",
+    "layer": "placenames",
+    "notes": "Pronounced \"Glann\".",
+    "category": "field",
+    "townland": "ross"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4638735,
+     53.1276107
+    ]
+   },
+   "properties": {
+    "name": "The New Piece",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "ross"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4653674,
+     53.1274592
+    ]
+   },
+   "properties": {
+    "name": "Calves Field",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "ross"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.468283,
+     53.1272001
+    ]
+   },
+   "properties": {
+    "name": "Behind the House",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "ross"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4629301,
+     53.1271482
     ]
    },
    "properties": {
@@ -2488,8 +2318,195 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -8.465529868633064,
-     53.12499920563736
+     -8.46452,
+     53.1269162
+    ]
+   },
+   "properties": {
+    "name": "Cregg",
+    "layer": "placenames",
+    "notes": "Also pronounced \"Cragg\".",
+    "category": "field",
+    "townland": "ross"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4588991,
+     53.1267195
+    ]
+   },
+   "properties": {
+    "name": "Móin Bhearnach",
+    "layer": "placenames",
+    "notes": "Pronounced \"Monevarnach\".",
+    "category": "field",
+    "townland": "ross"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4653711,
+     53.1266798
+    ]
+   },
+   "properties": {
+    "name": "The Forge Garden",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "ross"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4664246,
+     53.1266794
+    ]
+   },
+   "properties": {
+    "name": "The Haggard",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "ross"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4634125,
+     53.1264071
+    ]
+   },
+   "properties": {
+    "name": "Above the Road",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "ross"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4650031,
+     53.1262406
+    ]
+   },
+   "properties": {
+    "name": "Gáirdín na Sceacha",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "ross"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4677041,
+     53.1257493
+    ]
+   },
+   "properties": {
+    "name": "The Hill Field/The Tillage Field",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "ross"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4611164,
+     53.1257022
+    ]
+   },
+   "properties": {
+    "name": "Campbell's",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "ross"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4655903,
+     53.1256738
+    ]
+   },
+   "properties": {
+    "name": "The Long Piece",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "ross"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4651975,
+     53.1253549
+    ]
+   },
+   "properties": {
+    "name": "Pat's Piece",
+    "layer": "placenames",
+    "notes": "Pat Moylan.",
+    "category": "field",
+    "townland": "ross"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4678662,
+     53.125064
+    ]
+   },
+   "properties": {
+    "name": "Coarse",
+    "layer": "placenames",
+    "notes": "Pronounced \"Coorse\".",
+    "category": "field",
+    "townland": "ross"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4655299,
+     53.1249992
     ]
    },
    "properties": {
@@ -2497,6 +2514,91 @@
     "layer": "placenames",
     "notes": null,
     "category": "field",
+    "townland": "ross"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4611135,
+     53.1271334
+    ]
+   },
+   "properties": {
+    "name": "Shiel's House",
+    "layer": "houses",
+    "notes": "Ned Shiel.",
+    "category": "house",
+    "townland": "ross"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4662381,
+     53.1267894
+    ]
+   },
+   "properties": {
+    "name": "Moylan's House",
+    "layer": "houses",
+    "notes": null,
+    "category": "house",
+    "townland": "ross"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4691115,
+     53.1265559
+    ]
+   },
+   "properties": {
+    "name": "Haugh's House",
+    "layer": "houses",
+    "notes": "Sean Haugh.",
+    "category": "house",
+    "townland": "ross"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4638706,
+     53.1267749
+    ]
+   },
+   "properties": {
+    "name": "Tailor's Workshop",
+    "layer": "buildings",
+    "notes": null,
+    "category": "building",
+    "townland": "ross"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4647825,
+     53.1265547
+    ]
+   },
+   "properties": {
+    "name": "The Forge",
+    "layer": "buildings",
+    "notes": null,
+    "category": "forge",
     "townland": "ross"
    }
   },
@@ -5463,57 +5565,6 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -8.466238100314266,
-     53.12678935028003
-    ]
-   },
-   "properties": {
-    "name": "Moylan's House",
-    "layer": "houses",
-    "notes": null,
-    "category": "house",
-    "townland": "ross"
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
-     -8.469111509810032,
-     53.12655590985383
-    ]
-   },
-   "properties": {
-    "name": "Haugh's House",
-    "layer": "houses",
-    "notes": "Sean Haugh.",
-    "category": "house",
-    "townland": "ross"
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
-     -8.461113508464807,
-     53.12713343301906
-    ]
-   },
-   "properties": {
-    "name": "Shiel's House",
-    "layer": "houses",
-    "notes": "Ned Shiel.",
-    "category": "house",
-    "townland": "ross"
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
      -8.462282573332976,
      53.07081185457474
     ]
@@ -6544,40 +6595,6 @@
     "notes": null,
     "category": "house",
     "townland": "moyglass"
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
-     -8.463870583070543,
-     53.12677492490032
-    ]
-   },
-   "properties": {
-    "name": "Tailor's Workshop",
-    "layer": "buildings",
-    "notes": null,
-    "category": "building",
-    "townland": "ross"
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
-     -8.464782456293335,
-     53.12655467731683
-    ]
-   },
-   "properties": {
-    "name": "The Forge",
-    "layer": "buildings",
-    "notes": null,
-    "category": "forge",
-    "townland": "ross"
    }
   },
   {
@@ -10760,6 +10777,74 @@
     "notes": "This was said to be a fish shop. Location not exact.",
     "category": "shop",
     "townland": "tooreen-north"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4728563,
+     53.1282187
+    ]
+   },
+   "properties": {
+    "name": "Wooden Bridge",
+    "layer": "placenames",
+    "notes": null,
+    "category": "bridge",
+    "townland": "kyleaglannawood"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4926321,
+     53.1264027
+    ]
+   },
+   "properties": {
+    "name": "Hynes' Borehole",
+    "layer": "placenames",
+    "notes": "Location not exact.",
+    "category": "hole",
+    "townland": "kyleaglannawood"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4886157,
+     53.1238225
+    ]
+   },
+   "properties": {
+    "name": "Bill Gardiner's House",
+    "layer": "houses",
+    "notes": null,
+    "category": "house",
+    "townland": "kyleaglannawood"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4730267,
+     53.1282283
+    ]
+   },
+   "properties": {
+    "name": "MacAnish's Sawmill",
+    "layer": "buildings",
+    "notes": "The spelling McAnish was given but pronounced \"McInch\".",
+    "category": "sawmill",
+    "townland": "kyleaglannawood"
    }
   }
  ]
