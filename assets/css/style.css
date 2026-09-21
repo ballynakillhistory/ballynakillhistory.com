@@ -285,7 +285,7 @@ h2.section-heading {
 .landing .townland-list {
   columns: auto;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(9.5rem, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(11rem, 1fr));
   gap: 0.5rem;
 }
 .landing .townland-list li {
@@ -302,6 +302,16 @@ h2.section-heading {
   border: 1px solid var(--color-border);
   border-radius: 8px;
   text-decoration: none;
+  white-space: nowrap;
+}
+@media (max-width: 600px) {
+  .landing .townland-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .landing .townland-list a {
+    padding: 0 0.5rem;
+    font-size: 0.9rem;
+  }
 }
 .landing .townland-list a:hover,
 .landing .townland-list a:focus-visible {
