@@ -138,15 +138,106 @@ body.home {
 }
 
 /* Placenames Project index: small headings in the intro text, prominent Townlands heading */
-h2.minor-heading {
+h2.minor-heading,
+h3.minor-heading {
   font-size: 1.5rem;
   margin: 2rem 0 0.5rem;
 }
-h2.townlands-heading {
+h2.section-heading {
   font-size: var(--fs-h1);
   margin: 3rem 0 1rem;
   padding-top: 1.5rem;
   border-top: 1px solid var(--color-border);
+}
+
+/* Placenames Project landing page: townland finder first, project text after */
+.landing p,
+.landing > ul:not(.townland-list) {
+  max-width: 42rem;
+}
+.landing .lead {
+  font-size: 1.25rem;
+  line-height: 1.5;
+  max-width: 46rem;
+}
+.landing-tools {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 1rem 1.5rem;
+  margin: 1.5rem 0 0;
+  padding: 1.25rem;
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+}
+.townland-search {
+  flex: 1 1 18rem;
+}
+.townland-search label {
+  display: block;
+  margin-bottom: 0.35rem;
+  font-weight: 700;
+}
+.townland-search input {
+  width: 100%;
+  height: 3rem;
+  padding: 0 0.85rem;
+  font: inherit;
+  color: var(--color-text);
+  background: #fff;
+  border: 2px solid var(--color-secondary);
+  border-radius: 8px;
+}
+.townland-search input:focus {
+  outline: 3px solid #1a5fb4;
+  outline-offset: 2px;
+}
+.button {
+  display: inline-flex;
+  align-items: center;
+  min-height: 3rem;
+  padding: 0 1.25rem;
+  font-weight: 700;
+  color: #fff;
+  background: var(--color-text);
+  border-radius: 8px;
+  text-decoration: none;
+}
+.button:hover,
+.button:focus-visible {
+  background: #333;
+}
+.townland-status {
+  margin: 0 0 0.25rem;
+  color: var(--color-secondary);
+  font-size: var(--fs-small);
+}
+.landing .townland-list {
+  columns: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(9.5rem, 1fr));
+  gap: 0.5rem;
+}
+.landing .townland-list li {
+  padding: 0;
+}
+.landing .townland-list li[hidden] {
+  display: none;
+}
+.landing .townland-list a {
+  display: flex;
+  align-items: center;
+  min-height: 2.75rem;
+  padding: 0 0.85rem;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  text-decoration: none;
+}
+.landing .townland-list a:hover,
+.landing .townland-list a:focus-visible {
+  background: #f2f2f2;
+  border-color: var(--color-secondary);
+  text-decoration: underline;
 }
 
 /* church parish sub-headings above each townland list */
