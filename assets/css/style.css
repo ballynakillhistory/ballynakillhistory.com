@@ -136,8 +136,8 @@ nav a:focus-visible {
 }
 nav a[aria-current] {
   color: #fff;
-  background: #444;
-  border-color: #444;
+  background: var(--color-text);
+  border-color: var(--color-text);
 }
 
 /* content */
@@ -245,7 +245,7 @@ h2.section-heading {
   padding: 0 1.25rem;
   font-weight: 700;
   color: #fff;
-  background: #444;
+  background: var(--color-text);
   border-radius: 8px;
   text-decoration: none;
 }
