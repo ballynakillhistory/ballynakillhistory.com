@@ -94,15 +94,18 @@ header, main, footer {
 }
 
 header {
-  padding: 50px 0;
+  padding: clamp(16px, 5vh, 50px) 0;
 }
 
 /* header / banner / nav */
 
 .banner {
   display: block;
-  width: 100%;
+  width: auto;
+  max-width: 100%;
   height: auto;
+  max-height: 32vh;
+  margin: 0 auto;
 }
 
 nav {
