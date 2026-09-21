@@ -10914,6 +10914,312 @@
     "category": "shop",
     "townland": "inchy"
    }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4561888,
+     53.125204
+    ]
+   },
+   "properties": {
+    "name": "Sceacha Dubh",
+    "layer": "placenames",
+    "notes": "Pronounced \"Shkehadoo\".",
+    "category": "river",
+    "townland": "tonroe"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4604077,
+     53.1245468
+    ]
+   },
+   "properties": {
+    "name": "The Callow's",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "tonroe"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4663836,
+     53.1240064
+    ]
+   },
+   "properties": {
+    "name": "Connaire's",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "tonroe"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4476985,
+     53.1236295
+    ]
+   },
+   "properties": {
+    "name": "The Sandpit",
+    "layer": "placenames",
+    "notes": null,
+    "category": "man-made feature",
+    "townland": "tonroe"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4658956,
+     53.123528
+    ]
+   },
+   "properties": {
+    "name": "Lackey's Gap",
+    "layer": "placenames",
+    "notes": null,
+    "category": "gap",
+    "townland": "tonroe"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4699614,
+     53.1233969
+    ]
+   },
+   "properties": {
+    "name": "Jane Carthy's",
+    "layer": "placenames",
+    "notes": "Location not exact.",
+    "category": "field",
+    "townland": "tonroe"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4681406,
+     53.1226141
+    ]
+   },
+   "properties": {
+    "name": "Haugh's Well",
+    "layer": "placenames",
+    "notes": null,
+    "category": "well",
+    "townland": "tonroe"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4429641,
+     53.1221879
+    ]
+   },
+   "properties": {
+    "name": "Brehony's",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "tonroe"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.452117,
+     53.1221444
+    ]
+   },
+   "properties": {
+    "name": "The Hill Field",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "tonroe"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4681742,
+     53.1218274
+    ]
+   },
+   "properties": {
+    "name": "The Wiggy Bog",
+    "layer": "placenames",
+    "notes": null,
+    "category": "bog",
+    "townland": "tonroe"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4615161,
+     53.1217637
+    ]
+   },
+   "properties": {
+    "name": "Tonroe Mountain",
+    "layer": "placenames",
+    "notes": null,
+    "category": "bog",
+    "townland": "tonroe"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.448079,
+     53.1206733
+    ]
+   },
+   "properties": {
+    "name": "The Lower Field",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "tonroe"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4449993,
+     53.1224665
+    ]
+   },
+   "properties": {
+    "name": "Peter Kennedy's House",
+    "layer": "houses",
+    "notes": null,
+    "category": "house",
+    "townland": "tonroe"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4431395,
+     53.1222808
+    ]
+   },
+   "properties": {
+    "name": "Brehony's House?",
+    "layer": "houses",
+    "notes": "Unsure about this but was possibly Brehony's house when the field is called \"Brehony's\".",
+    "category": "house",
+    "townland": "tonroe"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4467407,
+     53.1210955
+    ]
+   },
+   "properties": {
+    "name": "Connors' House",
+    "layer": "houses",
+    "notes": null,
+    "category": "house",
+    "townland": "tonroe"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4434747,
+     53.1187795
+    ]
+   },
+   "properties": {
+    "name": "Curley's House",
+    "layer": "houses",
+    "notes": null,
+    "category": "house",
+    "townland": "tonroe"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4424921,
+     53.1172137
+    ]
+   },
+   "properties": {
+    "name": "Tommy Connors' House",
+    "layer": "houses",
+    "notes": null,
+    "category": "house",
+    "townland": "tonroe"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4415909,
+     53.1226142
+    ]
+   },
+   "properties": {
+    "name": "Quinn's Blacksmith",
+    "layer": "buildings",
+    "notes": null,
+    "category": "smithy",
+    "townland": "tonroe"
+   }
   }
  ]
 }
