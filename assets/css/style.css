@@ -104,9 +104,9 @@ header {
   width: 100%;
   height: auto;
   aspect-ratio: 1024 / 440;
-  max-height: 42vh;
+  max-height: 48vh;
   object-fit: cover;
-  object-position: center 45%;
+  object-position: center 28%;
 }
 
 nav {
