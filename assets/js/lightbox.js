@@ -19,7 +19,7 @@ document.querySelectorAll(".map-gallery").forEach((gallery) => {
   lightbox.init();
 });
 
-const singles = [...document.querySelectorAll("main img")].filter(
+const singles = [...document.querySelectorAll("main figure.zoomable img")].filter(
   (img) => !img.closest("a") && !img.closest(".map-gallery")
 );
 
