@@ -256,6 +256,13 @@ h2.section-heading {
 .townland-meta .button {
   margin-left: auto;
 }
+@media (max-width: 600px) {
+  .townland-meta .button {
+    margin-left: 0;
+    width: 100%;
+    justify-content: center;
+  }
+}
 .townland-status:empty {
   display: none;
 }
