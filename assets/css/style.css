@@ -151,10 +151,6 @@ h2.section-heading {
 }
 
 /* Placenames Project landing page: townland finder first, project text after */
-.landing p,
-.landing > ul:not(.townland-list):not(.page-contents) {
-  max-width: 42rem;
-}
 .landing .skip-link-row {
   margin: 0 0 1rem;
 }
@@ -167,7 +163,6 @@ h2.section-heading {
 .landing .lead {
   font-size: 1.25rem;
   line-height: 1.5;
-  max-width: 46rem;
 }
 .page-contents {
   list-style: none;
