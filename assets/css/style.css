@@ -58,10 +58,13 @@
   --fs-h1: clamp(1.743rem, 1.743rem + ((1vw - 0.2rem) * 2.285), 3rem);
 }
 
-/* desktop and laptop screens: scale text, headings and controls down 10%; phones keep full size */
+/* desktop and laptop screens: slightly smaller text (about 17px body) and titles; phones keep full size */
 @media (min-width: 900px) {
   html {
-    font-size: 90%;
+    font-size: 94%;
+  }
+  :root {
+    --fs-h1: clamp(1.743rem, 1.743rem + ((1vw - 0.2rem) * 2.285), 2.65rem);
   }
 }
 
@@ -229,7 +232,7 @@ h2.section-heading {
 }
 .townland-search input {
   width: 100%;
-  height: 3rem;
+  height: 2.75rem;
   padding: 0 0.85rem;
   font: inherit;
   color: var(--color-text);
@@ -252,7 +255,7 @@ h2.section-heading {
 .button {
   display: inline-flex;
   align-items: center;
-  min-height: 3rem;
+  min-height: 2.75rem;
   padding: 0 1.25rem;
   font-weight: 700;
   color: #fff;
@@ -383,7 +386,7 @@ figure + figure {
 }
 figcaption {
   color: var(--color-caption);
-  font-size: 0.8125rem;
+  font-size: 0.9375rem;
   text-align: center;
   margin-top: 0.5em;
 }
@@ -458,7 +461,7 @@ body.map-page .townland-map {
   background: #fff;
   border-radius: 4px;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
-  font-size: 0.8125rem;
+  font-size: 0.875rem;
 }
 .map-back-link a {
   display: block;
@@ -476,7 +479,7 @@ body.map-page .townland-map {
   background: #fff;
   border-radius: 4px;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
-  font-size: 0.8125rem;
+  font-size: 0.875rem;
   line-height: 1.6;
 }
 .map-legend-toggle {
@@ -540,7 +543,7 @@ body.map-page .townland-map {
   border: none;
   box-shadow: none;
   font-family: "Source Sans Pro", sans-serif;
-  font-size: 0.8125rem;
+  font-size: 0.875rem;
   font-weight: 600;
   font-style: italic;
   color: #fff;
@@ -569,11 +572,11 @@ body.map-page .townland-map {
 }
 .map-popup-source {
   color: var(--color-caption);
-  font-size: 0.8125rem;
+  font-size: 0.875rem;
 }
 .map-popup-townland {
   color: var(--color-caption);
-  font-size: 0.8125rem;
+  font-size: 0.875rem;
 }
 
 /* footer */
