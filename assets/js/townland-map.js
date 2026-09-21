@@ -67,10 +67,20 @@ function esc(str) {
 // run after esc() — the notes field sometimes cites a source as a plain URL, which should
 // be a clickable link rather than long unbroken text
 function linkify(escapedText) {
-  return escapedText.replace(
-    /https?:\/\/[^\s<>")]+/g,
-    (url) => `<a href="${url}" target="_blank" rel="noopener">${url}</a>`,
-  );
+  return escapedText.replace(/https?:\/\/[^\s<>")]+/g, (url) => {
+    let host = "link";
+    try {
+      host = new URL(url).hostname.replace(/^www\./, "");
+    } catch {}
+    return `<a href="${url}" target="_blank" rel="noopener" data-goatcounter-click="ext-${host}">${url}</a>`;
+  });
+}
+
+// GoatCounter loads async from the <head> and may be blocked, so every call is guarded
+function track(path, title) {
+  if (window.goatcounter && window.goatcounter.count) {
+    window.goatcounter.count({ path, title, event: true });
+  }
 }
 
 // townlandLabel is passed only when rendering unfiltered (the overview map) — on a
@@ -383,6 +393,12 @@ async function initTownlandMap(el) {
     onEachFeature: (feature, layer) => {
       const townlandLabel = townland ? null : townlandNames.get(feature.properties.townland);
       layer.bindPopup(popupHtml(feature.properties, townlandLabel));
+      layer.on("popupopen", () => {
+        const where = townlandLabel || townlandNames.get(feature.properties.townland) || feature.properties.townland;
+        track("map-point: " + where + " - " + feature.properties.name, feature.properties.name);
+        // links inside a popup are created when it opens, so have GoatCounter bind them now
+        if (window.goatcounter && window.goatcounter.bind_events) window.goatcounter.bind_events();
+      });
       layer.bindTooltip(esc(feature.properties.name), {
         permanent: true,
         direction: "right",
