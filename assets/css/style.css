@@ -58,8 +58,8 @@
   --fs-h1: clamp(1.743rem, 1.743rem + ((1vw - 0.2rem) * 2.285), 3rem);
 }
 
-/* laptops with short or heavily scaled displays (about 1280x720): scale everything down a notch */
-@media (min-width: 900px) and (max-height: 800px) {
+/* desktop and laptop screens: scale text, headings and controls down 10%; phones keep full size */
+@media (min-width: 900px) {
   html {
     font-size: 90%;
   }
