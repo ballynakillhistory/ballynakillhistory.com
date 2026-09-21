@@ -58,6 +58,16 @@
   --fs-h1: clamp(1.743rem, 1.743rem + ((1vw - 0.2rem) * 2.285), 3rem);
 }
 
+/* desktop and laptop screens: slightly smaller text (about 17px body) and titles; phones keep full size */
+@media (min-width: 900px) {
+  html {
+    font-size: 94%;
+  }
+  :root {
+    --fs-h1: clamp(1.743rem, 1.743rem + ((1vw - 0.2rem) * 2.285), 2.65rem);
+  }
+}
+
 * {
   box-sizing: border-box;
 }
@@ -94,7 +104,7 @@ header, main, footer {
 }
 
 header {
-  padding: 50px 0;
+  padding: clamp(16px, 5vh, 50px) 0;
 }
 
 /* header / banner / nav */
@@ -103,6 +113,10 @@ header {
   display: block;
   width: 100%;
   height: auto;
+  aspect-ratio: 1024 / 440;
+  max-height: 48vh;
+  object-fit: cover;
+  object-position: center 28%;
 }
 
 nav {
@@ -122,7 +136,7 @@ nav ul {
 nav a {
   display: flex;
   align-items: center;
-  min-height: 44px;
+  min-height: 2.75rem;
   padding: 0 1.25rem;
   font-family: "DM Serif Display", serif;
   font-size: 1.2rem;
@@ -218,7 +232,7 @@ h2.section-heading {
 }
 .townland-search input {
   width: 100%;
-  height: 3rem;
+  height: 2.75rem;
   padding: 0 0.85rem;
   font: inherit;
   color: var(--color-text);
@@ -241,7 +255,7 @@ h2.section-heading {
 .button {
   display: inline-flex;
   align-items: center;
-  min-height: 3rem;
+  min-height: 2.75rem;
   padding: 0 1.25rem;
   font-weight: 700;
   color: #fff;
@@ -274,7 +288,7 @@ h2.section-heading {
 .landing .townland-list {
   columns: auto;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(9.5rem, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(11rem, 1fr));
   gap: 0.5rem;
 }
 .landing .townland-list li {
@@ -291,6 +305,16 @@ h2.section-heading {
   border: 1px solid var(--color-border);
   border-radius: 8px;
   text-decoration: none;
+  white-space: nowrap;
+}
+@media (max-width: 600px) {
+  .landing .townland-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .landing .townland-list a {
+    padding: 0 0.5rem;
+    font-size: 0.9rem;
+  }
 }
 .landing .townland-list a:hover,
 .landing .townland-list a:focus-visible {
@@ -342,6 +366,7 @@ h3.parish-heading {
 }
 
 main img {
+  display: block;
   width: 100%;
   height: auto;
 }
@@ -358,7 +383,7 @@ figure + figure {
 }
 figcaption {
   color: var(--color-caption);
-  font-size: 0.8125rem;
+  font-size: 0.9375rem;
   text-align: center;
   margin-top: 0.5em;
 }
@@ -433,7 +458,7 @@ body.map-page .townland-map {
   background: #fff;
   border-radius: 4px;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
-  font-size: 0.8125rem;
+  font-size: 0.875rem;
 }
 .map-back-link a {
   display: block;
@@ -451,7 +476,7 @@ body.map-page .townland-map {
   background: #fff;
   border-radius: 4px;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
-  font-size: 0.8125rem;
+  font-size: 0.875rem;
   line-height: 1.6;
 }
 .map-legend-toggle {
@@ -515,7 +540,7 @@ body.map-page .townland-map {
   border: none;
   box-shadow: none;
   font-family: "Source Sans Pro", sans-serif;
-  font-size: 0.8125rem;
+  font-size: 0.875rem;
   font-weight: 600;
   font-style: italic;
   color: #fff;
@@ -544,11 +569,11 @@ body.map-page .townland-map {
 }
 .map-popup-source {
   color: var(--color-caption);
-  font-size: 0.8125rem;
+  font-size: 0.875rem;
 }
 .map-popup-townland {
   color: var(--color-caption);
-  font-size: 0.8125rem;
+  font-size: 0.875rem;
 }
 
 /* footer */
