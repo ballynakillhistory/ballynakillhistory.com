@@ -10489,6 +10489,278 @@
     "category": "sawmill",
     "townland": "allykeolaun"
    }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4988575,
+     53.1251613
+    ]
+   },
+   "properties": {
+    "name": "The Second Field",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "tooreen-north"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.5007789,
+     53.1249341
+    ]
+   },
+   "properties": {
+    "name": "Gardebawshta",
+    "layer": "placenames",
+    "notes": "This covers two fields, one of them is forestry now.",
+    "category": "field",
+    "townland": "tooreen-north"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.5017124,
+     53.1246576
+    ]
+   },
+   "properties": {
+    "name": "Baychhol",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "tooreen-north"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4992285,
+     53.1245002
+    ]
+   },
+   "properties": {
+    "name": "Below the House",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "tooreen-north"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4973778,
+     53.1241329
+    ]
+   },
+   "properties": {
+    "name": "The Well Field",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "tooreen-north"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4982347,
+     53.1240746
+    ]
+   },
+   "properties": {
+    "name": "The Small Hill Field",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "tooreen-north"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.5000207,
+     53.1240474
+    ]
+   },
+   "properties": {
+    "name": "Simmon's",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "tooreen-north"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.5064819,
+     53.1237544
+    ]
+   },
+   "properties": {
+    "name": "Gort an Riasc",
+    "layer": "placenames",
+    "notes": "Pronounced \"Gortareesk\". It covers 2 fields here.",
+    "category": "field",
+    "townland": "tooreen-north"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.5002058,
+     53.1234533
+    ]
+   },
+   "properties": {
+    "name": "The Caravan Field",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "tooreen-north"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4972427,
+     53.1232444
+    ]
+   },
+   "properties": {
+    "name": "The Wood Field",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "tooreen-north"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.5002839,
+     53.1227619
+    ]
+   },
+   "properties": {
+    "name": "Garraí Nua",
+    "layer": "placenames",
+    "notes": "Pronounced \"Gorreynoo\".",
+    "category": "field",
+    "townland": "tooreen-north"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4986144,
+     53.1226951
+    ]
+   },
+   "properties": {
+    "name": "The Hill Field",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "tooreen-north"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4972071,
+     53.1225194
+    ]
+   },
+   "properties": {
+    "name": "Garraí Fraochán",
+    "layer": "placenames",
+    "notes": "Pronounce \"Garryfrehawn\".",
+    "category": "field",
+    "townland": "tooreen-north"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.501863,
+     53.1219938
+    ]
+   },
+   "properties": {
+    "name": "Goirtín",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "tooreen-north"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.500525,
+     53.1236848
+    ]
+   },
+   "properties": {
+    "name": "John Daniels' House",
+    "layer": "houses",
+    "notes": "John moved to Westmeath, he was known as \"John Hat\".",
+    "category": "house",
+    "townland": "tooreen-north"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4996365,
+     53.1236134
+    ]
+   },
+   "properties": {
+    "name": "Shop",
+    "layer": "buildings",
+    "notes": "This was said to be a fish shop. Location not exact.",
+    "category": "shop",
+    "townland": "tooreen-north"
+   }
   }
  ]
 }
