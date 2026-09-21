@@ -10013,6 +10013,482 @@
     "category": "house",
     "townland": "knockaundarragh"
    }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4978416,
+     53.107468
+    ]
+   },
+   "properties": {
+    "name": "Cnocán na Brón",
+    "layer": "placenames",
+    "notes": "Pronounced \"Cruckawnabrone\".",
+    "category": "hill or hills",
+    "townland": "allykeolaun"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4847997,
+     53.1053856
+    ]
+   },
+   "properties": {
+    "name": "Light Hill",
+    "layer": "placenames",
+    "notes": null,
+    "category": "hill or hills",
+    "townland": "allykeolaun"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4830896,
+     53.1044103
+    ]
+   },
+   "properties": {
+    "name": "Riascín",
+    "layer": "placenames",
+    "notes": "Pronounced \"Reeshkeen\".",
+    "category": "field",
+    "townland": "allykeolaun"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4865293,
+     53.1036785
+    ]
+   },
+   "properties": {
+    "name": "The Quarry Field",
+    "layer": "placenames",
+    "notes": "There was a quarry in this field. The stone used to build Drimkeary bridge came out of it.",
+    "category": "field",
+    "townland": "allykeolaun"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4809742,
+     53.1029956
+    ]
+   },
+   "properties": {
+    "name": "Hay Socks",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "allykeolaun"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4854898,
+     53.1025236
+    ]
+   },
+   "properties": {
+    "name": "Fairy Fort",
+    "layer": "placenames",
+    "notes": "It was said that this fort was rotovated out and that the man who did it died soon after.",
+    "category": "fort",
+    "townland": "allykeolaun"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4805866,
+     53.1025073
+    ]
+   },
+   "properties": {
+    "name": "Rushy Socks",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "allykeolaun"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4827033,
+     53.1022389
+    ]
+   },
+   "properties": {
+    "name": "The Hill",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "allykeolaun"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4803675,
+     53.101668
+    ]
+   },
+   "properties": {
+    "name": "Socks'",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "allykeolaun"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4821199,
+     53.1016492
+    ]
+   },
+   "properties": {
+    "name": "The Long Garden",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "allykeolaun"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4819754,
+     53.1013835
+    ]
+   },
+   "properties": {
+    "name": "The Orchard",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "allykeolaun"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4803863,
+     53.1009715
+    ]
+   },
+   "properties": {
+    "name": "Across From Rourkes",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "allykeolaun"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4820232,
+     53.1009148
+    ]
+   },
+   "properties": {
+    "name": "The Cabbage Garden",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "allykeolaun"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4818793,
+     53.1007003
+    ]
+   },
+   "properties": {
+    "name": "The Garden at the Road",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "allykeolaun"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4800451,
+     53.1003658
+    ]
+   },
+   "properties": {
+    "name": "The Callow",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "allykeolaun"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4811893,
+     53.1002323
+    ]
+   },
+   "properties": {
+    "name": "The Hurling Field",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "allykeolaun"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4817135,
+     53.1000332
+    ]
+   },
+   "properties": {
+    "name": "The Well Field",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "allykeolaun"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4803672,
+     53.0997352
+    ]
+   },
+   "properties": {
+    "name": "Above the River",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "allykeolaun"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4819301,
+     53.0989972
+    ]
+   },
+   "properties": {
+    "name": "The Lisheen Field",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "allykeolaun"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4833618,
+     53.1048337
+    ]
+   },
+   "properties": {
+    "name": "Catherine \"The Bird\" Donohoe's House",
+    "layer": "houses",
+    "notes": null,
+    "category": "house",
+    "townland": "allykeolaun"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4823095,
+     53.1036946
+    ]
+   },
+   "properties": {
+    "name": "Farrell's House",
+    "layer": "houses",
+    "notes": null,
+    "category": "house",
+    "townland": "allykeolaun"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4820958,
+     53.1036064
+    ]
+   },
+   "properties": {
+    "name": "Feeney's House",
+    "layer": "houses",
+    "notes": "Unsure of the exact location but it was somewhere around Farrell's.",
+    "category": "house",
+    "townland": "allykeolaun"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4799149,
+     53.1025718
+    ]
+   },
+   "properties": {
+    "name": "Socks' House",
+    "layer": "houses",
+    "notes": null,
+    "category": "house",
+    "townland": "allykeolaun"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4821473,
+     53.1010918
+    ]
+   },
+   "properties": {
+    "name": "Gurley's House",
+    "layer": "houses",
+    "notes": null,
+    "category": "house",
+    "townland": "allykeolaun"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4851245,
+     53.1001104
+    ]
+   },
+   "properties": {
+    "name": "Egan's House",
+    "layer": "houses",
+    "notes": "Then Eddie Shiel.",
+    "category": "house",
+    "townland": "allykeolaun"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.484038,
+     53.1000484
+    ]
+   },
+   "properties": {
+    "name": "Burke's House",
+    "layer": "houses",
+    "notes": null,
+    "category": "house",
+    "townland": "allykeolaun"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4817903,
+     53.0997557
+    ]
+   },
+   "properties": {
+    "name": "Moran's House",
+    "layer": "houses",
+    "notes": null,
+    "category": "house",
+    "townland": "allykeolaun"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4796759,
+     53.1079656
+    ]
+   },
+   "properties": {
+    "name": "Sawmill",
+    "layer": "buildings",
+    "notes": null,
+    "category": "sawmill",
+    "townland": "allykeolaun"
+   }
   }
  ]
 }
