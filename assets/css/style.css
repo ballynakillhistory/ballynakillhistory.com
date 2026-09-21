@@ -215,23 +215,22 @@ h2.section-heading {
   outline: 3px solid #1a5fb4;
   outline-offset: 2px;
 }
-.button {
+.townland-meta {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.25rem 1.5rem;
+  margin: 0 0 0.25rem;
+}
+.map-link {
   display: inline-flex;
   align-items: center;
-  min-height: 3rem;
-  padding: 0 1.25rem;
+  min-height: 2.75rem;
   font-weight: 700;
-  color: #fff;
-  background: var(--color-text);
-  border-radius: 8px;
-  text-decoration: none;
-}
-.button:hover,
-.button:focus-visible {
-  background: #333;
 }
 .townland-status {
-  margin: 0 0 0.25rem;
+  margin: 0;
   color: var(--color-secondary);
   font-size: var(--fs-small);
 }
