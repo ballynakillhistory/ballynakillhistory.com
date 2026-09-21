@@ -10846,6 +10846,74 @@
     "category": "sawmill",
     "townland": "kyleaglannawood"
    }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4598844,
+     53.1325919
+    ]
+   },
+   "properties": {
+    "name": "Daniel's Cross",
+    "layer": "placenames",
+    "notes": null,
+    "category": "crossroads",
+    "townland": "inchy"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4625144,
+     53.1295972
+    ]
+   },
+   "properties": {
+    "name": "Whaly's Inchy",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "inchy"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.458162,
+     53.1291442
+    ]
+   },
+   "properties": {
+    "name": "Inchy",
+    "layer": "placenames",
+    "notes": "This field was pointed out as being called \"Inchy\" though the townland is also Inchy.",
+    "category": "field",
+    "townland": "inchy"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4598149,
+     53.1324416
+    ]
+   },
+   "properties": {
+    "name": "Daniel's Shop",
+    "layer": "buildings",
+    "notes": null,
+    "category": "shop",
+    "townland": "inchy"
+   }
   }
  ]
 }
