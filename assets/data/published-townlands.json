@@ -75,6 +75,26 @@
     "fid": 34
   },
   {
+    "slug": "cullenagh",
+    "name_tag": "Cullenagh",
+    "fid": 22
+  },
+  {
+    "slug": "drum",
+    "name_tag": "Drum",
+    "fid": 24
+  },
+  {
+    "slug": "drumkeary-east",
+    "name_tag": "Drumkeary East",
+    "fid": 39
+  },
+  {
+    "slug": "drumkeary-west",
+    "name_tag": "Drumkeary West",
+    "fid": 31
+  },
+  {
     "slug": "garraunphaudeen",
     "name_tag": "Garraunphaudeen",
     "fid": 88
@@ -88,6 +108,11 @@
     "slug": "knockadrum",
     "name_tag": "Knockadrum",
     "fid": 6
+  },
+  {
+    "slug": "knockaundarragh",
+    "name_tag": "Knockaundarragh",
+    "fid": 26
   },
   {
     "slug": "knockdrummore",
@@ -113,6 +138,11 @@
     "slug": "laggoo",
     "name_tag": "Laggoo",
     "fid": 25
+  },
+  {
+    "slug": "larraga",
+    "name_tag": "Larraga",
+    "fid": 45
   },
   {
     "slug": "lecarrow-north",
