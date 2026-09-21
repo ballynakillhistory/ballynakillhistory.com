@@ -101,11 +101,12 @@ header {
 
 .banner {
   display: block;
-  width: auto;
-  max-width: 100%;
+  width: 100%;
   height: auto;
-  max-height: 45vh;
-  margin: 0 auto;
+  aspect-ratio: 1024 / 440;
+  max-height: 42vh;
+  object-fit: cover;
+  object-position: center 45%;
 }
 
 nav {
