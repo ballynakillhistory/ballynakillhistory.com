@@ -178,6 +178,12 @@ h3.minor-heading {
   font-size: 1.875rem;
   margin: 2rem 0 0.5rem;
 }
+@media (min-width: 900px) {
+  h2.minor-heading,
+  h3.minor-heading {
+    font-size: 2.1rem;
+  }
+}
 h2.section-heading {
   font-size: var(--fs-h1);
   margin: 3rem 0 1rem;
@@ -332,7 +338,7 @@ h2.section-heading {
 
 /* church parish sub-headings above each townland list */
 h3.parish-heading {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   margin: 1.5rem 0 0.5rem;
 }
 
