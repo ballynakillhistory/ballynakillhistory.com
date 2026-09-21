@@ -161,7 +161,7 @@ body.home {
 /* Placenames Project index: small headings in the intro text, prominent Townlands heading */
 h2.minor-heading,
 h3.minor-heading {
-  font-size: 1.5rem;
+  font-size: 1.875rem;
   margin: 2rem 0 0.5rem;
 }
 h2.section-heading {
