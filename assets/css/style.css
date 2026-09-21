@@ -152,20 +152,48 @@ h2.section-heading {
 
 /* Placenames Project landing page: townland finder first, project text after */
 .landing p,
-.landing > ul:not(.townland-list) {
+.landing > ul:not(.townland-list):not(.page-contents) {
   max-width: 42rem;
+}
+.landing .skip-link-row {
+  margin: 0 0 1rem;
+}
+.landing .skip-link-row a {
+  font-weight: 700;
+}
+.landing-tools {
+  scroll-margin-top: 1rem;
 }
 .landing .lead {
   font-size: 1.25rem;
   line-height: 1.5;
   max-width: 46rem;
 }
+.page-contents {
+  list-style: none;
+  margin: 0.75rem 0 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  gap: 0.75rem;
+}
+.page-contents li {
+  padding: 0.85rem 1rem;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+}
+.page-contents strong {
+  display: block;
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+}
 .landing-tools {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-end;
   gap: 1rem 1.5rem;
-  margin: 1.5rem 0 0;
+  margin: 2rem 0 0;
   padding: 1.25rem;
   border: 1px solid var(--color-border);
   border-radius: 10px;
