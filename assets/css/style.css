@@ -238,6 +238,12 @@ h2.section-heading {
 .button:focus-visible {
   background: #333;
 }
+.townland-meta .button {
+  margin-left: auto;
+}
+.townland-status:empty {
+  display: none;
+}
 .townland-status {
   margin: 0;
   color: var(--color-secondary);

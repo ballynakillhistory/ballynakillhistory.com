@@ -34,7 +34,6 @@
   var status = document.getElementById("townland-status");
   var items = Array.prototype.slice.call(document.querySelectorAll(".townland-list li"));
   var parish = document.querySelector(".parish-heading");
-  status.textContent = items.length + " townlands so far.";
   input.addEventListener("input", function () {
     var q = input.value.trim().toLowerCase();
     var shown = 0;
@@ -46,7 +45,7 @@
     if (parish) parish.hidden = shown === 0;
     status.textContent = q
       ? (shown ? shown + " of " + items.length + " townlands match." : "No townlands match \u201c" + input.value.trim() + "\u201d.")
-      : items.length + " townlands so far.";
+      : "";
   });
 })();
 </script>
