@@ -184,17 +184,22 @@ function declutterLabels(map, items, initialZoom) {
   function show(item, dir) {
     const tooltip = item.marker.getTooltip();
     // Confirmed on a real device (not reproducible in any simulated test here): a label that
-    // stays visible across a pan can still end up ~10px off from its point, even though
-    // nothing about it (direction, hidden state) changed — so skipping the reopen whenever
-    // those happened to be unchanged (as this used to, for hidden→shown transitions only)
-    // wasn't the whole story. Rather than chase the exact reason Leaflet's own tracking isn't
-    // dependable here, every visible label just gets a full close+reopen on every declutter
-    // pass now, guaranteeing a fresh position regardless of what changed. The working set is
-    // viewport-limited already, so the extra DOM churn per pan/zoom should be unnoticeable.
-    tooltip.options.direction = dir;
-    tooltip.options.offset = offsetFor(dir);
-    item.marker.closeTooltip();
-    item.marker.openTooltip();
+    // stays visible across a pan can still end up ~10px off from its point, so it needs a
+    // fresh position on every declutter pass, not just when something about it changed. A
+    // full close+reopen forces that, but it also tears down and rebuilds the DOM element —
+    // visible as a distracting "snap" on every pan even when the label barely moved.
+    // setLatLng() forces the same fresh recompute without removing the element, so the
+    // common case (direction unchanged) repositions smoothly instead of jumping. An actual
+    // direction flip (rare — only right at a collision boundary) still needs the full
+    // close+reopen, since that's what updates the left/right CSS layout, not just position.
+    if (tooltip.options.direction !== dir) {
+      tooltip.options.direction = dir;
+      tooltip.options.offset = offsetFor(dir);
+      item.marker.closeTooltip();
+      item.marker.openTooltip();
+    } else {
+      tooltip.setLatLng(item.marker.getLatLng());
+    }
     tooltip.getElement().style.display = "";
   }
 
