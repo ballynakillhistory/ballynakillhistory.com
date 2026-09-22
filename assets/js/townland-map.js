@@ -505,6 +505,50 @@ async function initTownlandMap(el) {
   window.addEventListener("resize", onViewportResize);
   if (window.visualViewport) window.visualViewport.addEventListener("resize", onViewportResize);
 
+  // Temporary on-screen diagnostic readout (?debug in the URL) — for tracking down a
+  // real-device label-misplacement report that hasn't reproduced in any simulated test.
+  // Remove once that's actually diagnosed and fixed; not meant to ship long-term.
+  if (!townland && new URLSearchParams(location.search).has("debug")) {
+    const hud = L.DomUtil.create("div", "", document.body);
+    hud.style.cssText =
+      "position:fixed;top:0;left:0;z-index:99999;background:rgba(0,0,0,.85);color:#0f0;" +
+      "font:11px/1.4 monospace;padding:6px 8px;max-width:100vw;white-space:pre-wrap;pointer-events:none;";
+    const vv = window.visualViewport;
+    const updateHud = () => {
+      const size = map.getSize();
+      const mapRect = el.getBoundingClientRect();
+      const visible = labelItems.filter((it) => {
+        const tEl = it.marker.getTooltip()?.getElement();
+        return tEl && tEl.style.display !== "none";
+      });
+      let sampleInfo = "no visible label";
+      if (visible.length) {
+        const it = visible[0];
+        const tEl = it.marker.getTooltip().getElement();
+        const rect = tEl.getBoundingClientRect();
+        const pt = map.latLngToContainerPoint(it.marker.getLatLng());
+        const expectedY = mapRect.top + pt.y;
+        const dy = Math.round(rect.top + rect.height / 2 - expectedY);
+        sampleInfo = `${it.marker.feature.properties.name}: dy=${dy}px dir=${it.marker.getTooltip().options.direction}`;
+      }
+      hud.textContent = [
+        `innerWH: ${window.innerWidth}x${window.innerHeight}`,
+        `visualViewport: ${vv ? `${Math.round(vv.width)}x${Math.round(vv.height)} offsetTop=${Math.round(vv.offsetTop)}` : "n/a"}`,
+        `map.getSize(): ${size.x}x${size.y}`,
+        `mapDiv rect: ${Math.round(mapRect.width)}x${Math.round(mapRect.height)} top=${Math.round(mapRect.top)}`,
+        `zoom: ${map.getZoom().toFixed(2)}`,
+        `visible labels: ${visible.length}`,
+        `sample: ${sampleInfo}`,
+        `time: ${new Date().toLocaleTimeString()}`,
+      ].join("\n");
+    };
+    map.on("moveend", updateHud);
+    window.addEventListener("resize", updateHud);
+    if (vv) vv.addEventListener("resize", updateHud);
+    map.whenReady(() => setTimeout(updateHud, 200));
+    setInterval(updateHud, 1000); // catches any change that doesn't fire an event at all
+  }
+
   const legendEntries = [];
   const seenTypes = new Set();
   data.points.features.forEach((f) => {
