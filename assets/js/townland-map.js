@@ -462,12 +462,16 @@ async function initTownlandMap(el) {
   if (combined) map.fitBounds(combined, { padding: [40, 40] });
   const initialZoom = map.getZoom();
 
+  // "moveend" fires once the view settles after either a zoom or a pan/drag (it covers
+  // zoomend too), which matters since the two declutter passes above only consider labels
+  // inside the current viewport — panning at a fixed zoom needs to re-run this just as much
+  // as zooming does, or newly-panned-into-view points stay unlabelled until the next zoom.
   map.whenReady(() => setTimeout(() => declutterLabels(map, labelItems, initialZoom), 0));
-  map.on("zoomend", () => declutterLabels(map, labelItems, initialZoom));
+  map.on("moveend", () => declutterLabels(map, labelItems, initialZoom));
 
   if (townlandLabelItems.length) {
     map.whenReady(() => setTimeout(() => declutterTownlandLabels(map, townlandLabelItems), 0));
-    map.on("zoomend", () => declutterTownlandLabels(map, townlandLabelItems));
+    map.on("moveend", () => declutterTownlandLabels(map, townlandLabelItems));
   }
 
   const legendEntries = [];
