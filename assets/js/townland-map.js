@@ -183,25 +183,23 @@ function declutterLabels(map, items, initialZoom) {
 
   function show(item, dir) {
     const tooltip = item.marker.getTooltip();
-    // A label that was hidden (panned off-screen, then back into view) was hidden by a plain
-    // CSS display:none, not by Leaflet's own closeTooltip — so its last known screen position
-    // can go stale while hidden. Skipping the reopen there (as this used to do whenever the
-    // direction happened to match) left it rendered at that stale spot, offset from the point,
-    // until the next zoom forced a fresh reopen anyway. Anything just transitioning back into
-    // view always gets a real close+reopen; only an already-visible, unchanged label skips it.
-    if (tooltip.options.direction !== dir || item.wasHidden) {
-      tooltip.options.direction = dir;
-      tooltip.options.offset = offsetFor(dir);
-      item.marker.closeTooltip();
-      item.marker.openTooltip();
-    }
+    // Confirmed on a real device (not reproducible in any simulated test here): a label that
+    // stays visible across a pan can still end up ~10px off from its point, even though
+    // nothing about it (direction, hidden state) changed — so skipping the reopen whenever
+    // those happened to be unchanged (as this used to, for hidden→shown transitions only)
+    // wasn't the whole story. Rather than chase the exact reason Leaflet's own tracking isn't
+    // dependable here, every visible label just gets a full close+reopen on every declutter
+    // pass now, guaranteeing a fresh position regardless of what changed. The working set is
+    // viewport-limited already, so the extra DOM churn per pan/zoom should be unnoticeable.
+    tooltip.options.direction = dir;
+    tooltip.options.offset = offsetFor(dir);
+    item.marker.closeTooltip();
+    item.marker.openTooltip();
     tooltip.getElement().style.display = "";
-    item.wasHidden = false;
   }
 
   function hide(item) {
     item.marker.getTooltip()?.getElement()?.style.setProperty("display", "none");
-    item.wasHidden = true;
   }
 
   const ordered = [...visible].sort(
@@ -458,11 +456,7 @@ async function initTownlandMap(el) {
         offset: offsetFor("right"),
         className: "point-label",
       });
-      // starts true: the tooltip auto-opened at bind time above, at whatever the default
-      // "right" position happened to be — that first real declutter pass should treat it the
-      // same as anything else transitioning into view and give it a proper reopen, not assume
-      // its position is already correct
-      labelItems.push({ marker: layer, wasHidden: true });
+      labelItems.push({ marker: layer });
     },
   }).addTo(map);
   boundsList.push(pointsLayer.getBounds());
