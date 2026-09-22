@@ -11373,6 +11373,176 @@
     "category": "house",
     "townland": "callatra"
    }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.457149709111638,
+     53.11326569198528
+    ]
+   },
+   "properties": {
+    "name": "The Bay Field",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "allygola"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.452336520378077,
+     53.10950859861792
+    ]
+   },
+   "properties": {
+    "name": "The Bull Field",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "allygola"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.45404104657784,
+     53.11605386073079
+    ]
+   },
+   "properties": {
+    "name": "Curraghnair Well",
+    "layer": "placenames",
+    "notes": "Pronounced “Curranare”.",
+    "category": "well",
+    "townland": "allygola"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.451916897667424,
+     53.108306003908666
+    ]
+   },
+   "properties": {
+    "name": "The Pump Field",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "allygola"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.466586851439756,
+     53.117067286629265
+    ]
+   },
+   "properties": {
+    "name": "Burns' House",
+    "layer": "houses",
+    "notes": null,
+    "category": "house",
+    "townland": "allygola"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.451742591889547,
+     53.11447840433672
+    ]
+   },
+   "properties": {
+    "name": "Monahan's House",
+    "layer": "houses",
+    "notes": null,
+    "category": "house",
+    "townland": "allygola"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.454591183266205,
+     53.11344165929822
+    ]
+   },
+   "properties": {
+    "name": "Donohoe's House?",
+    "layer": "houses",
+    "notes": "It was said that there was another Donohoe’s House here but wasn’t sure.",
+    "category": "house",
+    "townland": "allygola"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.45913992409077,
+     53.11221264624403
+    ]
+   },
+   "properties": {
+    "name": "Donohoe's House",
+    "layer": "houses",
+    "notes": null,
+    "category": "house",
+    "townland": "allygola"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4594741687267,
+     53.112128132159114
+    ]
+   },
+   "properties": {
+    "name": "Kilcar's House",
+    "layer": "houses",
+    "notes": null,
+    "category": "house",
+    "townland": "allygola"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.456389666805535,
+     53.11322351618321
+    ]
+   },
+   "properties": {
+    "name": "Kelly's Mill",
+    "layer": "buildings",
+    "notes": null,
+    "category": "mill",
+    "townland": "allygola"
+   }
   }
  ]
 }
