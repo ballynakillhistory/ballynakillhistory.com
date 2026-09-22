@@ -474,17 +474,36 @@ async function initTownlandMap(el) {
   if (combined) map.fitBounds(combined, { padding: [40, 40] });
   const initialZoom = map.getZoom();
 
+  function refreshLabels() {
+    declutterLabels(map, labelItems, initialZoom);
+    if (townlandLabelItems.length) declutterTownlandLabels(map, townlandLabelItems);
+  }
+
   // "moveend" fires once the view settles after either a zoom or a pan/drag (it covers
   // zoomend too), which matters since the two declutter passes above only consider labels
   // inside the current viewport — panning at a fixed zoom needs to re-run this just as much
   // as zooming does, or newly-panned-into-view points stay unlabelled until the next zoom.
-  map.whenReady(() => setTimeout(() => declutterLabels(map, labelItems, initialZoom), 0));
-  map.on("moveend", () => declutterLabels(map, labelItems, initialZoom));
+  map.whenReady(() => setTimeout(refreshLabels, 0));
+  map.on("moveend", refreshLabels);
 
-  if (townlandLabelItems.length) {
-    map.whenReady(() => setTimeout(() => declutterTownlandLabels(map, townlandLabelItems), 0));
-    map.on("moveend", () => declutterTownlandLabels(map, townlandLabelItems));
-  }
+  // On mobile, dragging the map (especially near the top of a full-viewport page like this
+  // one) commonly collapses the browser's address bar, which changes the actual visible
+  // viewport height without firing any Leaflet event — Leaflet only measures its container
+  // once and caches that size, so every position calculation goes stale until something
+  // forces a re-measure. A zoom happens to trigger that recalculation as a side effect,
+  // which is why "zoom fixes it"; panning alone never does. Explicitly invalidating the
+  // size (and re-running the declutter passes) whenever the real viewport changes closes
+  // that gap regardless of which gesture caused it.
+  let resizeTimer;
+  const onViewportResize = () => {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(() => {
+      map.invalidateSize();
+      refreshLabels();
+    }, 100);
+  };
+  window.addEventListener("resize", onViewportResize);
+  if (window.visualViewport) window.visualViewport.addEventListener("resize", onViewportResize);
 
   const legendEntries = [];
   const seenTypes = new Set();
