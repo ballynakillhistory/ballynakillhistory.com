@@ -250,12 +250,12 @@ h2.section-heading {
   outline: 3px solid #1a5fb4;
   outline-offset: 2px;
 }
-.townland-meta {
+.map-link-row {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  gap: 0.75rem 1.5rem;
+  justify-content: flex-end;
+  margin: 0 0 1rem;
+}
+.townland-meta {
   margin: 1rem 0 0.75rem;
 }
 .button {
@@ -273,12 +273,8 @@ h2.section-heading {
 .button:focus-visible {
   background: #333;
 }
-.townland-meta .button {
-  margin-left: auto;
-}
 @media (max-width: 600px) {
-  .townland-meta .button {
-    margin-left: 0;
+  .map-link-row .button {
     width: 100%;
     justify-content: center;
   }
