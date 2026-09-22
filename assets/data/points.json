@@ -11543,6 +11543,499 @@
     "category": "mill",
     "townland": "allygola"
    }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.470476281971145,
+     53.12678360526975
+    ]
+   },
+   "properties": {
+    "name": "The Corner of the Wood",
+    "layer": "placenames",
+    "notes": null,
+    "category": "wood",
+    "townland": "barratoor"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.475430034773233,
+     53.12363202783248
+    ]
+   },
+   "properties": {
+    "name": "The Black Garden",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "barratoor"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.480573103815123,
+     53.12324592688334
+    ]
+   },
+   "properties": {
+    "name": "The Pond Hill",
+    "layer": "placenames",
+    "notes": null,
+    "category": "hill or hills",
+    "townland": "barratoor"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.47619613325167,
+     53.122724550769775
+    ]
+   },
+   "properties": {
+    "name": "The Baunoge",
+    "layer": "placenames",
+    "notes": "Pronounced “The Bawnyoge”.",
+    "category": "field",
+    "townland": "barratoor"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.477757982810425,
+     53.122253967711906
+    ]
+   },
+   "properties": {
+    "name": "The Slide Stone",
+    "layer": "placenames",
+    "notes": "Location not exact.",
+    "category": "rock or rocks",
+    "townland": "barratoor"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.488641289440798,
+     53.12217150128742
+    ]
+   },
+   "properties": {
+    "name": "Fahy's",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "barratoor"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.470888491733986,
+     53.12212037102909
+    ]
+   },
+   "properties": {
+    "name": "McKeigue's Field",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "barratoor"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.474308284173127,
+     53.12203096420792
+    ]
+   },
+   "properties": {
+    "name": "The Long Field",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "barratoor"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.47167991785081,
+     53.12101997123207
+    ]
+   },
+   "properties": {
+    "name": "Coarsepark",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "barratoor"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.480804204933994,
+     53.118557670215225
+    ]
+   },
+   "properties": {
+    "name": "The Bull Field",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "barratoor"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.480146142865319,
+     53.11822064501941
+    ]
+   },
+   "properties": {
+    "name": "Gleann an Tobar",
+    "layer": "placenames",
+    "notes": "Pronounced “Glannatubber”.",
+    "category": "well",
+    "townland": "barratoor"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.47268977200183,
+     53.117817634016376
+    ]
+   },
+   "properties": {
+    "name": "The Duck Pond",
+    "layer": "placenames",
+    "notes": "It was also called “The Swamp”.",
+    "category": "marsh",
+    "townland": "barratoor"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.474135896686988,
+     53.117411925724895
+    ]
+   },
+   "properties": {
+    "name": "Cruckawnamwigga",
+    "layer": "placenames",
+    "notes": null,
+    "category": "hill or hills",
+    "townland": "barratoor"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.474281877017019,
+     53.117302185301554
+    ]
+   },
+   "properties": {
+    "name": "Children's Burial Ground",
+    "layer": "placenames",
+    "notes": "Location not exact, but it was said there was a Children’s Burial Ground in this area.",
+    "category": "graveyard, cemetary, burial ground",
+    "townland": "barratoor"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.482140370949605,
+     53.11710451223767
+    ]
+   },
+   "properties": {
+    "name": "Mag's Well",
+    "layer": "placenames",
+    "notes": null,
+    "category": "well",
+    "townland": "barratoor"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.481071679468915,
+     53.117094530994734
+    ]
+   },
+   "properties": {
+    "name": "Bullaun Stone",
+    "layer": "placenames",
+    "notes": "St. Patrick is said to have knelt here. The water in the indentation is said to have a cure for warts.",
+    "category": "rock or rocks",
+    "townland": "barratoor"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.47339679559076,
+     53.12418283119986
+    ]
+   },
+   "properties": {
+    "name": "Haugh's House",
+    "layer": "houses",
+    "notes": null,
+    "category": "house",
+    "townland": "barratoor"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.474890821898192,
+     53.1240546469679
+    ]
+   },
+   "properties": {
+    "name": "Kennedy's House",
+    "layer": "houses",
+    "notes": null,
+    "category": "house",
+    "townland": "barratoor"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.470538730188109,
+     53.12414137091176
+    ]
+   },
+   "properties": {
+    "name": "McKeigue's House",
+    "layer": "houses",
+    "notes": null,
+    "category": "house",
+    "townland": "barratoor"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.485004532868192,
+     53.12389629374683
+    ]
+   },
+   "properties": {
+    "name": "Joe Kylie's House",
+    "layer": "houses",
+    "notes": null,
+    "category": "house",
+    "townland": "barratoor"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.475836054074351,
+     53.12375647444486
+    ]
+   },
+   "properties": {
+    "name": "Bruton's House",
+    "layer": "houses",
+    "notes": null,
+    "category": "house",
+    "townland": "barratoor"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.47789558916519,
+     53.123384572152546
+    ]
+   },
+   "properties": {
+    "name": "Burke's House",
+    "layer": "houses",
+    "notes": null,
+    "category": "house",
+    "townland": "barratoor"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.475442524052028,
+     53.122709324112506
+    ]
+   },
+   "properties": {
+    "name": "Dennis Daly's House",
+    "layer": "houses",
+    "notes": null,
+    "category": "house",
+    "townland": "barratoor"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.475421678758924,
+     53.121687636942276
+    ]
+   },
+   "properties": {
+    "name": "Johnny Callanan's House",
+    "layer": "houses",
+    "notes": null,
+    "category": "house",
+    "townland": "barratoor"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.47738971345622,
+     53.12116861508521
+    ]
+   },
+   "properties": {
+    "name": "Delaney's House",
+    "layer": "houses",
+    "notes": "Exact location uncertain but this family were evicted by the landlord and made to build this house on the mountain.",
+    "category": "house",
+    "townland": "barratoor"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.484205053680279,
+     53.11876697330783
+    ]
+   },
+   "properties": {
+    "name": "Grady's House",
+    "layer": "houses",
+    "notes": "Julia and Martin Grady.",
+    "category": "house",
+    "townland": "barratoor"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.481465669364841,
+     53.11852524491492
+    ]
+   },
+   "properties": {
+    "name": "Burke's House",
+    "layer": "houses",
+    "notes": "This was a school.",
+    "category": "house",
+    "townland": "barratoor"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.481241632083089,
+     53.117703159478616
+    ]
+   },
+   "properties": {
+    "name": "Callanan's House",
+    "layer": "houses",
+    "notes": "Then Reid's.",
+    "category": "house",
+    "townland": "barratoor"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.480351383765178,
+     53.116937772120586
+    ]
+   },
+   "properties": {
+    "name": "John Gardiner's House",
+    "layer": "houses",
+    "notes": null,
+    "category": "house",
+    "townland": "barratoor"
+   }
   }
  ]
 }
