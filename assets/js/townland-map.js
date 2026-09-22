@@ -137,9 +137,25 @@ const FULL_LABEL_ZOOM_DELTA = 2;
 
 function declutterLabels(map, items, initialZoom) {
   const forceAll = map.getZoom() >= initialZoom + FULL_LABEL_ZOOM_DELTA;
+
+  // Re-running this over the full point set (600+ on the overview map) on every zoom step is
+  // what made zooming feel laggy — most of them are off-screen at any given time, and zooming
+  // in should mean less work, not the same amount. Only labels inside the current viewport
+  // (plus a small buffer) get measured/positioned; anything outside is hidden and left alone
+  // until it's back in view — Leaflet keeps its lat/lng position correct regardless.
+  const bounds = map.getBounds().pad(0.25);
+  const visible = [];
+  items.forEach((item) => {
+    if (bounds.contains(item.marker.getLatLng())) {
+      visible.push(item);
+    } else {
+      hide(item);
+    }
+  });
+
   // measure each label's natural size once (before any hiding) — content/font never changes,
   // so a fixed width/height can be reused for every future placement calculation
-  items.forEach((item) => {
+  visible.forEach((item) => {
     if (item.size) return;
     const el = item.marker.getTooltip()?.getElement();
     if (el) item.size = { width: el.offsetWidth, height: el.offsetHeight };
@@ -168,7 +184,7 @@ function declutterLabels(map, items, initialZoom) {
     item.marker.getTooltip()?.getElement()?.style.setProperty("display", "none");
   }
 
-  const ordered = [...items].sort(
+  const ordered = [...visible].sort(
     (a, b) => priorityFor(a.marker.feature.properties) - priorityFor(b.marker.feature.properties),
   );
 
@@ -209,12 +225,27 @@ function declutterLabels(map, items, initialZoom) {
 function declutterTownlandLabels(map, items) {
   items.forEach((item) => {
     if (!item.bounds) item.bounds = item.layer.getBounds(); // static geometry, cache forever
+  });
+
+  // same reasoning as declutterLabels above: skip the townlands nowhere near the current
+  // view rather than repositioning all 144 of them on every zoom step
+  const bounds = map.getBounds().pad(0.1);
+  const visible = [];
+  items.forEach((item) => {
+    if (bounds.intersects(item.bounds)) {
+      visible.push(item);
+    } else {
+      item.layer.closeTooltip();
+    }
+  });
+
+  visible.forEach((item) => {
     if (!item.size) {
       const el = item.layer.getTooltip()?.getElement();
       if (el) item.size = { width: el.offsetWidth, height: el.offsetHeight };
     }
   });
-  items.forEach((item) => {
+  visible.forEach((item) => {
     if (!item.size) return;
     const nw = map.latLngToContainerPoint(item.bounds.getNorthWest());
     const se = map.latLngToContainerPoint(item.bounds.getSouthEast());
@@ -266,7 +297,9 @@ async function initTownlandMap(el) {
   // fractional zoom so fitBounds can land on the true best-fit level instead of always
   // rounding down to the next whole zoom (which overshoots badly on small/oddly-shaped
   // townlands, e.g. a tall narrow bounding box) — zoomDelta keeps the +/- buttons at whole steps
-  const map = L.map(el, { scrollWheelZoom: false, zoomSnap: 0.25, zoomDelta: 1 });
+  // canvas rendering is much cheaper than SVG once there are hundreds of circle markers
+  // (the overview map has 600+), especially for the redraw Leaflet does on every zoom frame
+  const map = L.map(el, { scrollWheelZoom: false, zoomSnap: 0.25, zoomDelta: 1, preferCanvas: true });
   map.invalidateSize();
 
   L.tileLayer(
