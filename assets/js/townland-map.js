@@ -478,12 +478,32 @@ async function initTownlandMap(el) {
     if (townlandLabelItems.length) declutterTownlandLabels(map, townlandLabelItems);
   }
 
+  // During an active drag, Leaflet pans by sliding the whole map pane as one image rather
+  // than recalculating each label's position — cheap and smooth for the drag itself, but it
+  // means every visible label's on-screen position is only actually correct at the instant
+  // the drag started, drifting from its true (recalculated) spot for the rest of the drag.
+  // refreshLabels only runs once the drag settles ("moveend"), so that drift shows up as a
+  // single visible jump right at the end, however cheap the fix itself is. Keeping already-
+  // visible labels' positions genuinely correct throughout — via the continuous "move" event,
+  // which fires on every drag frame — means there's nothing left to jump to by the time the
+  // drag stops. This intentionally skips the full collision-avoidance pass (which decides
+  // what's visible in the first place): that's only worth redoing once the view settles, not
+  // on every frame — this just keeps whatever's already showing correctly positioned.
+  function trackVisiblePositions() {
+    labelItems.forEach((item) => {
+      const tooltip = item.marker.getTooltip();
+      const el = tooltip?.getElement();
+      if (el && el.style.display !== "none") tooltip.setLatLng(item.marker.getLatLng());
+    });
+  }
+
   // "moveend" fires once the view settles after either a zoom or a pan/drag (it covers
   // zoomend too), which matters since the two declutter passes above only consider labels
   // inside the current viewport — panning at a fixed zoom needs to re-run this just as much
   // as zooming does, or newly-panned-into-view points stay unlabelled until the next zoom.
   map.whenReady(() => setTimeout(refreshLabels, 0));
   map.on("moveend", refreshLabels);
+  map.on("move", trackVisiblePositions);
 
   // On mobile, dragging the map (especially near the top of a full-viewport page like this
   // one) commonly collapses the browser's address bar, which changes the actual visible
