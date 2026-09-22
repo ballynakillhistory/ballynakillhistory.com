@@ -135,8 +135,20 @@ function overlaps(a, b) {
 // sane zoom) don't end up with a permanently-hidden label
 const FULL_LABEL_ZOOM_DELTA = 2;
 
+// A narrow phone screen has to fit the same geographic area into far fewer pixels than a
+// desktop one, so Leaflet's fitBounds lands on a lower initial zoom there — on a 390px phone
+// vs. a 1850px desktop that's routinely a ~2 zoom-level gap. Measuring FULL_LABEL_ZOOM_DELTA
+// from each map's own initial zoom meant "zoomed in 2 steps" corresponded to a much smaller
+// real-world scale on desktop than on mobile, so the phone forced every label to show while
+// a much wider area (still close to the whole parish) was on screen. Normalising the initial
+// zoom against a reference container width first keeps the threshold tied to real-world
+// ground scale rather than to whatever width the visitor's screen happens to be.
+const REFERENCE_CONTAINER_WIDTH = 1200; // matches --content-width, an arbitrary but fixed reference
+
 function declutterLabels(map, items, initialZoom) {
-  const forceAll = map.getZoom() >= initialZoom + FULL_LABEL_ZOOM_DELTA;
+  const normalizedInitialZoom =
+    initialZoom + Math.log2(REFERENCE_CONTAINER_WIDTH / map.getSize().x);
+  const forceAll = map.getZoom() >= normalizedInitialZoom + FULL_LABEL_ZOOM_DELTA;
 
   // Re-running this over the full point set (600+ on the overview map) on every zoom step is
   // what made zooming feel laggy — most of them are off-screen at any given time, and zooming
