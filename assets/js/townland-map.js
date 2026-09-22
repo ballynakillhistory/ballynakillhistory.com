@@ -135,8 +135,20 @@ function overlaps(a, b) {
 // sane zoom) don't end up with a permanently-hidden label
 const FULL_LABEL_ZOOM_DELTA = 2;
 
+// A narrow phone screen has to fit the same geographic area into far fewer pixels than a
+// desktop one, so Leaflet's fitBounds lands on a lower initial zoom there — on a 390px phone
+// vs. a 1850px desktop that's routinely a ~2 zoom-level gap. Measuring FULL_LABEL_ZOOM_DELTA
+// from each map's own initial zoom meant "zoomed in 2 steps" corresponded to a much smaller
+// real-world scale on desktop than on mobile, so the phone forced every label to show while
+// a much wider area (still close to the whole parish) was on screen. Normalising the initial
+// zoom against a reference container width first keeps the threshold tied to real-world
+// ground scale rather than to whatever width the visitor's screen happens to be.
+const REFERENCE_CONTAINER_WIDTH = 1200; // matches --content-width, an arbitrary but fixed reference
+
 function declutterLabels(map, items, initialZoom) {
-  const forceAll = map.getZoom() >= initialZoom + FULL_LABEL_ZOOM_DELTA;
+  const normalizedInitialZoom =
+    initialZoom + Math.log2(REFERENCE_CONTAINER_WIDTH / map.getSize().x);
+  const forceAll = map.getZoom() >= normalizedInitialZoom + FULL_LABEL_ZOOM_DELTA;
 
   // Re-running this over the full point set (600+ on the overview map) on every zoom step is
   // what made zooming feel laggy — most of them are off-screen at any given time, and zooming
@@ -171,11 +183,22 @@ function declutterLabels(map, items, initialZoom) {
 
   function show(item, dir) {
     const tooltip = item.marker.getTooltip();
+    // Confirmed on a real device (not reproducible in any simulated test here): a label that
+    // stays visible across a pan can still end up ~10px off from its point, so it needs a
+    // fresh position on every declutter pass, not just when something about it changed. A
+    // full close+reopen forces that, but it also tears down and rebuilds the DOM element —
+    // visible as a distracting "snap" on every pan even when the label barely moved.
+    // setLatLng() forces the same fresh recompute without removing the element, so the
+    // common case (direction unchanged) repositions smoothly instead of jumping. An actual
+    // direction flip (rare — only right at a collision boundary) still needs the full
+    // close+reopen, since that's what updates the left/right CSS layout, not just position.
     if (tooltip.options.direction !== dir) {
       tooltip.options.direction = dir;
       tooltip.options.offset = offsetFor(dir);
       item.marker.closeTooltip();
       item.marker.openTooltip();
+    } else {
+      tooltip.setLatLng(item.marker.getLatLng());
     }
     tooltip.getElement().style.display = "";
   }
@@ -450,12 +473,99 @@ async function initTownlandMap(el) {
   if (combined) map.fitBounds(combined, { padding: [40, 40] });
   const initialZoom = map.getZoom();
 
-  map.whenReady(() => setTimeout(() => declutterLabels(map, labelItems, initialZoom), 0));
-  map.on("zoomend", () => declutterLabels(map, labelItems, initialZoom));
+  function refreshLabels() {
+    declutterLabels(map, labelItems, initialZoom);
+    if (townlandLabelItems.length) declutterTownlandLabels(map, townlandLabelItems);
+  }
 
-  if (townlandLabelItems.length) {
-    map.whenReady(() => setTimeout(() => declutterTownlandLabels(map, townlandLabelItems), 0));
-    map.on("zoomend", () => declutterTownlandLabels(map, townlandLabelItems));
+  // During an active drag, Leaflet pans by sliding the whole map pane as one image rather
+  // than recalculating each label's position — cheap and smooth for the drag itself, but it
+  // means every visible label's on-screen position is only actually correct at the instant
+  // the drag started, drifting from its true (recalculated) spot for the rest of the drag.
+  // refreshLabels only runs once the drag settles ("moveend"), so that drift shows up as a
+  // single visible jump right at the end, however cheap the fix itself is. Keeping already-
+  // visible labels' positions genuinely correct throughout — via the continuous "move" event,
+  // which fires on every drag frame — means there's nothing left to jump to by the time the
+  // drag stops. This intentionally skips the full collision-avoidance pass (which decides
+  // what's visible in the first place): that's only worth redoing once the view settles, not
+  // on every frame — this just keeps whatever's already showing correctly positioned.
+  function trackVisiblePositions() {
+    labelItems.forEach((item) => {
+      const tooltip = item.marker.getTooltip();
+      const el = tooltip?.getElement();
+      if (el && el.style.display !== "none") tooltip.setLatLng(item.marker.getLatLng());
+    });
+  }
+
+  // "moveend" fires once the view settles after either a zoom or a pan/drag (it covers
+  // zoomend too), which matters since the two declutter passes above only consider labels
+  // inside the current viewport — panning at a fixed zoom needs to re-run this just as much
+  // as zooming does, or newly-panned-into-view points stay unlabelled until the next zoom.
+  map.whenReady(() => setTimeout(refreshLabels, 0));
+  map.on("moveend", refreshLabels);
+  map.on("move", trackVisiblePositions);
+
+  // On mobile, dragging the map (especially near the top of a full-viewport page like this
+  // one) commonly collapses the browser's address bar, which changes the actual visible
+  // viewport height without firing any Leaflet event — Leaflet only measures its container
+  // once and caches that size, so every position calculation goes stale until something
+  // forces a re-measure. A zoom happens to trigger that recalculation as a side effect,
+  // which is why "zoom fixes it"; panning alone never does. Explicitly invalidating the
+  // size (and re-running the declutter passes) whenever the real viewport changes closes
+  // that gap regardless of which gesture caused it.
+  let resizeTimer;
+  const onViewportResize = () => {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(() => {
+      map.invalidateSize();
+      refreshLabels();
+    }, 100);
+  };
+  window.addEventListener("resize", onViewportResize);
+  if (window.visualViewport) window.visualViewport.addEventListener("resize", onViewportResize);
+
+  // Temporary on-screen diagnostic readout (?debug in the URL) — for tracking down a
+  // real-device label-misplacement report that hasn't reproduced in any simulated test.
+  // Remove once that's actually diagnosed and fixed; not meant to ship long-term.
+  if (!townland && new URLSearchParams(location.search).has("debug")) {
+    const hud = L.DomUtil.create("div", "", document.body);
+    hud.style.cssText =
+      "position:fixed;top:0;left:0;z-index:99999;background:rgba(0,0,0,.85);color:#0f0;" +
+      "font:11px/1.4 monospace;padding:6px 8px;max-width:100vw;white-space:pre-wrap;pointer-events:none;";
+    const vv = window.visualViewport;
+    const updateHud = () => {
+      const size = map.getSize();
+      const mapRect = el.getBoundingClientRect();
+      const visible = labelItems.filter((it) => {
+        const tEl = it.marker.getTooltip()?.getElement();
+        return tEl && tEl.style.display !== "none";
+      });
+      let sampleInfo = "no visible label";
+      if (visible.length) {
+        const it = visible[0];
+        const tEl = it.marker.getTooltip().getElement();
+        const rect = tEl.getBoundingClientRect();
+        const pt = map.latLngToContainerPoint(it.marker.getLatLng());
+        const expectedY = mapRect.top + pt.y;
+        const dy = Math.round(rect.top + rect.height / 2 - expectedY);
+        sampleInfo = `${it.marker.feature.properties.name}: dy=${dy}px dir=${it.marker.getTooltip().options.direction}`;
+      }
+      hud.textContent = [
+        `innerWH: ${window.innerWidth}x${window.innerHeight}`,
+        `visualViewport: ${vv ? `${Math.round(vv.width)}x${Math.round(vv.height)} offsetTop=${Math.round(vv.offsetTop)}` : "n/a"}`,
+        `map.getSize(): ${size.x}x${size.y}`,
+        `mapDiv rect: ${Math.round(mapRect.width)}x${Math.round(mapRect.height)} top=${Math.round(mapRect.top)}`,
+        `zoom: ${map.getZoom().toFixed(2)}`,
+        `visible labels: ${visible.length}`,
+        `sample: ${sampleInfo}`,
+        `time: ${new Date().toLocaleTimeString()}`,
+      ].join("\n");
+    };
+    map.on("moveend", updateHud);
+    window.addEventListener("resize", updateHud);
+    if (vv) vv.addEventListener("resize", updateHud);
+    map.whenReady(() => setTimeout(updateHud, 200));
+    setInterval(updateHud, 1000); // catches any change that doesn't fire an event at all
   }
 
   const legendEntries = [];
