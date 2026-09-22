@@ -11220,6 +11220,159 @@
     "category": "smithy",
     "townland": "tonroe"
    }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4547525,
+     53.1178077
+    ]
+   },
+   "properties": {
+    "name": "Keating's Garden",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "callatra"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4545771,
+     53.1192119
+    ]
+   },
+   "properties": {
+    "name": "Callanan's House",
+    "layer": "houses",
+    "notes": null,
+    "category": "house",
+    "townland": "callatra"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.454983,
+     53.118599
+    ]
+   },
+   "properties": {
+    "name": "Fallon's House",
+    "layer": "houses",
+    "notes": null,
+    "category": "house",
+    "townland": "callatra"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4652241,
+     53.1185635
+    ]
+   },
+   "properties": {
+    "name": "Whelan's House",
+    "layer": "houses",
+    "notes": "Martin and Thomas Whelan.",
+    "category": "house",
+    "townland": "callatra"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4602091,
+     53.1182268
+    ]
+   },
+   "properties": {
+    "name": "Connors' House",
+    "layer": "houses",
+    "notes": null,
+    "category": "house",
+    "townland": "callatra"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4643219,
+     53.117787
+    ]
+   },
+   "properties": {
+    "name": "Sheanan's House",
+    "layer": "houses",
+    "notes": "Bina Burns, a daughter of the Burns family nearby in Allygola townland, moved here.",
+    "category": "house",
+    "townland": "callatra"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.461597,
+     53.1174108
+    ]
+   },
+   "properties": {
+    "name": "Comer's House",
+    "layer": "houses",
+    "notes": null,
+    "category": "house",
+    "townland": "callatra"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4585916,
+     53.1169687
+    ]
+   },
+   "properties": {
+    "name": "Denis Riordan's House",
+    "layer": "houses",
+    "notes": null,
+    "category": "house",
+    "townland": "callatra"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4551911,
+     53.11664
+    ]
+   },
+   "properties": {
+    "name": "Tom Connaire's House",
+    "layer": "houses",
+    "notes": null,
+    "category": "house",
+    "townland": "callatra"
+   }
   }
  ]
 }
