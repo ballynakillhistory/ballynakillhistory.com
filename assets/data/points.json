@@ -12036,6 +12036,142 @@
     "category": "house",
     "townland": "barratoor"
    }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.48083588961906,
+     53.09900272302742
+    ]
+   },
+   "properties": {
+    "name": "The Kitchen Garden",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "kylenagappa"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.473643160093356,
+     53.0984255267917
+    ]
+   },
+   "properties": {
+    "name": "The Cradle Field",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "kylenagappa"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.476309732329232,
+     53.096652524748876
+    ]
+   },
+   "properties": {
+    "name": "The Two Trees/The Twin Ash",
+    "layer": "placenames",
+    "notes": "These two big ash trees are a known landmark. Said to be the edge of a fort.",
+    "category": "tree or bush",
+    "townland": "kylenagappa"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.484142356665247,
+     53.09557555826058
+    ]
+   },
+   "properties": {
+    "name": "The Brand Iron Field",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "kylenagappa"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.47670460685499,
+     53.098952352695974
+    ]
+   },
+   "properties": {
+    "name": "Fox's House",
+    "layer": "houses",
+    "notes": null,
+    "category": "house",
+    "townland": "kylenagappa"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.480446045480774,
+     53.09894892098041
+    ]
+   },
+   "properties": {
+    "name": "Riordan's House",
+    "layer": "houses",
+    "notes": "Riordan's from the shop in Drum townland came from here originally.",
+    "category": "house",
+    "townland": "kylenagappa"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.480144023659587,
+     53.094069937363955
+    ]
+   },
+   "properties": {
+    "name": "Larkin's House",
+    "layer": "houses",
+    "notes": "Then Egan's, then Comer's. John Joe Comer was the last to live here.",
+    "category": "house",
+    "townland": "kylenagappa"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.486580998941063,
+     53.09133746274756
+    ]
+   },
+   "properties": {
+    "name": "Farrell's House",
+    "layer": "houses",
+    "notes": null,
+    "category": "house",
+    "townland": "kylenagappa"
+   }
   }
  ]
 }
