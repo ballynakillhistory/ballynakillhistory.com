@@ -896,3 +896,8 @@ th[aria-sort="descending"] .pc-sort::after {
     font-size: 1.05rem;
   }
 }
+
+/* the townland table is wider than a phone: scroll it inside its own box, not the whole page */
+.pc-table-wrap {
+  overflow-x: auto;
+}
