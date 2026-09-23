@@ -49,6 +49,8 @@
   --color-caption: #555;
   --color-secondary: #666;
   --color-border: #dedede;
+  --color-population-up: #3d7a4d;
+  --color-population-down: #a33f3f;
   --content-width: 1200px;
   --side-padding: clamp(1.5rem, 5vw, 2rem);
   --fs-small: clamp(0.875rem, 0.875rem + ((1vw - 0.2rem) * 0.227), 1rem);
@@ -401,6 +403,18 @@ td {
 th {
   font-weight: 700;
 }
+.table-scroll {
+  overflow-x: auto;
+  font-size: 0.9rem;
+}
+.table-scroll table {
+  width: auto;
+  min-width: 100%;
+}
+.table-scroll td, .table-scroll th {
+  white-space: nowrap;
+  padding: 6px 8px;
+}
 
 /* map thumbnail galleries (click to enlarge) */
 
@@ -592,4 +606,253 @@ footer p {
   color: var(--color-secondary);
   font-size: var(--fs-small);
   margin: 0;
+}
+
+/* interactive townland population chart */
+
+.population-chart-figure {
+  max-width: 660px;
+  margin: 1.5rem auto;
+}
+.townland-population-chart {
+  border: 1px solid var(--color-border);
+  padding: 18px clamp(12px, 3vw, 22px) 4px;
+}
+.population-chart-wrap {
+  position: relative;
+}
+.population-chart-svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+.chart-grid {
+  stroke: var(--color-border);
+  stroke-width: 1;
+}
+.chart-axis-label {
+  fill: var(--color-text);
+  font-size: 13px;
+  font-family: "Source Sans Pro", sans-serif;
+}
+.chart-year-label {
+  font-size: 12px;
+}
+.chart-line {
+  fill: none;
+  stroke-width: 2.5;
+  vector-effect: non-scaling-stroke;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.chart-dot {
+  stroke: var(--color-bg);
+  stroke-width: 1.5;
+  pointer-events: none;
+}
+.chart-hit {
+  fill: transparent;
+  cursor: pointer;
+}
+.chart-hit:focus {
+  outline: none;
+}
+.chart-hit:focus + .chart-dot,
+.chart-hit:hover + .chart-dot {
+  r: 4.5;
+}
+
+/* trend colours: population grew (up), declined (down), or never changed
+   /never had residents (flat). Compound selectors (.chart-line.chart-up
+   etc.) so these win over .chart-line's fill: none regardless of
+   stylesheet order, instead of relying on a single-class specificity tie. */
+.chart-line.chart-up,
+.chart-dot.chart-up {
+  stroke: var(--color-population-up);
+}
+.chart-line.chart-down,
+.chart-dot.chart-down {
+  stroke: var(--color-population-down);
+}
+.chart-line.chart-flat,
+.chart-dot.chart-flat {
+  stroke: var(--color-secondary);
+}
+.chart-dot.chart-up {
+  fill: var(--color-population-up);
+}
+.chart-dot.chart-down {
+  fill: var(--color-population-down);
+}
+.chart-dot.chart-flat {
+  fill: var(--color-secondary);
+}
+.chart-change-value.chart-up {
+  color: var(--color-population-up);
+}
+.chart-change-value.chart-down {
+  color: var(--color-population-down);
+}
+.chart-change-value.chart-flat {
+  color: var(--color-secondary);
+}
+
+.chart-tooltip {
+  position: absolute;
+  transform: translate(-50%, -130%);
+  background: var(--color-text);
+  color: var(--color-bg);
+  font-size: var(--fs-small);
+  padding: 4px 8px;
+  border-radius: 3px;
+  white-space: nowrap;
+  pointer-events: none;
+}
+.population-chart-summary {
+  text-align: center;
+  margin: 8px 0 10px;
+}
+.population-chart-summary p {
+  margin: 0;
+}
+.chart-change-line {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0.4em;
+  color: var(--color-secondary);
+  font-size: var(--fs-medium);
+}
+.chart-change-value {
+  font-family: inherit;
+  font-size: inherit;
+}
+.chart-change-label {
+  color: var(--color-secondary);
+  font-size: var(--fs-small);
+}
+.chart-change-detail {
+  color: var(--color-caption);
+  font-size: 0.8125rem;
+  margin-top: 4px;
+}
+.population-chart-figure figcaption {
+  font-size: 0.9375rem;
+}
+
+/* population-change choropleth page */
+
+.population-change-map {
+  width: 100%;
+  height: 640px;
+  border: 1px solid var(--color-border);
+  background: #eee;
+}
+.pc-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 2rem;
+  margin: 1rem 0;
+}
+.pc-controls label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+}
+.pc-controls select {
+  font: inherit;
+  padding: 0.35rem 0.6rem;
+  border: 2px solid var(--color-secondary);
+  background: var(--color-bg);
+  color: var(--color-text);
+}
+.pc-summary {
+  margin: 0 0 1rem;
+}
+.pc-legend {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+  gap: 0.35rem 1.5rem;
+  list-style: none;
+  margin: 1rem 0;
+  padding: 0;
+  font-size: var(--fs-small);
+}
+.pc-legend li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.pc-legend-empty {
+  color: var(--color-secondary);
+}
+.pc-count {
+  color: var(--color-secondary);
+}
+.pc-swatch {
+  display: inline-block;
+  flex: none;
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  vertical-align: -0.15em;
+}
+.pc-legend .pc-swatch {
+  margin-right: 0;
+}
+.pc-popup-class {
+  color: var(--color-secondary);
+}
+#pc-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--fs-small);
+}
+#pc-table caption {
+  text-align: left;
+  font-weight: 600;
+  padding-bottom: 0.5rem;
+}
+#pc-table th,
+#pc-table td {
+  padding: 0.3rem 0.5rem;
+  border-bottom: 1px solid var(--color-border);
+  text-align: right;
+}
+#pc-table th:first-child,
+#pc-table td:first-child {
+  text-align: left;
+}
+.pc-sort {
+  font: inherit;
+  font-weight: 600;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  color: inherit;
+}
+th[aria-sort="ascending"] .pc-sort::after {
+  content: " ▲";
+  font-size: 0.7em;
+}
+th[aria-sort="descending"] .pc-sort::after {
+  content: " ▼";
+  font-size: 0.7em;
+}
+@media (max-width: 600px) {
+  .population-change-map {
+    height: 440px;
+  }
+}
+/* Chrome draws a rectangular focus box around a townland after a click. The polygons have
+   no keyboard behaviour (the table below the map is the keyboard/screen-reader route),
+   so there is nothing for the focus ring to indicate */
+.population-change-map path.leaflet-interactive:focus,
+.population-change-map path.leaflet-interactive:focus-visible {
+  outline: none;
 }
