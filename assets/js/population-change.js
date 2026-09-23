@@ -52,8 +52,8 @@ function el(tag, attrs = {}, ...children) {
 
 async function loadData() {
   const [censusRes, boundariesRes] = await Promise.all([
-    fetch("../assets/data/census.json"),
-    fetch("../assets/data/boundaries.json"),
+    fetch("../../assets/data/census.json"),
+    fetch("../../assets/data/boundaries.json"),
   ]);
   if (!censusRes.ok || !boundariesRes.ok) {
     throw new Error(censusRes.statusText || boundariesRes.statusText);
