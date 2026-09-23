@@ -611,12 +611,12 @@ footer p {
 /* interactive townland population chart */
 
 .population-chart-figure {
-  max-width: 560px;
+  max-width: 660px;
   margin: 1.5rem auto;
 }
 .townland-population-chart {
   border: 1px solid var(--color-border);
-  padding: 16px clamp(10px, 3vw, 20px) 8px;
+  padding: 18px clamp(12px, 3vw, 22px) 4px;
 }
 .population-chart-wrap {
   position: relative;
@@ -687,13 +687,13 @@ footer p {
 .chart-dot.chart-flat {
   fill: var(--color-secondary);
 }
-strong.chart-up {
+.chart-change-value.chart-up {
   color: var(--color-population-up);
 }
-strong.chart-down {
+.chart-change-value.chart-down {
   color: var(--color-population-down);
 }
-strong.chart-flat {
+.chart-change-value.chart-flat {
   color: var(--color-secondary);
 }
 
@@ -709,13 +709,25 @@ strong.chart-flat {
   pointer-events: none;
 }
 .population-chart-summary {
-  font-size: var(--fs-small);
-  color: var(--color-secondary);
   text-align: center;
-  margin: 4px 0 8px;
+  margin: 6px 0 10px;
 }
-.population-chart-summary strong {
-  font-weight: 700;
+.population-chart-summary p {
+  margin: 0;
+}
+.chart-change-value {
+  font-family: "DM Serif Display", serif;
+  font-size: clamp(1.75rem, 1.75rem + 1vw, 2.25rem);
+  line-height: 1.2;
+}
+.chart-change-label {
+  color: var(--color-secondary);
+  font-size: var(--fs-small);
+}
+.chart-change-detail {
+  color: var(--color-caption);
+  font-size: 0.8125rem;
+  margin-top: 2px;
 }
 .population-chart-figure figcaption {
   font-size: 0.9375rem;

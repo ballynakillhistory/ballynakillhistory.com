@@ -3,12 +3,12 @@
 // the shared assets/data/population.json. Mirrors the loading pattern used
 // by townland-map.js (one shared fetch, one script for every townland page).
 
-const W = 520;
-const H = 200;
-const PAD_L = 34;
-const PAD_R = 10;
-const PAD_T = 12;
-const PAD_B = 24;
+const W = 620;
+const H = 240;
+const PAD_L = 38;
+const PAD_R = 12;
+const PAD_T = 14;
+const PAD_B = 26;
 
 function trendOf(first, last) {
   if (first === 0 && last === 0) return "flat";
@@ -141,18 +141,24 @@ function buildChart(container, years, values) {
   wrap.appendChild(tooltip);
   container.appendChild(wrap);
 
-  // summary line with the overall change, colour-matched to the trend
+  // summary: a large colour-matched percentage headline, plus the raw
+  // figures underneath in smaller, muted text
   const first = values[0];
   const last = values[values.length - 1];
   const change = fmtChange(first, last);
-  const summary = document.createElement("p");
+  const summary = document.createElement("div");
   summary.className = "population-chart-summary";
   if (max === 0) {
-    summary.textContent = "No residents recorded in any census, 1841–1926.";
+    summary.innerHTML = `<p class="chart-change-label">No residents recorded in any census, ${years[0]}–${years[years.length - 1]}.</p>`;
   } else if (change === null) {
-    summary.textContent = `${first.toLocaleString()} in ${years[0]}, none recorded by ${years[years.length - 1]}.`;
+    summary.innerHTML =
+      `<p class="chart-change-value chart-${trend}">${first.toLocaleString()} → 0</p>` +
+      `<p class="chart-change-label">${first.toLocaleString()} people in ${years[0]}, none recorded by ${years[years.length - 1]}</p>`;
   } else {
-    summary.innerHTML = `${first.toLocaleString()} in ${years[0]} → ${last.toLocaleString()} in ${years[years.length - 1]} <strong class="chart-${trend}">(${change})</strong>`;
+    summary.innerHTML =
+      `<p class="chart-change-value chart-${trend}">${change}</p>` +
+      `<p class="chart-change-label">change between ${years[0]} and ${years[years.length - 1]}</p>` +
+      `<p class="chart-change-detail">${first.toLocaleString()} → ${last.toLocaleString()} people</p>`;
   }
   container.appendChild(summary);
 }
