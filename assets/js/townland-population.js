@@ -42,8 +42,8 @@ function buildChart(container, years, values) {
   svg.setAttribute("class", "population-chart-svg");
   svg.setAttribute("preserveAspectRatio", "xMidYMid meet");
 
-  // gridlines + y-axis labels (0 and max)
-  [0, 1].forEach((frac) => {
+  // gridlines + y-axis labels
+  [0, 0.25, 0.5, 0.75, 1].forEach((frac) => {
     const val = Math.round(scaleMax * frac);
     const gy = y(val);
     const line = document.createElementNS(svgNS, "line");
