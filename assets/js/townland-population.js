@@ -63,9 +63,8 @@ function buildChart(container, years, values) {
     svg.appendChild(label);
   });
 
-  // x-axis year labels: first, last, and every other one in between
+  // x-axis year labels: every census year
   years.forEach((yr, i) => {
-    if (i !== 0 && i !== years.length - 1 && i % 2 === 0) return;
     const label = document.createElementNS(svgNS, "text");
     label.setAttribute("x", x(i));
     label.setAttribute("y", H - PAD_B + 13);
