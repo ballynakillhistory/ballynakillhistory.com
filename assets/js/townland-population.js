@@ -106,7 +106,7 @@ function buildChart(container, years, values) {
     const dot = document.createElementNS(svgNS, "circle");
     dot.setAttribute("cx", cx);
     dot.setAttribute("cy", cy);
-    dot.setAttribute("r", 2.5);
+    dot.setAttribute("r", 3.5);
     dot.setAttribute("class", `chart-dot chart-${trend}`);
     svg.appendChild(dot);
 
