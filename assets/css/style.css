@@ -632,12 +632,12 @@ footer p {
   stroke-width: 1;
 }
 .chart-axis-label {
-  fill: var(--color-secondary);
-  font-size: 10px;
+  fill: var(--color-text);
+  font-size: 13px;
   font-family: "Source Sans Pro", sans-serif;
 }
 .chart-year-label {
-  font-size: 9px;
+  font-size: 12px;
 }
 .chart-line {
   fill: none;
@@ -710,15 +710,23 @@ footer p {
 }
 .population-chart-summary {
   text-align: center;
-  margin: 6px 0 10px;
+  margin: 8px 0 10px;
 }
 .population-chart-summary p {
   margin: 0;
 }
+.chart-change-line {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0.4em;
+  color: var(--color-secondary);
+  font-size: var(--fs-medium);
+}
 .chart-change-value {
   font-family: "DM Serif Display", serif;
-  font-size: clamp(1.75rem, 1.75rem + 1vw, 2.25rem);
-  line-height: 1.2;
+  font-size: 1.1em;
 }
 .chart-change-label {
   color: var(--color-secondary);
@@ -727,7 +735,7 @@ footer p {
 .chart-change-detail {
   color: var(--color-caption);
   font-size: 0.8125rem;
-  margin-top: 2px;
+  margin-top: 4px;
 }
 .population-chart-figure figcaption {
   font-size: 0.9375rem;

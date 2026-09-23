@@ -5,10 +5,10 @@
 
 const W = 620;
 const H = 240;
-const PAD_L = 38;
-const PAD_R = 12;
-const PAD_T = 14;
-const PAD_B = 26;
+const PAD_L = 46;
+const PAD_R = 16;
+const PAD_T = 16;
+const PAD_B = 30;
 
 function trendOf(first, last) {
   if (first === 0 && last === 0) return "flat";
@@ -152,12 +152,11 @@ function buildChart(container, years, values) {
     summary.innerHTML = `<p class="chart-change-label">No residents recorded in any census, ${years[0]}–${years[years.length - 1]}.</p>`;
   } else if (change === null) {
     summary.innerHTML =
-      `<p class="chart-change-value chart-${trend}">${first.toLocaleString()} → 0</p>` +
-      `<p class="chart-change-label">${first.toLocaleString()} people in ${years[0]}, none recorded by ${years[years.length - 1]}</p>`;
+      `<p class="chart-change-line"><span class="chart-change-value chart-${trend}">${first.toLocaleString()} → 0</span></p>` +
+      `<p class="chart-change-detail">${first.toLocaleString()} people in ${years[0]}, none recorded by ${years[years.length - 1]}</p>`;
   } else {
     summary.innerHTML =
-      `<p class="chart-change-value chart-${trend}">${change}</p>` +
-      `<p class="chart-change-label">change between ${years[0]} and ${years[years.length - 1]}</p>` +
+      `<p class="chart-change-line"><span class="chart-change-value chart-${trend}">${change}</span> change between ${years[0]} and ${years[years.length - 1]}</p>` +
       `<p class="chart-change-detail">${first.toLocaleString()} → ${last.toLocaleString()} people</p>`;
   }
   container.appendChild(summary);
