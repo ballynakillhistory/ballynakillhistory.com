@@ -3,12 +3,19 @@
 // the shared assets/data/population.json. Mirrors the loading pattern used
 // by townland-map.js (one shared fetch, one script for every townland page).
 
-const W = 640;
-const H = 220;
-const PAD_L = 34;
-const PAD_R = 12;
-const PAD_T = 14;
-const PAD_B = 26;
+const W = 420;
+const H = 130;
+const PAD_L = 30;
+const PAD_R = 8;
+const PAD_T = 10;
+const PAD_B = 20;
+
+function trendOf(first, last) {
+  if (first === 0 && last === 0) return "flat";
+  if (last > first) return "up";
+  if (last < first) return "down";
+  return "flat";
+}
 
 function fmtChange(first, last) {
   if (first === 0) {
@@ -24,6 +31,7 @@ function buildChart(container, years, values) {
   const scaleMax = max === 0 ? 1 : max;
   const plotW = W - PAD_L - PAD_R;
   const plotH = H - PAD_T - PAD_B;
+  const trend = trendOf(values[0], values[values.length - 1]);
 
   const x = (i) => PAD_L + (i / (years.length - 1)) * plotW;
   const y = (v) => PAD_T + (1 - v / scaleMax) * plotH;
@@ -34,9 +42,8 @@ function buildChart(container, years, values) {
   svg.setAttribute("class", "population-chart-svg");
   svg.setAttribute("preserveAspectRatio", "xMidYMid meet");
 
-  // gridlines + y-axis labels (0, half, max)
-  const gridSteps = max === 0 ? [0] : [0, 0.5, 1];
-  gridSteps.forEach((frac) => {
+  // gridlines + y-axis labels (0 and max)
+  [0, 1].forEach((frac) => {
     const val = Math.round(scaleMax * frac);
     const gy = y(val);
     const line = document.createElementNS(svgNS, "line");
@@ -48,7 +55,7 @@ function buildChart(container, years, values) {
     svg.appendChild(line);
 
     const label = document.createElementNS(svgNS, "text");
-    label.setAttribute("x", PAD_L - 8);
+    label.setAttribute("x", PAD_L - 6);
     label.setAttribute("y", gy + 3);
     label.setAttribute("text-anchor", "end");
     label.setAttribute("class", "chart-axis-label");
@@ -56,32 +63,35 @@ function buildChart(container, years, values) {
     svg.appendChild(label);
   });
 
-  // x-axis year labels (skip alternating labels on narrow screens via CSS class)
+  // x-axis year labels: first, last, and every other one in between
   years.forEach((yr, i) => {
+    if (i !== 0 && i !== years.length - 1 && i % 2 === 0) return;
     const label = document.createElementNS(svgNS, "text");
     label.setAttribute("x", x(i));
-    label.setAttribute("y", H - PAD_B + 16);
-    label.setAttribute("text-anchor", "middle");
+    label.setAttribute("y", H - PAD_B + 13);
+    label.setAttribute(
+      "text-anchor",
+      i === 0 ? "start" : i === years.length - 1 ? "end" : "middle"
+    );
     label.setAttribute("class", "chart-axis-label chart-year-label");
     label.textContent = yr;
     svg.appendChild(label);
   });
 
-  // line path
-  const points = values.map((v, i) => `${x(i)},${y(v)}`).join(" L ");
-  const path = document.createElementNS(svgNS, "path");
-  path.setAttribute("d", `M ${points}`);
-  path.setAttribute("class", "chart-line");
-  svg.appendChild(path);
-
   // area fill under the line
+  const points = values.map((v, i) => `${x(i)},${y(v)}`).join(" L ");
   const areaD = `M ${x(0)},${y(0)} L ${points} L ${x(values.length - 1)},${y(0)} Z`;
   const area = document.createElementNS(svgNS, "path");
   area.setAttribute("d", areaD);
-  area.setAttribute("class", "chart-area");
-  svg.insertBefore(area, svg.firstChild);
+  area.setAttribute("class", `chart-area chart-${trend}`);
+  svg.appendChild(area);
 
-  // dots + larger invisible hit targets for hover/tap
+  // line path
+  const path = document.createElementNS(svgNS, "path");
+  path.setAttribute("d", `M ${points}`);
+  path.setAttribute("class", `chart-line chart-${trend}`);
+  svg.appendChild(path);
+
   const tooltip = document.createElement("div");
   tooltip.className = "chart-tooltip";
   tooltip.hidden = true;
@@ -90,18 +100,21 @@ function buildChart(container, years, values) {
     const cx = x(i);
     const cy = y(v);
 
+    // larger invisible hit target, drawn first so the visible dot sits on
+    // top of it without stealing its pointer events (see chart-dot's
+    // pointer-events: none in the stylesheet)
     const hit = document.createElementNS(svgNS, "circle");
     hit.setAttribute("cx", cx);
     hit.setAttribute("cy", cy);
-    hit.setAttribute("r", 11);
+    hit.setAttribute("r", 10);
     hit.setAttribute("class", "chart-hit");
     svg.appendChild(hit);
 
     const dot = document.createElementNS(svgNS, "circle");
     dot.setAttribute("cx", cx);
     dot.setAttribute("cy", cy);
-    dot.setAttribute("r", 3);
-    dot.setAttribute("class", "chart-dot");
+    dot.setAttribute("r", 2.5);
+    dot.setAttribute("class", `chart-dot chart-${trend}`);
     svg.appendChild(dot);
 
     function showTooltip() {
@@ -134,7 +147,7 @@ function buildChart(container, years, values) {
   wrap.appendChild(tooltip);
   container.appendChild(wrap);
 
-  // summary line with the overall change
+  // summary line with the overall change, colour-matched to the trend
   const first = values[0];
   const last = values[values.length - 1];
   const change = fmtChange(first, last);
@@ -145,7 +158,7 @@ function buildChart(container, years, values) {
   } else if (change === null) {
     summary.textContent = `${first.toLocaleString()} in ${years[0]}, none recorded by ${years[years.length - 1]}.`;
   } else {
-    summary.innerHTML = `${first.toLocaleString()} in ${years[0]} → ${last.toLocaleString()} in ${years[years.length - 1]} <strong>(${change})</strong>`;
+    summary.innerHTML = `${first.toLocaleString()} in ${years[0]} → ${last.toLocaleString()} in ${years[years.length - 1]} <strong class="chart-${trend}">(${change})</strong>`;
   }
   container.appendChild(summary);
 }

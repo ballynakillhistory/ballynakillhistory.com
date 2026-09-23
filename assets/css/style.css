@@ -49,6 +49,8 @@
   --color-caption: #555;
   --color-secondary: #666;
   --color-border: #dedede;
+  --color-population-up: #3d7a4d;
+  --color-population-down: #a33f3f;
   --content-width: 1200px;
   --side-padding: clamp(1.5rem, 5vw, 2rem);
   --fs-small: clamp(0.875rem, 0.875rem + ((1vw - 0.2rem) * 0.227), 1rem);
@@ -608,9 +610,13 @@ footer p {
 
 /* interactive townland population chart */
 
+.population-chart-figure {
+  max-width: 420px;
+  margin: 1.5rem auto;
+}
 .townland-population-chart {
   border: 1px solid var(--color-border);
-  padding: 20px clamp(12px, 3vw, 24px) 8px;
+  padding: 14px clamp(10px, 3vw, 18px) 6px;
 }
 .population-chart-wrap {
   position: relative;
@@ -627,27 +633,25 @@ footer p {
 }
 .chart-axis-label {
   fill: var(--color-secondary);
-  font-size: 10px;
+  font-size: 9px;
   font-family: "Source Sans Pro", sans-serif;
 }
 .chart-year-label {
-  font-size: 9px;
+  font-size: 8px;
 }
 .chart-area {
-  fill: var(--color-text);
-  opacity: 0.06;
+  opacity: 0.1;
 }
 .chart-line {
   fill: none;
-  stroke: var(--color-text);
   stroke-width: 2;
   stroke-linecap: round;
   stroke-linejoin: round;
 }
 .chart-dot {
-  fill: var(--color-text);
   stroke: var(--color-bg);
   stroke-width: 1.5;
+  pointer-events: none;
 }
 .chart-hit {
   fill: transparent;
@@ -658,8 +662,27 @@ footer p {
 }
 .chart-hit:focus + .chart-dot,
 .chart-hit:hover + .chart-dot {
-  r: 5;
+  r: 4.5;
 }
+
+/* trend colours: population grew (up), declined (down), or never changed
+   /never had residents (flat) */
+.chart-up {
+  fill: var(--color-population-up);
+  stroke: var(--color-population-up);
+  color: var(--color-population-up);
+}
+.chart-down {
+  fill: var(--color-population-down);
+  stroke: var(--color-population-down);
+  color: var(--color-population-down);
+}
+.chart-flat {
+  fill: var(--color-secondary);
+  stroke: var(--color-secondary);
+  color: var(--color-secondary);
+}
+
 .chart-tooltip {
   position: absolute;
   transform: translate(-50%, -130%);
@@ -675,8 +698,11 @@ footer p {
   font-size: var(--fs-small);
   color: var(--color-secondary);
   text-align: center;
-  margin: 4px 0 12px;
+  margin: 4px 0 8px;
 }
 .population-chart-summary strong {
-  color: var(--color-text);
+  font-weight: 700;
+}
+.population-chart-figure figcaption {
+  font-size: 0.9375rem;
 }
