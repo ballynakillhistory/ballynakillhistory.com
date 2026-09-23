@@ -112,6 +112,28 @@ async function init(root) {
   root.addEventListener("click", () => map.scrollWheelZoom.enable());
   root.addEventListener("mouseleave", () => map.scrollWheelZoom.disable());
 
+  // one shared tooltip for hover-capable devices. Leaflet skips mouseout while the map is
+  // being dragged, so the hovered shape is tracked here and cleared whenever the pointer
+  // is no longer over it, leaves the map, or the map starts moving.
+  // permanent: Leaflet closes ordinary tooltips on any map click, which dismissed the hover
+  // tooltip when the visitor clicked the townland; closing is handled below instead
+  const tooltip = L.tooltip({ permanent: true });
+  let hovered = null;
+  let dragging = false;
+  function clearHover() {
+    if (hovered) hovered.setStyle({ weight: 1, color: "#333" });
+    hovered = null;
+    map.closeTooltip(tooltip);
+  }
+  map.on("movestart zoomstart", clearHover);
+  // polygons slide under a stationary cursor while panning and fire mouseover; ignore those
+  map.on("dragstart", () => (dragging = true));
+  map.on("dragend", () => (dragging = false));
+  map.on("mousemove", (e) => {
+    if (hovered && e.originalEvent.target !== hovered.getElement()) clearHover();
+  });
+  root.addEventListener("mouseleave", clearHover);
+
   const layerByName = new Map();
   const geo = L.geoJSON(boundaries, {
     style: () => ({ color: "#333", weight: 1, fillOpacity: 0.85 }),
@@ -120,9 +142,30 @@ async function init(root) {
       // hover-capable devices get a follow-the-cursor tooltip; touch devices get a tap
       // popup. A tap on a phone fires an emulated hover as well as the click, so binding
       // both showed two boxes at once.
-      const on = canHover ? ["mouseover", "mouseout"] : ["popupopen", "popupclose"];
-      layer.on(on[0], () => layer.setStyle({ weight: 3, color: "#fff" }));
-      layer.on(on[1], () => layer.setStyle({ weight: 1, color: "#333" }));
+      const highlight = () => layer.setStyle({ weight: 3, color: "#fff" });
+      const unhighlight = () => layer.setStyle({ weight: 1, color: "#333" });
+      if (canHover) {
+        // Driven by hand rather than layer.bindTooltip: Leaflet opens bound tooltips on
+        // *click* whenever the browser reports touch support (touchscreen laptops, some
+        // desktops), and nothing closes them, so click-dragging the map left one stuck open.
+        layer.on("mouseover", (e) => {
+          if (dragging) return;
+          if (hovered && hovered !== layer) clearHover();
+          hovered = layer;
+          highlight();
+          tooltip.setContent(layer.pcContent()).setLatLng(e.latlng);
+          map.openTooltip(tooltip);
+        });
+        layer.on("mousemove", (e) => {
+          if (!dragging && hovered === layer) tooltip.setLatLng(e.latlng);
+        });
+        layer.on("mouseout", () => {
+          if (hovered === layer) clearHover();
+        });
+      } else {
+        layer.on("popupopen", highlight);
+        layer.on("popupclose", unhighlight);
+      }
     },
   }).addTo(map);
   map.fitBounds(geo.getBounds());
@@ -201,8 +244,9 @@ async function init(root) {
   }
 
   function render() {
-    // an open popup shows the previous years' figures, so close it
+    // an open popup or tooltip shows the previous years' figures, so close it
     map.closePopup();
+    clearHover();
     const yearA = +from.select.value;
     const yearB = +to.select.value;
     const ia = idx(yearA);
@@ -225,9 +269,9 @@ async function init(root) {
       const layer = layerByName.get(row.name);
       if (!layer) return;
       layer.setStyle({ fillColor: row.cls.color });
-      layer.unbindTooltip().unbindPopup();
-      if (canHover) layer.bindTooltip(popupFor(row, yearA, yearB), { sticky: true });
-      else layer.bindPopup(popupFor(row, yearA, yearB));
+      layer.unbindPopup();
+      layer.pcContent = () => popupFor(row, yearA, yearB);
+      if (!canHover) layer.bindPopup(layer.pcContent());
     });
 
     const totalA = rows.reduce((s, r) => s + r.a, 0);
