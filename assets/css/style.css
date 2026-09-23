@@ -611,12 +611,12 @@ footer p {
 /* interactive townland population chart */
 
 .population-chart-figure {
-  max-width: 420px;
+  max-width: 560px;
   margin: 1.5rem auto;
 }
 .townland-population-chart {
   border: 1px solid var(--color-border);
-  padding: 14px clamp(10px, 3vw, 18px) 6px;
+  padding: 16px clamp(10px, 3vw, 20px) 8px;
 }
 .population-chart-wrap {
   position: relative;
@@ -633,14 +633,11 @@ footer p {
 }
 .chart-axis-label {
   fill: var(--color-secondary);
-  font-size: 9px;
+  font-size: 10px;
   font-family: "Source Sans Pro", sans-serif;
 }
 .chart-year-label {
-  font-size: 8px;
-}
-.chart-area {
-  opacity: 0.1;
+  font-size: 9px;
 }
 .chart-line {
   fill: none;
@@ -666,20 +663,37 @@ footer p {
 }
 
 /* trend colours: population grew (up), declined (down), or never changed
-   /never had residents (flat) */
-.chart-up {
-  fill: var(--color-population-up);
+   /never had residents (flat). Compound selectors (.chart-line.chart-up
+   etc.) so these win over .chart-line's fill: none regardless of
+   stylesheet order, instead of relying on a single-class specificity tie. */
+.chart-line.chart-up,
+.chart-dot.chart-up {
   stroke: var(--color-population-up);
+}
+.chart-line.chart-down,
+.chart-dot.chart-down {
+  stroke: var(--color-population-down);
+}
+.chart-line.chart-flat,
+.chart-dot.chart-flat {
+  stroke: var(--color-secondary);
+}
+.chart-dot.chart-up {
+  fill: var(--color-population-up);
+}
+.chart-dot.chart-down {
+  fill: var(--color-population-down);
+}
+.chart-dot.chart-flat {
+  fill: var(--color-secondary);
+}
+strong.chart-up {
   color: var(--color-population-up);
 }
-.chart-down {
-  fill: var(--color-population-down);
-  stroke: var(--color-population-down);
+strong.chart-down {
   color: var(--color-population-down);
 }
-.chart-flat {
-  fill: var(--color-secondary);
-  stroke: var(--color-secondary);
+strong.chart-flat {
   color: var(--color-secondary);
 }
 

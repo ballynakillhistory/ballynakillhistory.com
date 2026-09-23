@@ -3,12 +3,12 @@
 // the shared assets/data/population.json. Mirrors the loading pattern used
 // by townland-map.js (one shared fetch, one script for every townland page).
 
-const W = 420;
-const H = 130;
-const PAD_L = 30;
-const PAD_R = 8;
-const PAD_T = 10;
-const PAD_B = 20;
+const W = 520;
+const H = 200;
+const PAD_L = 34;
+const PAD_R = 10;
+const PAD_T = 12;
+const PAD_B = 24;
 
 function trendOf(first, last) {
   if (first === 0 && last === 0) return "flat";
@@ -78,13 +78,7 @@ function buildChart(container, years, values) {
     svg.appendChild(label);
   });
 
-  // area fill under the line
   const points = values.map((v, i) => `${x(i)},${y(v)}`).join(" L ");
-  const areaD = `M ${x(0)},${y(0)} L ${points} L ${x(values.length - 1)},${y(0)} Z`;
-  const area = document.createElementNS(svgNS, "path");
-  area.setAttribute("d", areaD);
-  area.setAttribute("class", `chart-area chart-${trend}`);
-  svg.appendChild(area);
 
   // line path
   const path = document.createElementNS(svgNS, "path");
