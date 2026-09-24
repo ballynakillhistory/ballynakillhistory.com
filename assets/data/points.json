@@ -12172,6 +12172,193 @@
     "category": "house",
     "townland": "kylenagappa"
    }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.42640393898979,
+     53.123908824447035
+    ]
+   },
+   "properties": {
+    "name": "Clonbarry",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "carrowcrin"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.431083678458887,
+     53.12195512399606
+    ]
+   },
+   "properties": {
+    "name": "The Orchard",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "carrowcrin"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.427047847424426,
+     53.12545708599341
+    ]
+   },
+   "properties": {
+    "name": "Egan's House",
+    "layer": "houses",
+    "notes": null,
+    "category": "house",
+    "townland": "carrowcrin"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.428353463005767,
+     53.12484261823779
+    ]
+   },
+   "properties": {
+    "name": "Conway's House",
+    "layer": "houses",
+    "notes": null,
+    "category": "house",
+    "townland": "carrowcrin"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.429372817687282,
+     53.12407392334258
+    ]
+   },
+   "properties": {
+    "name": "Sonny Conway's House",
+    "layer": "houses",
+    "notes": null,
+    "category": "house",
+    "townland": "carrowcrin"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.42946808747557,
+     53.12295485292761
+    ]
+   },
+   "properties": {
+    "name": "Nevin's House",
+    "layer": "houses",
+    "notes": "There was a shop here.",
+    "category": "house",
+    "townland": "carrowcrin"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.429814163727022,
+     53.122708732572086
+    ]
+   },
+   "properties": {
+    "name": "Ruin of Bishop's House?",
+    "layer": "houses",
+    "notes": "The name of the people that live in this house wasn't known but they did remember hearing that a Bishop came from it.",
+    "category": "house",
+    "townland": "carrowcrin"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.430728210428288,
+     53.122058840417395
+    ]
+   },
+   "properties": {
+    "name": "Hogan's House",
+    "layer": "houses",
+    "notes": null,
+    "category": "house",
+    "townland": "carrowcrin"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.431640850047636,
+     53.12191033856028
+    ]
+   },
+   "properties": {
+    "name": "Hagueny's House",
+    "layer": "houses",
+    "notes": null,
+    "category": "house",
+    "townland": "carrowcrin"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.431096003658967,
+     53.121857450818005
+    ]
+   },
+   "properties": {
+    "name": "Hagueny's House",
+    "layer": "houses",
+    "notes": null,
+    "category": "house",
+    "townland": "carrowcrin"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.433026121294931,
+     53.12171920844081
+    ]
+   },
+   "properties": {
+    "name": "Brehony's House",
+    "layer": "houses",
+    "notes": "Then McDonagh's.",
+    "category": "house",
+    "townland": "carrowcrin"
+   }
   }
  ]
 }
