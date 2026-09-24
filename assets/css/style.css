@@ -901,3 +901,7 @@ th[aria-sort="descending"] .pc-sort::after {
 .pc-table-wrap {
   overflow-x: auto;
 }
+
+.nowrap {
+  white-space: nowrap;
+}
