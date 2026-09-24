@@ -392,16 +392,28 @@ table {
   border-collapse: collapse;
 }
 th, td {
-  border: 1px solid var(--color-text);
-  padding: 9px;
+  padding: 10px 12px;
   text-align: left;
   vertical-align: top;
+  border-bottom: 1px solid var(--color-border);
+  border-right: 1px solid var(--color-border);
+}
+th:last-child, td:last-child {
+  border-right: none;
 }
 td {
   font-weight: 400;
 }
 th {
   font-weight: 700;
+  font-size: 0.78rem;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--color-secondary);
+  border-bottom: 2px solid var(--color-text);
+}
+tbody tr:last-child td {
+  border-bottom: none;
 }
 .table-scroll {
   overflow-x: auto;
@@ -416,6 +428,38 @@ th {
   padding: 6px 8px;
 }
 
+/* household lists per historical source (Tithe/Griffith/census) — separate
+   cards on purpose, not a table: rows across sources aren't matched to each
+   other, so the layout doesn't line them up as if they were. */
+.ownership-sources {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 14px;
+  margin: 20px 0;
+}
+.ownership-source {
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  background: #f7f7f7;
+  padding: 12px 14px 16px;
+}
+.ownership-source-label {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-secondary);
+  margin: 0 0 10px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--color-border);
+}
+.ownership-source ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: var(--fs-small);
+  line-height: 1.7;
+}
 /* map thumbnail galleries (click to enlarge) */
 
 .map-gallery {
