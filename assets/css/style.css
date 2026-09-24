@@ -882,7 +882,7 @@ th[aria-sort="descending"] .pc-sort::after {
   font-weight: 400;
   font-size: 1.35rem;
 }
-.article-list span {
+.article-list a > span {
   display: block;
   margin-top: 0.25rem;
   color: var(--color-secondary);
