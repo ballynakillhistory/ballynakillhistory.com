@@ -460,6 +460,94 @@ tbody tr:last-child td {
   font-size: var(--fs-small);
   line-height: 1.7;
 }
+.ownership-placeholder {
+  color: var(--color-caption);
+  font-style: italic;
+}
+
+/* quick-facts strip: what was actually collected for this townland, above the map */
+.quick-facts {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 20px 36px;
+  margin: 18px 0;
+  padding: 14px 0;
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+}
+.quick-facts > div {
+  min-width: 0;
+}
+.quick-facts > div:has(.placename-types) {
+  max-width: 280px;
+}
+.quick-facts dt {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--color-secondary);
+  margin: 0 0 2px;
+}
+.quick-facts dd {
+  margin: 0;
+  font-family: "DM Serif Display", serif;
+  font-size: 1.5rem;
+}
+.quick-facts-note {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 0.8125rem;
+  font-weight: 400;
+  color: var(--color-secondary);
+}
+/* placename type breakdown, right under the quick-facts row - dot colours match
+   the map's own legend (assets/js/townland-map.js TYPE_COLORS), never invented */
+.placename-types-label {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-caption);
+  margin: 14px 0 6px;
+}
+.placename-types {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 4px 14px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 0.8rem;
+}
+.placename-types li {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.placename-types .dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  flex: 0 0 auto;
+}
+.placename-types .count {
+  font-weight: 700;
+  color: var(--color-text);
+}
+.quick-facts-heading {
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--color-text);
+  margin: 18px 0 0;
+}
+.quick-facts-heading + .quick-facts {
+  margin-top: 8px;
+}
+
 /* map thumbnail galleries (click to enlarge) */
 
 .map-gallery {
