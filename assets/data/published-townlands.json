@@ -348,5 +348,45 @@
     "slug": "toorsmuttaun",
     "name_tag": "Toorsmuttaun",
     "fid": 61
+  },
+  {
+    "slug": "barnaboy",
+    "name_tag": "Barnaboy",
+    "fid": 92
+  },
+  {
+    "slug": "coolfin",
+    "name_tag": "Coolfin",
+    "fid": 118
+  },
+  {
+    "slug": "garrynaglogh",
+    "name_tag": "Garrynaglogh",
+    "fid": 114
+  },
+  {
+    "slug": "knockaunbaun",
+    "name_tag": "Knockaunbaun",
+    "fid": 2
+  },
+  {
+    "slug": "kylemore",
+    "name_tag": "Kylemore",
+    "fid": 123
+  },
+  {
+    "slug": "pollagh",
+    "name_tag": "Pollagh",
+    "fid": 98
+  },
+  {
+    "slug": "tomany-more",
+    "name_tag": "Tomany More",
+    "fid": 84
+  },
+  {
+    "slug": "tomanynambraher",
+    "name_tag": "Tomanynambraher",
+    "fid": 97
   }
 ]

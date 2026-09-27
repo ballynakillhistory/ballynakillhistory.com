@@ -3100,6 +3100,57 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     -8.407272307777426,
+     53.12251269181221
+    ]
+   },
+   "properties": {
+    "name": "The River Field",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "pollagh"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.407450480261776,
+     53.12109726961006
+    ]
+   },
+   "properties": {
+    "name": "The Pasture  ",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "pollagh"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.409729110408717,
+     53.12031088324685
+    ]
+   },
+   "properties": {
+    "name": "The Rushy Park",
+    "layer": "placenames",
+    "notes": "These 2 fields.",
+    "category": "field",
+    "townland": "pollagh"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -8.502247800319477,
      53.06667737842208
     ]
@@ -10563,6 +10614,295 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     -8.423028067004713,
+     53.130253627712015
+    ]
+   },
+   "properties": {
+    "name": "The River Field",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "tomany-more"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.419825499019888,
+     53.12929187920396
+    ]
+   },
+   "properties": {
+    "name": "Misery",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "tomany-more"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.422741029716875,
+     53.12920474173257
+    ]
+   },
+   "properties": {
+    "name": "Green Acres",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "tomany-more"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.421210863538565,
+     53.12728640445434
+    ]
+   },
+   "properties": {
+    "name": "The Orchard Field",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "tomany-more"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.421692241989453,
+     53.1280785317552
+    ]
+   },
+   "properties": {
+    "name": "The Back of the House",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "tomany-more"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.419024634907023,
+     53.128342423166785
+    ]
+   },
+   "properties": {
+    "name": "Little Field",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "tomany-more"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.41775630402139,
+     53.12925914505103
+    ]
+   },
+   "properties": {
+    "name": "The Square Field",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "tomany-more"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.416273051673503,
+     53.13010778473957
+    ]
+   },
+   "properties": {
+    "name": "Mount Misery",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "tomany-more"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.419349922465813,
+     53.13089005717522
+    ]
+   },
+   "properties": {
+    "name": "The Three Corner Field",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "tomany-more"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.414117999676492,
+     53.12668390131214
+    ]
+   },
+   "properties": {
+    "name": "The Stony Field",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "tomany-more"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.412319876592742,
+     53.125491392494105
+    ]
+   },
+   "properties": {
+    "name": "The Callow",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "tomany-more"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.412608324847994,
+     53.12352181971309
+    ]
+   },
+   "properties": {
+    "name": "Tully's Bog",
+    "layer": "placenames",
+    "notes": null,
+    "category": "bog",
+    "townland": "tomany-more"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.41895338294143,
+     53.12394015499279
+    ]
+   },
+   "properties": {
+    "name": "The Esker",
+    "layer": "placenames",
+    "notes": null,
+    "category": "road",
+    "townland": "tomany-more"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.42407933589646,
+     53.126757671725514
+    ]
+   },
+   "properties": {
+    "name": "The Brand Iron Field",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "tomany-more"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.423193275352322,
+     53.12485946990036
+    ]
+   },
+   "properties": {
+    "name": "The Hill Field",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "tomany-more"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.418962632856832,
+     53.11731542277887
+    ]
+   },
+   "properties": {
+    "name": "The River Field",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "tomany-more"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.422454983775037,
+     53.11645163272781
+    ]
+   },
+   "properties": {
+    "name": "Fogha",
+    "layer": "placenames",
+    "notes": "",
+    "category": "field",
+    "townland": "tomany-more"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -8.416865606909587,
      53.07470655077689
     ]
@@ -10624,6 +10964,74 @@
     "notes": null,
     "category": "cave(s), souterrain(s)",
     "townland": "cappaghcon"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.362310245785599,
+     53.098614971000714
+    ]
+   },
+   "properties": {
+    "name": "The Canada Road",
+    "layer": "placenames",
+    "notes": null,
+    "category": "road",
+    "townland": "kylemore"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.367595580063844,
+     53.097406478572296
+    ]
+   },
+   "properties": {
+    "name": "The Friars Bridge",
+    "layer": "placenames",
+    "notes": "Fix location.",
+    "category": "bridge",
+    "townland": "kylemore"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.389080913727808,
+     53.10140599610997
+    ]
+   },
+   "properties": {
+    "name": "Judy's Corner",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "coolfin"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.388336864712919,
+     53.100863003313485
+    ]
+   },
+   "properties": {
+    "name": "The Pony's Hill",
+    "layer": "placenames",
+    "notes": null,
+    "category": "field",
+    "townland": "coolfin"
    }
   },
   {
@@ -10845,6 +11253,23 @@
     "notes": null,
     "category": "house",
     "townland": "loughatorick-north"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.424495920539883,
+     53.108270017254526
+    ]
+   },
+   "properties": {
+    "name": "Fahy's House",
+    "layer": "houses",
+    "notes": null,
+    "category": "house",
+    "townland": "knockaunbaun"
    }
   },
   {
@@ -16224,6 +16649,227 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     -8.42082150165679,
+     53.12763032424901
+    ]
+   },
+   "properties": {
+    "name": "Murphy's, Moran's, Egan's House",
+    "layer": "houses",
+    "notes": null,
+    "category": "house",
+    "townland": "tomany-more"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.416226232705602,
+     53.12760322011823
+    ]
+   },
+   "properties": {
+    "name": "Walsh's House",
+    "layer": "houses",
+    "notes": null,
+    "category": "house",
+    "townland": "tomany-more"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.414398049195603,
+     53.12841303031752
+    ]
+   },
+   "properties": {
+    "name": "Donohoe's House",
+    "layer": "houses",
+    "notes": null,
+    "category": "house",
+    "townland": "tomany-more"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.417671441771473,
+     53.12421157295139
+    ]
+   },
+   "properties": {
+    "name": "Patch Jennings House",
+    "layer": "houses",
+    "notes": "Jenning's Forge",
+    "category": "house",
+    "townland": "tomany-more"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.42223392009088,
+     53.12701230226069
+    ]
+   },
+   "properties": {
+    "name": "Larry Downey's House",
+    "layer": "houses",
+    "notes": "Then Rourke's",
+    "category": "house",
+    "townland": "tomany-more"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.419983838266809,
+     53.1220604135151
+    ]
+   },
+   "properties": {
+    "name": "Nevin's, Tully's House",
+    "layer": "houses",
+    "notes": "Annie Tully",
+    "category": "house",
+    "townland": "tomany-more"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.420048321231906,
+     53.120760606370474
+    ]
+   },
+   "properties": {
+    "name": "Martin's House",
+    "layer": "houses",
+    "notes": null,
+    "category": "house",
+    "townland": "tomany-more"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.425924876825128,
+     53.11836983524297
+    ]
+   },
+   "properties": {
+    "name": "Carroll's House",
+    "layer": "houses",
+    "notes": null,
+    "category": "house",
+    "townland": "tomany-more"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.420601628071529,
+     53.11939185341175
+    ]
+   },
+   "properties": {
+    "name": "Shiel's House",
+    "layer": "houses",
+    "notes": "Went to america",
+    "category": "house",
+    "townland": "tomany-more"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.41970846014532,
+     53.119873545232615
+    ]
+   },
+   "properties": {
+    "name": "Dwyer's House",
+    "layer": "houses",
+    "notes": null,
+    "category": "house",
+    "townland": "tomany-more"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.419810172851589,
+     53.11858667684674
+    ]
+   },
+   "properties": {
+    "name": "O'Donnell's House",
+    "layer": "houses",
+    "notes": null,
+    "category": "house",
+    "townland": "tomany-more"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.419575506392633,
+     53.11495687922789
+    ]
+   },
+   "properties": {
+    "name": "Donohoe's House",
+    "layer": "houses",
+    "notes": null,
+    "category": "house",
+    "townland": "tomany-more"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.422507452184934,
+     53.12682620681596
+    ]
+   },
+   "properties": {
+    "name": "Rourke's, Boland's House",
+    "layer": "houses",
+    "notes": "Guard Boland.",
+    "category": "house",
+    "townland": "tomany-more"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -8.41664895376452,
      53.07389517772047
     ]
@@ -16234,6 +16880,91 @@
     "notes": null,
     "category": "house",
     "townland": "cappaghconbeg"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.4153328597079,
+     53.116105973901725
+    ]
+   },
+   "properties": {
+    "name": "Hughes' House",
+    "layer": "houses",
+    "notes": null,
+    "category": "house",
+    "townland": "tomanynambraher"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.408107402631103,
+     53.101725740297255
+    ]
+   },
+   "properties": {
+    "name": "Hodgins' House",
+    "layer": "houses",
+    "notes": null,
+    "category": "house",
+    "townland": "barnaboy"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.408058766400446,
+     53.10002581107216
+    ]
+   },
+   "properties": {
+    "name": "The Russian's",
+    "layer": "houses",
+    "notes": "A soldier stayed here, he was said to be Russian and the house was called the Russian's after that.",
+    "category": "house",
+    "townland": "barnaboy"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.40614051418189,
+     53.098846380765785
+    ]
+   },
+   "properties": {
+    "name": "Walsh's House",
+    "layer": "houses",
+    "notes": null,
+    "category": "house",
+    "townland": "barnaboy"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.407880447061945,
+     53.09865776784945
+    ]
+   },
+   "properties": {
+    "name": "Sonny Madden's House",
+    "layer": "houses",
+    "notes": null,
+    "category": "house",
+    "townland": "barnaboy"
    }
   },
   {
@@ -17135,6 +17866,57 @@
     "notes": null,
     "category": "building",
     "townland": "ballynagar"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.414486039588011,
+     53.11640070406138
+    ]
+   },
+   "properties": {
+    "name": "Friary",
+    "layer": "buildings",
+    "notes": "Monks hid here when being persecuted. They left Abbey.",
+    "category": "ecclesiastical site",
+    "townland": "tomanynambraher"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.408300943124896,
+     53.09977507550687
+    ]
+   },
+   "properties": {
+    "name": "Hodgins' Forge",
+    "layer": "buildings",
+    "notes": null,
+    "category": "forge",
+    "townland": "barnaboy"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.390243962868032,
+     53.10293180916221
+    ]
+   },
+   "properties": {
+    "name": "Donohoe's Mill",
+    "layer": "buildings",
+    "notes": null,
+    "category": "mill",
+    "townland": "garrynaglogh"
    }
   }
  ]
