@@ -248,5 +248,105 @@
     "slug": "carrowcrin",
     "name_tag": "Carrowcrin",
     "fid": 77
+  },
+  {
+    "slug": "coarseparks",
+    "name_tag": "Coarseparks",
+    "fid": 89
+  },
+  {
+    "slug": "marblehill",
+    "name_tag": "Marblehill",
+    "fid": 38
+  },
+  {
+    "slug": "ballynakill",
+    "name_tag": "Ballynakill",
+    "fid": 63
+  },
+  {
+    "slug": "baunyknav",
+    "name_tag": "Baunyknav",
+    "fid": 67
+  },
+  {
+    "slug": "cloghvoley",
+    "name_tag": "Cloghvoley",
+    "fid": 18
+  },
+  {
+    "slug": "cregg",
+    "name_tag": "Cregg",
+    "fid": 72
+  },
+  {
+    "slug": "cuilleen",
+    "name_tag": "Cuilleen",
+    "fid": 3
+  },
+  {
+    "slug": "curragh",
+    "name_tag": "Curragh",
+    "fid": 74
+  },
+  {
+    "slug": "derreennamucka",
+    "name_tag": "Derreennamucka",
+    "fid": 15
+  },
+  {
+    "slug": "derrygarriff",
+    "name_tag": "Derrygarriff",
+    "fid": 30
+  },
+  {
+    "slug": "gorteenayanka",
+    "name_tag": "Gorteenayanka",
+    "fid": 28
+  },
+  {
+    "slug": "lisheeny",
+    "name_tag": "Lisheeny",
+    "fid": 57
+  },
+  {
+    "slug": "lissaniska",
+    "name_tag": "Lissaniska",
+    "fid": 70
+  },
+  {
+    "slug": "loughatorick-north",
+    "name_tag": "Loughatorick North",
+    "fid": 1
+  },
+  {
+    "slug": "newtown-north",
+    "name_tag": "Newtown North",
+    "fid": 80
+  },
+  {
+    "slug": "newtown-south",
+    "name_tag": "Newtown South",
+    "fid": 78
+  },
+  {
+    "slug": "parkagarraun",
+    "name_tag": "Parkagarraun",
+    "fid": 66
+  },
+  {
+    "slug": "reynabrone",
+    "name_tag": "Reynabrone",
+    "fid": 17
+  },
+  {
+    "slug": "tomany-beg",
+    "name_tag": "Tomany Beg",
+    "fid": 75
+  },
+  {
+    "slug": "toorsmuttaun",
+    "name_tag": "Toorsmuttaun",
+    "fid": 61
   }
 ]
